@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EndStonePillar"
+      },
+      {
+        "value": "Blocks.PURPUR_PILLAR"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.PURPUR_PILLAR"
+      },
+      {
+        "value": "CUSTOM:EndStonePillar"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PurpurBorderedPillar"
+    },
+    "name": "purpur_bordered_pillar_recipe",
+    "namespace": "mod"
+  }
+}

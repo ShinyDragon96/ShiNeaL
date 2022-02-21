@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "shinycreepers_end_update:end_stone_pillar"
+    },
+    {
+      "item": "minecraft:purpur_pillar"
+    },
+    {
+      "item": "minecraft:purpur_pillar"
+    },
+    {
+      "item": "shinycreepers_end_update:end_stone_pillar"
+    }
+  ],
+  "result": {
+    "item": "shinycreepers_end_update:purpur_bordered_pillar",
+    "count": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "shinycreepers_end_update:blocks/purpur_leaves1",
+    "up": "shinycreepers_end_update:blocks/purpur_leaves1",
+    "north": "shinycreepers_end_update:blocks/purpur_leaves1",
+    "east": "shinycreepers_end_update:blocks/purpur_leaves1",
+    "south": "shinycreepers_end_update:blocks/purpur_leaves1",
+    "west": "shinycreepers_end_update:blocks/purpur_leaves1",
+    "particle": "shinycreepers_end_update:blocks/purpur_leaves1"
+  }
+}

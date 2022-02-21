@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "shinycreepers_end_update:raw_enderite"
+    },
+    {
+      "item": "shinycreepers_end_update:raw_enderite"
+    },
+    {
+      "item": "shinycreepers_end_update:raw_enderite"
+    },
+    {
+      "item": "shinycreepers_end_update:raw_enderite"
+    },
+    {
+      "item": "shinycreepers_end_update:raw_enderite"
+    },
+    {
+      "item": "shinycreepers_end_update:raw_enderite"
+    },
+    {
+      "item": "shinycreepers_end_update:raw_enderite"
+    },
+    {
+      "item": "shinycreepers_end_update:raw_enderite"
+    },
+    {
+      "item": "shinycreepers_end_update:raw_enderite"
+    }
+  ],
+  "result": {
+    "item": "shinycreepers_end_update:enderite_crystal_block",
+    "count": 1
+  }
+}

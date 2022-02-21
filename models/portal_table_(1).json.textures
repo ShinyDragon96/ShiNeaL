@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "missing": ""
+      },
+      "name": "default"
+    },
+    "portal_table_mapping": {
+      "map": {
+        "missing": ""
+      },
+      "name": "portal_table_mapping"
+    }
+  }
+}

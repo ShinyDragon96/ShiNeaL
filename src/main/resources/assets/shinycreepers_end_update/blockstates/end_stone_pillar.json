@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "shinycreepers_end_update:block/end_stone_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "shinycreepers_end_update:block/end_stone_pillar"
+    },
+    "axis=z": {
+      "model": "shinycreepers_end_update:block/end_stone_pillar",
+      "x": 90
+    }
+  }
+}

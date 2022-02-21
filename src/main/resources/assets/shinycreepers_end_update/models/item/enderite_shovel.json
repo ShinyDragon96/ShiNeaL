@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "shinycreepers_end_update:items/enderite_shovel"
+  }
+}

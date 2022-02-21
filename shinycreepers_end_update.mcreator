@@ -1,0 +1,648 @@
+{
+  "mod_elements": [
+    {
+      "name": "EndStonePillar",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_stone_pillar"
+    },
+    {
+      "name": "CobbledEndStone",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobbled_end_stone"
+    },
+    {
+      "name": "SmoothEndStone",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_end_stone"
+    },
+    {
+      "name": "EnderiteOre",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_ore"
+    },
+    {
+      "name": "RawEnderite",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_enderite"
+    },
+    {
+      "name": "EnderiteIngot",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_ingot"
+    },
+    {
+      "name": "EnderiteIngotRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_ingot_recipe"
+    },
+    {
+      "name": "ShinyCreepersEndUpdate",
+      "type": "tab",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shiny_creepers_end_update"
+    },
+    {
+      "name": "RawEnderiterecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_enderiterecipe"
+    },
+    {
+      "name": "RawEnderiteRecipeBlast",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_enderite_recipe_blast"
+    },
+    {
+      "name": "EndStoneLamp",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_stone_lamp"
+    },
+    {
+      "name": "RawEnderiteBlock",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_crystal_block"
+    },
+    {
+      "name": "RawEnderiteBlockRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_enderite_block_recipe"
+    },
+    {
+      "name": "RawEnderiteRecipeFromBlock",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_enderite_recipe_from_block"
+    },
+    {
+      "name": "ChiseledEndStone",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_end_stone"
+    },
+    {
+      "name": "EnderiteBlock",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_block"
+    },
+    {
+      "name": "EnderiteBlockRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_block_recipe"
+    },
+    {
+      "name": "EnderiteIngotRecipeFromBlock",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_ingot_recipe_from_block"
+    },
+    {
+      "name": "PortalTable",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_table"
+    },
+    {
+      "name": "PortalTableEmpty",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_table_empty"
+    },
+    {
+      "name": "PortalTableEmptyOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_table_empty_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnderiteArmor",
+      "type": "armor",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "ChorusLog",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_log"
+    },
+    {
+      "name": "ChorusPlanks",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_planks"
+    },
+    {
+      "name": "ChorusPlanksRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_planks_recipe"
+    },
+    {
+      "name": "ChorusForest",
+      "type": "biome",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_forest"
+    },
+    {
+      "name": "HiddenInTheSkies",
+      "type": "achievement",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hidden_in_the_skies"
+    },
+    {
+      "name": "CoverMeInShards",
+      "type": "achievement",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cover_me_in_shards"
+    },
+    {
+      "name": "UltimateDedication",
+      "type": "achievement",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimate_dedication"
+    },
+    {
+      "name": "CoverMeInShardsProcedure",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cover_me_in_shards_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnderiteSword",
+      "type": "tool",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_sword"
+    },
+    {
+      "name": "EnderitePickaxe",
+      "type": "tool",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_pickaxe"
+    },
+    {
+      "name": "EnderiteAxe",
+      "type": "tool",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_axe"
+    },
+    {
+      "name": "EnderiteShovel",
+      "type": "tool",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_shovel"
+    },
+    {
+      "name": "EnderiteHoe",
+      "type": "tool",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_hoe"
+    },
+    {
+      "name": "EnderiteSwordRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_sword_recipe"
+    },
+    {
+      "name": "EnderitePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_pickaxe_recipe"
+    },
+    {
+      "name": "EnderiteAxeRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_axe_recipe"
+    },
+    {
+      "name": "EnderiteShovelRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_shovel_recipe"
+    },
+    {
+      "name": "EnderiteHoeRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_hoe_recipe"
+    },
+    {
+      "name": "EnderiteHelmetRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_helmet_recipe"
+    },
+    {
+      "name": "EnderiteChestplateRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_chestplate_recipe"
+    },
+    {
+      "name": "EnderiteLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_leggings_recipe"
+    },
+    {
+      "name": "EnderiteBootsRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_boots_recipe"
+    },
+    {
+      "name": "PortalTableGUI",
+      "type": "gui",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_table_gui"
+    },
+    {
+      "name": "PurpurBorderedPillar",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpur_bordered_pillar"
+    },
+    {
+      "name": "PurpurBorderedPillarRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpur_bordered_pillar_recipe"
+    },
+    {
+      "name": "SmoothEndStoneRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_end_stone_recipe"
+    },
+    {
+      "name": "ChiseledEndStoneRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_end_stone_recipe"
+    },
+    {
+      "name": "VoidialWaterMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidial_water_mobplayer_collides_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidialWater",
+      "type": "fluid",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidial_water",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "StoneToolMaterials",
+      "type": "tag",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_tool_materials"
+    },
+    {
+      "name": "Planks",
+      "type": "tag",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "planks"
+    },
+    {
+      "name": "ChorusWood",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_wood"
+    },
+    {
+      "name": "ChorusWoodRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_wood_recipe"
+    },
+    {
+      "name": "ChiseledEndStoneRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_end_stone_recipe_stonecutter"
+    },
+    {
+      "name": "StoneCraftingMaterials",
+      "type": "tag",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_crafting_materials"
+    },
+    {
+      "name": "PurpurLeavesDead",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpur_leaves_dead"
+    },
+    {
+      "name": "PurpurLeaves",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpur_leaves"
+    },
+    {
+      "name": "FloweringPurpurLeaves",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flowering_purpur_leaves"
+    },
+    {
+      "name": "ChorusTree",
+      "type": "structure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_tree"
+    },
+    {
+      "name": "EnderiteSwordVoid",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_sword_void",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "advancements.hidden_in_the_skies.descr": "Obtain Enderite Ore",
+      "item.shinycreepers_end_update.enderite_armor_leggings": "Enderite Leggings",
+      "block.shinycreepers_end_update.cobbled_end_stone": "Cobbled End Stone",
+      "item.shinycreepers_end_update.enderite_armor_helmet": "Enderite Helmet",
+      "item.shinycreepers_end_update.enderite_armor_chestplate": "Enderite Chestplate",
+      "block.shinycreepers_end_update.end_stone_lamp": "End Stone Lamp",
+      "block.shinycreepers_end_update.chorus_log": "Chorus Log",
+      "biome.shinycreepers_end_update.chorus_forest": "Chorus Forest",
+      "block.shinycreepers_end_update.purpur_leaves_dead": "Purpur Leaves Dead",
+      "block.shinycreepers_end_update.purpur_leaves": "Purpur Leaves Dead",
+      "block.shinycreepers_end_update.portal_table_empty": "Portal Table Empty",
+      "item.shinycreepers_end_update.enderite_axe": "Enderite Axe",
+      "item.shinycreepers_end_update.enderite_shovel": "Enderite Shovel",
+      "fluid.shinycreepers_end_update.voidial_water": "Voidial Water",
+      "item.shinycreepers_end_update.enderite_pickaxe": "Enderite Pickaxe",
+      "block.shinycreepers_end_update.chorus_wood": "Chorus Wood",
+      "block.shinycreepers_end_update.enderite_block": "Blcok of Enderite",
+      "item.shinycreepers_end_update.raw_enderite": "Enderite Shard",
+      "item.shinycreepers_end_update.voidial_water_bucket": "Voidial Water Bucket",
+      "item.shinycreepers_end_update.enderite_hoe": "Enderite Hoe",
+      "block.shinycreepers_end_update.enderite_ore": "Enderite Ore",
+      "itemGroup.tabshiny_creepers_end_update": "ShinyCreeper\u0027s End Update",
+      "block.shinycreepers_end_update.portal_table": "Portal Table",
+      "item.shinycreepers_end_update.enderite_armor_boots": "Enderite Boots",
+      "advancements.cover_me_in_shards.descr": "Get a full suit of Enderite armor",
+      "advancements.cover_me_in_shards.title": "Cover Me In Shards",
+      "block.shinycreepers_end_update.chorus_planks": "Chorus Planks",
+      "block.shinycreepers_end_update.flowering_purpur_leaves": "Purpur Leaves Dead",
+      "block.shinycreepers_end_update.smooth_end_stone": "Smooth End Stone",
+      "item.shinycreepers_end_update.enderite_sword": "Enderite Sword",
+      "block.shinycreepers_end_update.enderite_crystal_block": "Enderite Crystal",
+      "block.shinycreepers_end_update.chiseled_end_stone": "Chiseled End Stone",
+      "advancements.hidden_in_the_skies.title": "Hidden In The Skies",
+      "block.shinycreepers_end_update.voidial_water": "Voidial Water",
+      "block.shinycreepers_end_update.purpur_bordered_pillar": "Purpur Bordered Pillar",
+      "advancements.ultimate_dedication.descr": "Use a Enderite ingot to upgrade a hoe, and then reevaluate your life choices",
+      "advancements.ultimate_dedication.title": "Ultimate Dedication",
+      "item.shinycreepers_end_update.enderite_ingot": "Enderite Ingot",
+      "block.shinycreepers_end_update.end_stone_pillar": "End Stone Pillar"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "shinycreepers_end_update",
+    "modName": "ShinyCreeper\u0027s End Update",
+    "version": "1.0.0",
+    "author": "Shiny, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.shinycreepersendupdate",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100354000
+}

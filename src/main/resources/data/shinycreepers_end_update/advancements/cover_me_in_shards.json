@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "shinycreepers_end_update:enderite_armor_chestplate"
+    },
+    "title": {
+      "translate": "advancements.cover_me_in_shards.title"
+    },
+    "description": {
+      "translate": "advancements.cover_me_in_shards.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cover_me_in_shards": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "shinycreepers_end_update:hidden_in_the_skies"
+}

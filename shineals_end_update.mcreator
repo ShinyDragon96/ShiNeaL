@@ -561,18 +561,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           }
         ]
       }
@@ -590,8 +578,8 @@
       "item.shinycreepers_end_update.enderite_armor_helmet": "Enderite Helmet",
       "block.shinycreepers_end_update.end_stone_lamp": "End Stone Lamp",
       "block.shineals_end_update.chorus_planks": "Chorus Planks",
-      "item.shineals_end_update.voidial_water_bucket": "Voidial Water Bucket",
       "biome.shinycreepers_end_update.chorus_forest": "Chorus Forest",
+      "item.shineals_end_update.voidial_water_bucket": "Voidial Water Bucket",
       "block.shineals_end_update.flowering_purpur_leaves": "Purpur Leaves Dead",
       "block.shinycreepers_end_update.portal_table_empty": "Portal Table Empty",
       "item.shinycreepers_end_update.enderite_axe": "Enderite Axe",
@@ -672,7 +660,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.16.5",
+    "currentGenerator": "forge-1.17.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.shinealsendupdate",
     "lockBaseModFiles": false

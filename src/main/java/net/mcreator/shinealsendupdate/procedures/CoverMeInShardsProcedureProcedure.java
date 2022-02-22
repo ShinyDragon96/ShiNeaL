@@ -1,47 +1,59 @@
 package net.mcreator.shinealsendupdate.procedures;
 
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import net.mcreator.shinealsendupdate.item.EnderiteArmorItem;
-import net.mcreator.shinealsendupdate.ShinealsEndUpdateMod;
+import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
 
-import java.util.Map;
+import javax.annotation.Nullable;
+
 import java.util.Iterator;
 
+@Mod.EventBusSubscriber
 public class CoverMeInShardsProcedureProcedure {
+	@SubscribeEvent
+	public static void onItemCrafted(PlayerEvent.ItemCraftedEvent event) {
+		Entity entity = event.getPlayer();
+		execute(event, event.getPlayer());
+	}
 
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				ShinealsEndUpdateMod.LOGGER.warn("Failed to load dependency entity for procedure CoverMeInShardsProcedure!");
+	public static void execute(Entity entity) {
+		execute(null, entity);
+	}
+
+	private static void execute(@Nullable Event event, Entity entity) {
+		if (entity == null)
 			return;
-		}
-		Entity entity = (Entity) dependencies.get("entity");
-		if ((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(EnderiteArmorItem.helmet)) : false) {
-			if ((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(EnderiteArmorItem.body)) : false) {
-				if ((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(EnderiteArmorItem.legs))
+		if (entity instanceof Player _playerHasItem
+				? _playerHasItem.getInventory().contains(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_ARMOR_HELMET))
+				: false) {
+			if (entity instanceof Player _playerHasItem
+					? _playerHasItem.getInventory().contains(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_ARMOR_CHESTPLATE))
+					: false) {
+				if (entity instanceof Player _playerHasItem
+						? _playerHasItem.getInventory().contains(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_ARMOR_LEGGINGS))
 						: false) {
-					if ((entity instanceof PlayerEntity)
-							? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(EnderiteArmorItem.boots))
+					if (entity instanceof Player _playerHasItem
+							? _playerHasItem.getInventory().contains(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_ARMOR_BOOTS))
 							: false) {
-						if (entity instanceof ServerPlayerEntity) {
-							Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements()
 									.getAdvancement(new ResourceLocation("shineals_end_update:cover_me_in_shards"));
-							AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 							if (!_ap.isDone()) {
-								Iterator _iterator = _ap.getRemaningCriteria().iterator();
-								while (_iterator.hasNext()) {
-									String _criterion = (String) _iterator.next();
-									((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
-								}
+								Iterator _iterator = _ap.getRemainingCriteria().iterator();
+								while (_iterator.hasNext())
+									_player.getAdvancements().award(_adv, (String) _iterator.next());
 							}
 						}
 					}

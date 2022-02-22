@@ -1,70 +1,49 @@
 
 package net.mcreator.shinealsendupdate.block;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.loot.LootContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
-import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
-import net.mcreator.shinealsendupdate.itemgroup.ShinyCreepersEndUpdateItemGroup;
-import net.mcreator.shinealsendupdate.ShinealsEndUpdateModElements;
+import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModBlocks;
 
 import java.util.List;
 import java.util.Collections;
 
-@ShinealsEndUpdateModElements.ModElement.Tag
-public class FloweringPurpurLeavesBlock extends ShinealsEndUpdateModElements.ModElement {
-	@ObjectHolder("shineals_end_update:flowering_purpur_leaves")
-	public static final Block block = null;
-
-	public FloweringPurpurLeavesBlock(ShinealsEndUpdateModElements instance) {
-		super(instance, 59);
+public class FloweringPurpurLeavesBlock extends Block {
+	public FloweringPurpurLeavesBlock() {
+		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(1f, 10f).noOcclusion()
+				.isRedstoneConductor((bs, br, bp) -> false));
+		setRegistryName("flowering_purpur_leaves");
 	}
 
 	@Override
-	public void initElements() {
-		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ShinyCreepersEndUpdateItemGroup.tab))
-				.setRegistryName(block.getRegistryName()));
+	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+		return 15;
 	}
 
 	@Override
+	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+		if (!dropsOriginal.isEmpty())
+			return dropsOriginal;
+		return Collections.singletonList(new ItemStack(this, 1));
+	}
+
 	@OnlyIn(Dist.CLIENT)
-	public void clientLoad(FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+	public static void registerRenderLayer() {
+		ItemBlockRenderTypes.setRenderLayer(ShinealsEndUpdateModBlocks.FLOWERING_PURPUR_LEAVES, renderType -> renderType == RenderType.cutout());
 	}
 
-	public static class CustomBlock extends Block {
-		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
-					.setOpaque((bs, br, bp) -> false));
-			setRegistryName("flowering_purpur_leaves");
-		}
-
-		@Override
-		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 15;
-		}
-
-		@Override
-		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-			if (!dropsOriginal.isEmpty())
-				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
-		}
-	}
 }

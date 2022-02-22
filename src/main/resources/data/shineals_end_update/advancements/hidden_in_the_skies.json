@@ -21,7 +21,9 @@
       "conditions": {
         "items": [
           {
-            "item": "shineals_end_update:enderite_ore",
+            "items": [
+              "shineals_end_update:enderite_ore"
+            ],
             "count": {
               "min": 1,
               "max": 64

@@ -1,67 +1,49 @@
 
 package net.mcreator.shinealsendupdate.item;
 
-import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.Entity;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.shinealsendupdate.itemgroup.ShinyCreepersEndUpdateItemGroup;
-import net.mcreator.shinealsendupdate.ShinealsEndUpdateModElements;
+import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModTabs;
+import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
 
-@ShinealsEndUpdateModElements.ModElement.Tag
-public class EnderiteArmorItem extends ShinealsEndUpdateModElements.ModElement {
-	@ObjectHolder("shineals_end_update:enderite_armor_helmet")
-	public static final Item helmet = null;
-	@ObjectHolder("shineals_end_update:enderite_armor_chestplate")
-	public static final Item body = null;
-	@ObjectHolder("shineals_end_update:enderite_armor_leggings")
-	public static final Item legs = null;
-	@ObjectHolder("shineals_end_update:enderite_armor_boots")
-	public static final Item boots = null;
-
-	public EnderiteArmorItem(ShinealsEndUpdateModElements instance) {
-		super(instance, 20);
-	}
-
-	@Override
-	public void initElements() {
-		IArmorMaterial armormaterial = new IArmorMaterial() {
+public abstract class EnderiteArmorItem extends ArmorItem {
+	public EnderiteArmorItem(EquipmentSlot slot, Item.Properties properties) {
+		super(new ArmorMaterial() {
 			@Override
-			public int getDurability(EquipmentSlotType slot) {
+			public int getDurabilityForSlot(EquipmentSlot slot) {
 				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 40;
 			}
 
 			@Override
-			public int getDamageReductionAmount(EquipmentSlotType slot) {
+			public int getDefenseForSlot(EquipmentSlot slot) {
 				return new int[]{4, 7, 9, 4}[slot.getIndex()];
 			}
 
 			@Override
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 18;
 			}
 
 			@Override
-			public net.minecraft.util.SoundEvent getSoundEvent() {
-				return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+			public SoundEvent getEquipSound() {
+				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
 			}
 
 			@Override
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(EnderiteIngotItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT));
 			}
 
-			@OnlyIn(Dist.CLIENT)
 			@Override
 			public String getName() {
 				return "enderite_armor";
@@ -76,39 +58,54 @@ public class EnderiteArmorItem extends ShinealsEndUpdateModElements.ModElement {
 			public float getKnockbackResistance() {
 				return 0f;
 			}
-		};
-		elements.items
-				.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(ShinyCreepersEndUpdateItemGroup.tab)) {
-					@Override
-					public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-						return "shineals_end_update:textures/models/armor/enderite_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1")
-								+ ".png";
-					}
-				}.setRegistryName("enderite_armor_helmet"));
-		elements.items
-				.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(ShinyCreepersEndUpdateItemGroup.tab)) {
-					@Override
-					public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-						return "shineals_end_update:textures/models/armor/enderite_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1")
-								+ ".png";
-					}
-				}.setRegistryName("enderite_armor_chestplate"));
-		elements.items
-				.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(ShinyCreepersEndUpdateItemGroup.tab)) {
-					@Override
-					public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-						return "shineals_end_update:textures/models/armor/enderite_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1")
-								+ ".png";
-					}
-				}.setRegistryName("enderite_armor_leggings"));
-		elements.items
-				.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(ShinyCreepersEndUpdateItemGroup.tab)) {
-					@Override
-					public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-						return "shineals_end_update:textures/models/armor/enderite_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1")
-								+ ".png";
-					}
-				}.setRegistryName("enderite_armor_boots"));
+		}, slot, properties);
 	}
 
+	public static class Helmet extends EnderiteArmorItem {
+		public Helmet() {
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+			setRegistryName("enderite_armor_helmet");
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "shineals_end_update:textures/models/armor/enderite_armor__layer_1.png";
+		}
+	}
+
+	public static class Chestplate extends EnderiteArmorItem {
+		public Chestplate() {
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+			setRegistryName("enderite_armor_chestplate");
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "shineals_end_update:textures/models/armor/enderite_armor__layer_1.png";
+		}
+	}
+
+	public static class Leggings extends EnderiteArmorItem {
+		public Leggings() {
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+			setRegistryName("enderite_armor_leggings");
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "shineals_end_update:textures/models/armor/enderite_armor__layer_2.png";
+		}
+	}
+
+	public static class Boots extends EnderiteArmorItem {
+		public Boots() {
+			super(EquipmentSlot.FEET, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+			setRegistryName("enderite_armor_boots");
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "shineals_end_update:textures/models/armor/enderite_armor__layer_1.png";
+		}
+	}
 }

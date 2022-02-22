@@ -5,7 +5,7 @@
     "structure": "chorus_tree",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 2,
+    "spawnProbability": 100,
     "minCountPerChunk": 2,
     "maxCountPerChunk": 6,
     "spawnLocation": "Ground",
@@ -16,7 +16,11 @@
       "End"
     ],
     "restrictionBlocks": [],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:ChorusForest"
+      }
+    ],
     "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }

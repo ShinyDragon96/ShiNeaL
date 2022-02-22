@@ -15,11 +15,11 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
-    "rewardXP": 1,
+    "rewardXP": 3,
     "achievementType": "goal",
     "parent": {
       "value": "CUSTOM:HiddenInTheSkies"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"20\" y=\"75\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"20\" y=\"13\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:EnderiteArmor.helmet</field></block></value></block><block type=\"custom_trigger\" x=\"20\" y=\"75\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block><block type=\"item_in_inventory\" x=\"24\" y=\"122\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:EnderiteArmor.legs</field></block></value></block><block type=\"item_in_inventory\" x=\"34\" y=\"152\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:EnderiteArmor.body</field></block></value></block><block type=\"item_in_inventory\" x=\"52\" y=\"178\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:EnderiteArmor.boots</field></block></value></block></xml>"
   }
 }

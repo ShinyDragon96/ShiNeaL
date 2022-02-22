@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[36,)"
+loaderVersion="[37,)"
 license="Academic Free License v3.0"
 
 [[mods]]
@@ -13,7 +13,7 @@ authors="ShinyDragon96, TgwCreeper, GlitchedMastery, MCreator"
 [[dependencies.shineals_end_update]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.5]"
+    versionRange="[1.17.1]"
     ordering="NONE"
     side="BOTH"
 

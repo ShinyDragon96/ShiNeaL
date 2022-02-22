@@ -1,62 +1,53 @@
 package net.mcreator.shinealsendupdate.procedures;
 
-import net.minecraft.world.World;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.item.ItemEntity;
-import net.minecraft.entity.Entity;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.player.PlayerDestroyItemEvent;
 
-import net.mcreator.shinealsendupdate.item.EnderiteSwordItem;
-import net.mcreator.shinealsendupdate.ShinealsEndUpdateMod;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket;
+import net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket;
+import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
+import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
+import net.minecraft.core.BlockPos;
 
-import java.util.Map;
-import java.util.Collections;
+import javax.annotation.Nullable;
 
+@Mod.EventBusSubscriber
 public class EnderiteSwordVoidProcedure {
+	@SubscribeEvent
+	public static void onItemDestroyed(PlayerDestroyItemEvent event) {
+		Entity entity = event.getPlayer();
+		execute(event, entity);
+	}
 
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("x") == null) {
-			if (!dependencies.containsKey("x"))
-				ShinealsEndUpdateMod.LOGGER.warn("Failed to load dependency x for procedure EnderiteSwordVoid!");
+	public static void execute(Entity entity) {
+		execute(null, entity);
+	}
+
+	private static void execute(@Nullable Event event, Entity entity) {
+		if (entity == null)
 			return;
-		}
-		if (dependencies.get("y") == null) {
-			if (!dependencies.containsKey("y"))
-				ShinealsEndUpdateMod.LOGGER.warn("Failed to load dependency y for procedure EnderiteSwordVoid!");
-			return;
-		}
-		if (dependencies.get("z") == null) {
-			if (!dependencies.containsKey("z"))
-				ShinealsEndUpdateMod.LOGGER.warn("Failed to load dependency z for procedure EnderiteSwordVoid!");
-			return;
-		}
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				ShinealsEndUpdateMod.LOGGER.warn("Failed to load dependency entity for procedure EnderiteSwordVoid!");
-			return;
-		}
-		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
-		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
-		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		Entity entity = (Entity) dependencies.get("entity");
-		if (entity.getPosY() < 0) {
-			if ((entity.world.getDimensionKey()) == (World.THE_END)) {
-				if ((new Object() {
-					public ItemStack entityToItem(Entity _ent) {
-						if (_ent instanceof ItemEntity) {
-							return ((ItemEntity) _ent).getItem();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.entityToItem(entity)).getItem() == EnderiteSwordItem.block) {
-					{
-						Entity _ent = entity;
-						_ent.setPositionAndUpdate(x, (y + 1), z);
-						if (_ent instanceof ServerPlayerEntity) {
-							((ServerPlayerEntity) _ent).connection.setPlayerLocation(x, (y + 1), z, _ent.rotationYaw, _ent.rotationPitch,
-									Collections.emptySet());
-						}
-					}
+		if (true) {
+			if (entity instanceof ServerPlayer _player && !_player.level.isClientSide()) {
+				ResourceKey<Level> destinationType = Level.OVERWORLD;
+				if (_player.level.dimension() == destinationType)
+					return;
+				ServerLevel nextLevel = _player.server.getLevel(destinationType);
+				if (nextLevel != null) {
+					_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
+					_player.teleportTo(nextLevel, nextLevel.getSharedSpawnPos().getX(), nextLevel.getSharedSpawnPos().getY() + 1,
+							nextLevel.getSharedSpawnPos().getZ(), _player.getYRot(), _player.getXRot());
+					_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
+					for (MobEffectInstance effectinstance : _player.getActiveEffects())
+						_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), effectinstance));
+					_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
 				}
 			}
 		}

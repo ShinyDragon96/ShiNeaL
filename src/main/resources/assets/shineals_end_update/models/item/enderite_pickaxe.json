@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "shineals_end_update:items/enderite_pickaxe"
+  }
+}

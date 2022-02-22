@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "shineals_end_update:items/voidial_water_bucket"
+  }
+}

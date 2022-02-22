@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "shineals_end_update:enderite_ore"
+  },
+  "result": {
+    "item": "shineals_end_update:raw_enderite"
+  }
+}

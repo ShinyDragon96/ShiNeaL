@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_hoe"
+  },
+  "addition": {
+    "item": "shineals_end_update:enderite_ingot"
+  },
+  "result": {
+    "item": "shineals_end_update:enderite_hoe"
+  }
+}

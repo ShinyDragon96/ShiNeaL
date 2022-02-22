@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "shineals_end_update:enderite_crystal_block"
+    }
+  ],
+  "result": {
+    "item": "shineals_end_update:raw_enderite",
+    "count": 9
+  }
+}

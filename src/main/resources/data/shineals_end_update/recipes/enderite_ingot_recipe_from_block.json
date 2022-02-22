@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "shineals_end_update:enderite_block"
+    }
+  },
+  "result": {
+    "item": "shineals_end_update:enderite_ingot",
+    "count": 9
+  }
+}

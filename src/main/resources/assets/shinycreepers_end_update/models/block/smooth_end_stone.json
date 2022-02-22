@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "shinycreepers_end_update:blocks/smooth_end_stone",
-    "particle": "shinycreepers_end_update:blocks/smooth_end_stone"
-  }
-}

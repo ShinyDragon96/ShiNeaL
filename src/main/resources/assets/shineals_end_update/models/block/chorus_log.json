@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "shineals_end_update:blocks/purpur_log_top",
+    "up": "shineals_end_update:blocks/purpur_log_top",
+    "north": "shineals_end_update:blocks/purpur_log",
+    "east": "shineals_end_update:blocks/purpur_log",
+    "south": "shineals_end_update:blocks/purpur_log",
+    "west": "shineals_end_update:blocks/purpur_log",
+    "particle": "shineals_end_update:blocks/purpur_log_top"
+  }
+}

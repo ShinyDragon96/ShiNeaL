@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "shinycreepers_end_update:blocks/purpur_planks",
-    "particle": "shinycreepers_end_update:blocks/purpur_planks"
-  }
-}

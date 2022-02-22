@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "shineals_end_update:blocks/end_stone_pillar_top",
+    "up": "shineals_end_update:blocks/end_stone_pillar_top",
+    "north": "shineals_end_update:blocks/end_stone_pillar",
+    "east": "shineals_end_update:blocks/end_stone_pillar",
+    "south": "shineals_end_update:blocks/end_stone_pillar",
+    "west": "shineals_end_update:blocks/end_stone_pillar",
+    "particle": "shineals_end_update:blocks/end_stone_pillar_top"
+  }
+}

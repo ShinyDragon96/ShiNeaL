@@ -1,0 +1,8 @@
+{
+  "parent": "shineals_end_update:custom/portal_table_final",
+  "textures": {
+    "all": "shineals_end_update:blocks/portal_table_1",
+    "particle": "shineals_end_update:blocks/portal_table_1",
+    "missing": "shineals_end_update:blocks/portal_table_1"
+  }
+}

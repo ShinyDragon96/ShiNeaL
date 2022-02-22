@@ -1,8 +1,0 @@
-{
-  "parent": "shinycreepers_end_update:custom/portal_table_final",
-  "textures": {
-    "all": "shinycreepers_end_update:blocks/portal_table_1",
-    "particle": "shinycreepers_end_update:blocks/portal_table_1",
-    "missing": "shinycreepers_end_update:blocks/portal_table_1"
-  }
-}

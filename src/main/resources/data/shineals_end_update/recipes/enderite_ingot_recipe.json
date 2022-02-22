@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "shineals_end_update:raw_enderite"
+    },
+    {
+      "item": "shineals_end_update:raw_enderite"
+    },
+    {
+      "item": "shineals_end_update:raw_enderite"
+    },
+    {
+      "item": "shineals_end_update:raw_enderite"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "item": "shineals_end_update:enderite_ingot",
+    "count": 1
+  }
+}

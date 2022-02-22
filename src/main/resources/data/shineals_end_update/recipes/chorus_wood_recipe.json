@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "shineals_end_update:chorus_log"
+    },
+    "1": {
+      "item": "shineals_end_update:chorus_log"
+    },
+    "2": {
+      "item": "shineals_end_update:chorus_log"
+    },
+    "3": {
+      "item": "shineals_end_update:chorus_log"
+    }
+  },
+  "result": {
+    "item": "shineals_end_update:chorus_wood",
+    "count": 3
+  }
+}

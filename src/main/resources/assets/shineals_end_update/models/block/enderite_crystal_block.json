@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "shineals_end_update:blocks/raw_enderite_block",
+    "particle": "shineals_end_update:blocks/raw_enderite_block"
+  }
+}

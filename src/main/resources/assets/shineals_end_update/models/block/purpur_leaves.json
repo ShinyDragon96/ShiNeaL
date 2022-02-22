@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "shineals_end_update:blocks/purpur_leaves1",
+    "up": "shineals_end_update:blocks/purpur_leaves1",
+    "north": "shineals_end_update:blocks/purpur_leaves1",
+    "east": "shineals_end_update:blocks/purpur_leaves1",
+    "south": "shineals_end_update:blocks/purpur_leaves1",
+    "west": "shineals_end_update:blocks/purpur_leaves1",
+    "particle": "shineals_end_update:blocks/purpur_leaves1"
+  }
+}

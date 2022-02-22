@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.DIAMOND_SWORD"
+      "value": "Items.NETHERITE_SWORD"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:EnderiteIngot"

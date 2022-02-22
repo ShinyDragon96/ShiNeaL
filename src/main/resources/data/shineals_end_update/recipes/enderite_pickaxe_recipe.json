@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:diamond_pickaxe"
+    "item": "minecraft:netherite_pickaxe"
   },
   "addition": {
     "item": "shineals_end_update:enderite_ingot"

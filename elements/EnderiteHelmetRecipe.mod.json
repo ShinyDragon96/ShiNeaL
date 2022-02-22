@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.DIAMOND_HELMET"
+      "value": "Items.NETHERITE_HELMET"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:EnderiteIngot"

@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.DIAMOND_SHOVEL"
+      "value": "Items.NETHERITE_SHOVEL"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:EnderiteIngot"

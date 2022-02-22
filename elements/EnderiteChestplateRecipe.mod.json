@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.DIAMOND_CHESTPLATE"
+      "value": "Items.NETHERITE_CHESTPLATE"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:EnderiteIngot"

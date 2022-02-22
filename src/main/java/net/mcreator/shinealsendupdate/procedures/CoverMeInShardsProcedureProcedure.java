@@ -3,7 +3,7 @@ package net.mcreator.shinealsendupdate.procedures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -22,9 +22,11 @@ import java.util.Iterator;
 @Mod.EventBusSubscriber
 public class CoverMeInShardsProcedureProcedure {
 	@SubscribeEvent
-	public static void onItemCrafted(PlayerEvent.ItemCraftedEvent event) {
-		Entity entity = event.getPlayer();
-		execute(event, event.getPlayer());
+	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		if (event.phase == TickEvent.Phase.END) {
+			Entity entity = event.player;
+			execute(event, entity);
+		}
 	}
 
 	public static void execute(Entity entity) {

@@ -19,4 +19,10 @@ authors="ShinyDragon96, TgwCreeper, GlitchedMastery, MCreator"
 
 
 
+[[dependencies.shineals_end_update]]
+    modId="just_enough_items"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

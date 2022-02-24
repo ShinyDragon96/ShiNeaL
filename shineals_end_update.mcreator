@@ -580,6 +580,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "EndStrider",
+      "type": "livingentity",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_strider"
     }
   ],
   "variable_elements": [],
@@ -626,6 +634,7 @@
       "block.shineals_end_update.enderite_ore": "Enderite Ore",
       "block.shinycreepers_end_update.cobbled_end_stone": "Cobbled End Stone",
       "item.shinycreepers_end_update.enderite_armor_chestplate": "Enderite Chestplate",
+      "item.shineals_end_update.end_strider_spawn_egg": "End Strider Spawn Egg",
       "block.shinycreepers_end_update.chorus_log": "Chorus Log",
       "block.shineals_end_update.chorus_log": "Chorus Log",
       "block.shineals_end_update.purpur_bordered_pillar": "Purpur Bordered Pillar",
@@ -637,6 +646,7 @@
       "block.shinycreepers_end_update.chorus_wood": "Chorus Wood",
       "item.shineals_end_update.enderite_armor_chestplate": "Enderite Chestplate",
       "block.shinycreepers_end_update.enderite_block": "Blcok of Enderite",
+      "entity.shineals_end_update.end_strider": "End Strider",
       "item.shinycreepers_end_update.raw_enderite": "Enderite Shard",
       "item.shinycreepers_end_update.enderite_hoe": "Enderite Hoe",
       "block.shinycreepers_end_update.enderite_ore": "Enderite Ore",

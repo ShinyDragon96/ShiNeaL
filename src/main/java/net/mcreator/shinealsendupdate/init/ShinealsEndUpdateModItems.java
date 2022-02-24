@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
@@ -71,6 +72,9 @@ public class ShinealsEndUpdateModItems {
 			ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE);
 	public static final Item FLOWERING_PURPUR_LEAVES = register(ShinealsEndUpdateModBlocks.FLOWERING_PURPUR_LEAVES,
 			ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE);
+	public static final Item END_STRIDER = register(
+			new SpawnEggItem(ShinealsEndUpdateModEntities.END_STRIDER, -10092442, -16751104, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+					.setRegistryName("end_strider_spawn_egg"));
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

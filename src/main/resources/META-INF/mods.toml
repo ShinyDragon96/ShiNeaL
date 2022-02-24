@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="Creative Commons Attribution-NonCommercial 3.0"
+
+[[mods]]
+modId="shineals_end_update"
+version="1.0.0"
+displayName="ShiNeaL's End Update"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="ShinyDragon96, TgwCreeper, GlitchedMastery, MCreator"
+
+[[dependencies.shineals_end_update]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+[[dependencies.shineals_end_update]]
+    modId="just_enough_items"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

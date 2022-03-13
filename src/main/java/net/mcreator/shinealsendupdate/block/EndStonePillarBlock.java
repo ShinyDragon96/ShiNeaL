@@ -26,7 +26,6 @@ public class EndStonePillarBlock extends Block {
 	public EndStonePillarBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
-		setRegistryName("end_stone_pillar");
 	}
 
 	@Override

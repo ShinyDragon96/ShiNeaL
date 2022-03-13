@@ -26,7 +26,6 @@ public class PurpurBorderedPillarBlock extends Block {
 	public PurpurBorderedPillarBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.5f, 10f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
-		setRegistryName("purpur_bordered_pillar");
 	}
 
 	@Override

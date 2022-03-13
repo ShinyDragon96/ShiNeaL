@@ -19,7 +19,6 @@ import java.util.Collections;
 public class RawEnderiteBlockBlock extends Block {
 	public RawEnderiteBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(40f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("enderite_crystal_block");
 	}
 
 	@Override

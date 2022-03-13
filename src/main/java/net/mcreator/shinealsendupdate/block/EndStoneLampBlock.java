@@ -1,6 +1,8 @@
 
 package net.mcreator.shinealsendupdate.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,7 +22,6 @@ public class EndStoneLampBlock extends Block {
 	public EndStoneLampBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2.5f, 10f).lightLevel(s -> 15)
 				.requiresCorrectToolForDrops());
-		setRegistryName("end_stone_lamp");
 	}
 
 	@Override

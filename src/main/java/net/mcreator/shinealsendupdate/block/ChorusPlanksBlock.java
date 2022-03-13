@@ -17,7 +17,6 @@ import java.util.Collections;
 public class ChorusPlanksBlock extends Block {
 	public ChorusPlanksBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 10f));
-		setRegistryName("chorus_planks");
 	}
 
 	@Override

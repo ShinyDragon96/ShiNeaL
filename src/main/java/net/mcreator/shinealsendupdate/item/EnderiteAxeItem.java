@@ -34,9 +34,8 @@ public class EnderiteAxeItem extends AxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT));
+				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT.get()));
 			}
 		}, 1, -3f, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
-		setRegistryName("enderite_axe");
 	}
 }

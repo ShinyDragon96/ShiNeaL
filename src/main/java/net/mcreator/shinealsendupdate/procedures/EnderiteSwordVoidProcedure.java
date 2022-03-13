@@ -22,14 +22,13 @@ import javax.annotation.Nullable;
 import java.util.stream.Collectors;
 import java.util.List;
 import java.util.Comparator;
-import java.util.Collections;
 
 @Mod.EventBusSubscriber
 public class EnderiteSwordVoidProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingUpdateEvent event) {
-		Entity entity = event.getEntityLiving();
-		execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		execute(event, event.getEntityLiving().level, event.getEntityLiving().getX(), event.getEntityLiving().getY(), event.getEntityLiving().getZ(),
+				event.getEntityLiving());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -51,13 +50,12 @@ public class EnderiteSwordVoidProcedure {
 						for (Entity entityiterator : _entfound) {
 							if (entity.getY() < 0) {
 								if ((entity instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY)
-										.getItem() == ShinealsEndUpdateModItems.ENDERITE_SWORD) {
+										.getItem() == ShinealsEndUpdateModItems.ENDERITE_SWORD.get()) {
 									{
 										Entity _ent = entity;
 										_ent.teleportTo(x, (y + 1), z);
-										if (_ent instanceof ServerPlayer _serverPlayer) {
-											_serverPlayer.connection.teleport(x, (y + 1), z, _ent.getYRot(), _ent.getXRot(), Collections.emptySet());
-										}
+										if (_ent instanceof ServerPlayer _serverPlayer)
+											_serverPlayer.connection.teleport(x, (y + 1), z, _ent.getYRot(), _ent.getXRot());
 									}
 								}
 							}

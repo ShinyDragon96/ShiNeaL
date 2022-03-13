@@ -19,7 +19,6 @@ import java.util.Collections;
 public class CobbledEndStoneBlock extends Block {
 	public CobbledEndStoneBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.5f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("cobbled_end_stone");
 	}
 
 	@Override

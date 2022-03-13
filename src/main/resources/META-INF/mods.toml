@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[37,)"
+loaderVersion="[40,)"
 license="Creative Commons Attribution-NonCommercial 3.0"
 
 [[mods]]
@@ -13,16 +13,10 @@ authors="ShinyDragon96, TgwCreeper, GlitchedMastery, MCreator"
 [[dependencies.shineals_end_update]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.17.1]"
+    versionRange="[1.18.2]"
     ordering="NONE"
     side="BOTH"
 
 
 
-[[dependencies.shineals_end_update]]
-    modId="just_enough_items"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 

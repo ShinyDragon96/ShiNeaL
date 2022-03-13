@@ -19,7 +19,6 @@ import java.util.Collections;
 public class EnderiteBlockBlock extends Block {
 	public EnderiteBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(50f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("enderite_block");
 	}
 
 	@Override

@@ -16,15 +16,24 @@ package net.mcreator.shinealsendupdate;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
-import net.minecraftforge.fmllegacy.network.NetworkRegistry;
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.simple.SimpleChannel;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModTabs;
+import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
+import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModFluids;
+import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModFeatures;
+import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModEntities;
+import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModBlocks;
+import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModBlockEntities;
+import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModBiomes;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -41,6 +50,15 @@ public class ShinealsEndUpdateMod {
 
 	public ShinealsEndUpdateMod() {
 		ShinealsEndUpdateModTabs.load();
+		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		ShinealsEndUpdateModBlocks.REGISTRY.register(bus);
+		ShinealsEndUpdateModItems.REGISTRY.register(bus);
+		ShinealsEndUpdateModEntities.REGISTRY.register(bus);
+		ShinealsEndUpdateModBlockEntities.REGISTRY.register(bus);
+		ShinealsEndUpdateModFeatures.REGISTRY.register(bus);
+		ShinealsEndUpdateModFluids.REGISTRY.register(bus);
+
+		ShinealsEndUpdateModBiomes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

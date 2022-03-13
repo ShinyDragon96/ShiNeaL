@@ -2,8 +2,8 @@
 package net.mcreator.shinealsendupdate.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -56,11 +56,11 @@ public class EndStriderEntity extends PathfinderMob {
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
 			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(ShinealsEndUpdateModEntities.END_STRIDER, 11, 1, 1));
+					.add(new MobSpawnSettings.SpawnerData(ShinealsEndUpdateModEntities.END_STRIDER.get(), 11, 1, 1));
 	}
 
-	public EndStriderEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(ShinealsEndUpdateModEntities.END_STRIDER, world);
+	public EndStriderEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(ShinealsEndUpdateModEntities.END_STRIDER.get(), world);
 	}
 
 	public EndStriderEntity(EntityType<EndStriderEntity> type, Level world) {
@@ -83,7 +83,12 @@ public class EndStriderEntity extends PathfinderMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+			}
+		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
@@ -189,8 +194,8 @@ public class EndStriderEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(ShinealsEndUpdateModEntities.END_STRIDER, SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
+		SpawnPlacements.register(ShinealsEndUpdateModEntities.END_STRIDER.get(), SpawnPlacements.Type.ON_GROUND,
+				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 

@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "biome",
   "definition": {
     "name": "Chorus Forest",
@@ -44,9 +44,6 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "FOREST",
-    "parent": {
-      "value": "end_barrens"
-    },
     "rainingPossibility": 0.0,
     "temperature": 0.5,
     "baseHeight": 0.1,

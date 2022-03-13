@@ -19,7 +19,6 @@ import java.util.Collections;
 public class EnderiteOreBlock extends Block {
 	public EnderiteOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(30f, 1200f).requiresCorrectToolForDrops());
-		setRegistryName("enderite_ore");
 	}
 
 	@Override

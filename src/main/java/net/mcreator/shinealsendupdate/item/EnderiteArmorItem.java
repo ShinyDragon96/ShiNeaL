@@ -41,7 +41,7 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT));
+				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT.get()));
 			}
 
 			@Override
@@ -64,7 +64,6 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 	public static class Helmet extends EnderiteArmorItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
-			setRegistryName("enderite_armor_helmet");
 		}
 
 		@Override
@@ -76,7 +75,6 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 	public static class Chestplate extends EnderiteArmorItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
-			setRegistryName("enderite_armor_chestplate");
 		}
 
 		@Override
@@ -88,7 +86,6 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 	public static class Leggings extends EnderiteArmorItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
-			setRegistryName("enderite_armor_leggings");
 		}
 
 		@Override
@@ -100,7 +97,6 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 	public static class Boots extends EnderiteArmorItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
-			setRegistryName("enderite_armor_boots");
 		}
 
 		@Override

@@ -38,7 +38,6 @@ public class PortalTableBlock extends Block
 	public PortalTableBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("portal_table");
 	}
 
 	@Override
@@ -111,6 +110,6 @@ public class PortalTableBlock extends Block
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ShinealsEndUpdateModBlocks.PORTAL_TABLE, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(ShinealsEndUpdateModBlocks.PORTAL_TABLE.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

@@ -17,7 +17,7 @@ public class ShinealsEndUpdateModTabs {
 		TAB_SHINY_CREEPERS_END_UPDATE = new CreativeModeTab("tabshiny_creepers_end_update") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT);
+				return new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

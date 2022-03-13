@@ -26,7 +26,6 @@ public class ChorusLogBlock extends Block {
 	public ChorusLogBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 10f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
-		setRegistryName("chorus_log");
 	}
 
 	@Override

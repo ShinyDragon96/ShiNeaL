@@ -6,8 +6,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
 
-import java.util.Collections;
-
 public class VoidialWaterMobplayerCollidesBlockProcedure {
 	public static void execute(double x, double y, double z, Entity entity) {
 		if (entity == null)
@@ -15,9 +13,8 @@ public class VoidialWaterMobplayerCollidesBlockProcedure {
 		{
 			Entity _ent = entity;
 			_ent.teleportTo(x, (y + 0.2), z);
-			if (_ent instanceof ServerPlayer _serverPlayer) {
-				_serverPlayer.connection.teleport(x, (y + 0.2), z, _ent.getYRot(), _ent.getXRot(), Collections.emptySet());
-			}
+			if (_ent instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.connection.teleport(x, (y + 0.2), z, _ent.getYRot(), _ent.getXRot());
 		}
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 200, 0, (false), (true)));

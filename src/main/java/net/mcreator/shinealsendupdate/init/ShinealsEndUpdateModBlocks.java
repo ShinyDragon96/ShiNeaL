@@ -4,10 +4,12 @@
  */
 package net.mcreator.shinealsendupdate.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
@@ -30,41 +32,30 @@ import net.mcreator.shinealsendupdate.block.ChorusWoodBlock;
 import net.mcreator.shinealsendupdate.block.ChorusPlanksBlock;
 import net.mcreator.shinealsendupdate.block.ChorusLogBlock;
 import net.mcreator.shinealsendupdate.block.ChiseledEndStoneBlock;
+import net.mcreator.shinealsendupdate.ShinealsEndUpdateMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ShinealsEndUpdateModBlocks {
-	private static final List<Block> REGISTRY = new ArrayList<>();
-	public static final Block END_STONE_PILLAR = register(new EndStonePillarBlock());
-	public static final Block COBBLED_END_STONE = register(new CobbledEndStoneBlock());
-	public static final Block SMOOTH_END_STONE = register(new SmoothEndStoneBlock());
-	public static final Block ENDERITE_ORE = register(new EnderiteOreBlock());
-	public static final Block END_STONE_LAMP = register(new EndStoneLampBlock());
-	public static final Block ENDERITE_CRYSTAL_BLOCK = register(new RawEnderiteBlockBlock());
-	public static final Block CHISELED_END_STONE = register(new ChiseledEndStoneBlock());
-	public static final Block ENDERITE_BLOCK = register(new EnderiteBlockBlock());
-	public static final Block PORTAL_TABLE = register(new PortalTableBlock());
-	public static final Block PORTAL_TABLE_EMPTY = register(new PortalTableEmptyBlock());
-	public static final Block CHORUS_LOG = register(new ChorusLogBlock());
-	public static final Block CHORUS_PLANKS = register(new ChorusPlanksBlock());
-	public static final Block PURPUR_BORDERED_PILLAR = register(new PurpurBorderedPillarBlock());
-	public static final Block VOIDIAL_WATER = register(new VoidialWaterBlock());
-	public static final Block CHORUS_WOOD = register(new ChorusWoodBlock());
-	public static final Block PURPUR_LEAVES_DEAD = register(new PurpurLeavesDeadBlock());
-	public static final Block PURPUR_LEAVES = register(new PurpurLeavesBlock());
-	public static final Block FLOWERING_PURPUR_LEAVES = register(new FloweringPurpurLeavesBlock());
-
-	private static Block register(Block block) {
-		REGISTRY.add(block);
-		return block;
-	}
-
-	@SubscribeEvent
-	public static void registerBlocks(RegistryEvent.Register<Block> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new Block[0]));
-	}
+	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, ShinealsEndUpdateMod.MODID);
+	public static final RegistryObject<Block> END_STONE_PILLAR = REGISTRY.register("end_stone_pillar", () -> new EndStonePillarBlock());
+	public static final RegistryObject<Block> COBBLED_END_STONE = REGISTRY.register("cobbled_end_stone", () -> new CobbledEndStoneBlock());
+	public static final RegistryObject<Block> SMOOTH_END_STONE = REGISTRY.register("smooth_end_stone", () -> new SmoothEndStoneBlock());
+	public static final RegistryObject<Block> ENDERITE_ORE = REGISTRY.register("enderite_ore", () -> new EnderiteOreBlock());
+	public static final RegistryObject<Block> END_STONE_LAMP = REGISTRY.register("end_stone_lamp", () -> new EndStoneLampBlock());
+	public static final RegistryObject<Block> ENDERITE_CRYSTAL_BLOCK = REGISTRY.register("enderite_crystal_block", () -> new RawEnderiteBlockBlock());
+	public static final RegistryObject<Block> CHISELED_END_STONE = REGISTRY.register("chiseled_end_stone", () -> new ChiseledEndStoneBlock());
+	public static final RegistryObject<Block> ENDERITE_BLOCK = REGISTRY.register("enderite_block", () -> new EnderiteBlockBlock());
+	public static final RegistryObject<Block> PORTAL_TABLE = REGISTRY.register("portal_table", () -> new PortalTableBlock());
+	public static final RegistryObject<Block> PORTAL_TABLE_EMPTY = REGISTRY.register("portal_table_empty", () -> new PortalTableEmptyBlock());
+	public static final RegistryObject<Block> CHORUS_LOG = REGISTRY.register("chorus_log", () -> new ChorusLogBlock());
+	public static final RegistryObject<Block> CHORUS_PLANKS = REGISTRY.register("chorus_planks", () -> new ChorusPlanksBlock());
+	public static final RegistryObject<Block> PURPUR_BORDERED_PILLAR = REGISTRY.register("purpur_bordered_pillar",
+			() -> new PurpurBorderedPillarBlock());
+	public static final RegistryObject<Block> VOIDIAL_WATER = REGISTRY.register("voidial_water", () -> new VoidialWaterBlock());
+	public static final RegistryObject<Block> CHORUS_WOOD = REGISTRY.register("chorus_wood", () -> new ChorusWoodBlock());
+	public static final RegistryObject<Block> PURPUR_LEAVES_DEAD = REGISTRY.register("purpur_leaves_dead", () -> new PurpurLeavesDeadBlock());
+	public static final RegistryObject<Block> PURPUR_LEAVES = REGISTRY.register("purpur_leaves", () -> new PurpurLeavesBlock());
+	public static final RegistryObject<Block> FLOWERING_PURPUR_LEAVES = REGISTRY.register("flowering_purpur_leaves",
+			() -> new FloweringPurpurLeavesBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

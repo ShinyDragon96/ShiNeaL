@@ -25,7 +25,6 @@ public class PurpurLeavesBlock extends Block {
 	public PurpurLeavesBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("purpur_leaves");
 	}
 
 	@Override
@@ -43,7 +42,7 @@ public class PurpurLeavesBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ShinealsEndUpdateModBlocks.PURPUR_LEAVES, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(ShinealsEndUpdateModBlocks.PURPUR_LEAVES.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 }

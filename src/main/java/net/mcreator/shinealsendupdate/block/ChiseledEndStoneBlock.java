@@ -19,7 +19,6 @@ import java.util.Collections;
 public class ChiseledEndStoneBlock extends Block {
 	public ChiseledEndStoneBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("chiseled_end_stone");
 	}
 
 	@Override

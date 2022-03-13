@@ -15,6 +15,6 @@ import net.mcreator.shinealsendupdate.client.renderer.EndStriderRenderer;
 public class ShinealsEndUpdateModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(ShinealsEndUpdateModEntities.END_STRIDER, EndStriderRenderer::new);
+		event.registerEntityRenderer(ShinealsEndUpdateModEntities.END_STRIDER.get(), EndStriderRenderer::new);
 	}
 }

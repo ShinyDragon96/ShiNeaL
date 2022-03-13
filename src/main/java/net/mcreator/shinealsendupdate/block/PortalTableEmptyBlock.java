@@ -35,7 +35,6 @@ public class PortalTableEmptyBlock extends Block {
 	public PortalTableEmptyBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("portal_table_empty");
 	}
 
 	@Override
@@ -79,6 +78,6 @@ public class PortalTableEmptyBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ShinealsEndUpdateModBlocks.PORTAL_TABLE_EMPTY, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(ShinealsEndUpdateModBlocks.PORTAL_TABLE_EMPTY.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

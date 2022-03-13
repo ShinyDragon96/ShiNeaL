@@ -25,10 +25,9 @@ import java.util.Map;
 public class PortalTableEmptyOnBlockRightClickedProcedure {
 	@SubscribeEvent
 	public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
-		Player entity = event.getPlayer();
-		if (event.getHand() != entity.getUsedItemHand())
+		if (event.getHand() != event.getPlayer().getUsedItemHand())
 			return;
-		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), entity);
+		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -46,7 +45,7 @@ public class PortalTableEmptyOnBlockRightClickedProcedure {
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = ShinealsEndUpdateModBlocks.PORTAL_TABLE.defaultBlockState();
+				BlockState _bs = ShinealsEndUpdateModBlocks.PORTAL_TABLE.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());

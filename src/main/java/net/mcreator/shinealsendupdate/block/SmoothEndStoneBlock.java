@@ -19,7 +19,6 @@ import java.util.Collections;
 public class SmoothEndStoneBlock extends Block {
 	public SmoothEndStoneBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("smooth_end_stone");
 	}
 
 	@Override

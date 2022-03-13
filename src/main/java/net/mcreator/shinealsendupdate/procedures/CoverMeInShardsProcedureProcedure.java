@@ -24,8 +24,7 @@ public class CoverMeInShardsProcedureProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			Entity entity = event.player;
-			execute(event, entity);
+			execute(event, event.player);
 		}
 	}
 
@@ -37,16 +36,16 @@ public class CoverMeInShardsProcedureProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _playerHasItem
-				? _playerHasItem.getInventory().contains(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_ARMOR_HELMET))
+				? _playerHasItem.getInventory().contains(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_ARMOR_HELMET.get()))
 				: false) {
 			if (entity instanceof Player _playerHasItem
-					? _playerHasItem.getInventory().contains(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_ARMOR_CHESTPLATE))
+					? _playerHasItem.getInventory().contains(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_ARMOR_CHESTPLATE.get()))
 					: false) {
 				if (entity instanceof Player _playerHasItem
-						? _playerHasItem.getInventory().contains(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_ARMOR_LEGGINGS))
+						? _playerHasItem.getInventory().contains(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_ARMOR_LEGGINGS.get()))
 						: false) {
 					if (entity instanceof Player _playerHasItem
-							? _playerHasItem.getInventory().contains(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_ARMOR_BOOTS))
+							? _playerHasItem.getInventory().contains(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_ARMOR_BOOTS.get()))
 							: false) {
 						if (entity instanceof ServerPlayer _player) {
 							Advancement _adv = _player.server.getAdvancements()

@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Ultimate Dedication",
-    "achievementDescription": "Use a Enderite ingot to upgrade a hoe, and then reevaluate your life choices",
+    "achievementDescription": "Use a Enderium ingot to upgrade a hoe, and then reevaluate your life choices",
     "achievementIcon": {
       "value": "CUSTOM:EnderiteIngot"
     },

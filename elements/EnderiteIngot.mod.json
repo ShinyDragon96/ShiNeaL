@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "enderite_ingot",
     "customModelName": "Normal",
-    "name": "Enderite Ingot",
+    "name": "Enderium Ingot",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:ShinyCreepersEndUpdate"

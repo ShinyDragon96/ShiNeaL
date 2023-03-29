@@ -1007,6 +1007,24 @@
           "src/main/resources/data/shineals_end_update/forge/biome_modifier/end_strider_biome_modifier.json"
         ]
       }
+    },
+    {
+      "name": "EndMage",
+      "type": "animatedentity",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endmage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/entity/model/EndMageModel.java",
+          "src/main/java/net/mcreator/shinealsendupdate/entity/EndMageEntityProjectile.java",
+          "src/main/java/net/mcreator/shinealsendupdate/entity/EndMageEntity.java",
+          "src/main/java/net/mcreator/shinealsendupdate/client/renderer/EndMageRenderer.java",
+          "src/main/resources/data/shineals_end_update/forge/biome_modifier/endmage_biome_modifier.json",
+          "src/main/resources/assets/shineals_end_update/models/item/endmage_spawn_egg.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1019,12 +1037,14 @@
       "item.shineals_end_update.enderite_armor_leggings": "Enderium Leggings",
       "item.shineals_end_update.enderite_axe": "Enderium Axe",
       "item.shinycreepers_end_update.enderite_armor_helmet": "Enderite Helmet",
+      "item.shineals_end_update.endmage_spawn_egg": "End Mage Spawn Egg",
       "block.shinycreepers_end_update.end_stone_lamp": "End Stone Lamp",
       "block.shineals_end_update.chorus_planks": "Chorus Planks",
-      "item.shineals_end_update.voidial_water_bucket": "Voidial Water Bucket",
       "biome.shinycreepers_end_update.chorus_forest": "Chorus Forest",
+      "item.shineals_end_update.voidial_water_bucket": "Voidial Water Bucket",
       "block.shineals_end_update.flowering_purpur_leaves": "Purpur Leaves Dead",
       "block.shinycreepers_end_update.portal_table_empty": "Portal Table Empty",
+      "entity.shineals_end_update.endmage": "End Mage",
       "item.shinycreepers_end_update.enderite_axe": "Enderite Axe",
       "item.shinycreepers_end_update.enderite_shovel": "Enderite Shovel",
       "fluid.shinycreepers_end_update.voidial_water": "Voidial Water",

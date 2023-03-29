@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "end_barrens",
+  "spawners": {
+    "type": "shineals_end_update:endmage",
+    "weight": 12,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

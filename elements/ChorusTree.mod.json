@@ -16,11 +16,7 @@
       "End"
     ],
     "restrictionBlocks": [],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:ChorusForest"
-      }
-    ],
+    "restrictionBiomes": [],
     "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }

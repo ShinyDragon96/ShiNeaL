@@ -17,6 +17,8 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.shinealsendupdate.entity.EndStriderEntity;
+import net.mcreator.shinealsendupdate.entity.EndMageEntityProjectile;
+import net.mcreator.shinealsendupdate.entity.EndMageEntity;
 import net.mcreator.shinealsendupdate.ShinealsEndUpdateMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -26,6 +28,12 @@ public class ShinealsEndUpdateModEntities {
 			EntityType.Builder.<EndStriderEntity>of(EndStriderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EndStriderEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<EndMageEntity>> ENDMAGE = register("endmage",
+			EntityType.Builder.<EndMageEntity>of(EndMageEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EndMageEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<EndMageEntityProjectile>> ENDMAGE_PROJECTILE = register("projectile_endmage", EntityType.Builder.<EndMageEntityProjectile>of(EndMageEntityProjectile::new, MobCategory.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(EndMageEntityProjectile::new).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -35,11 +43,13 @@ public class ShinealsEndUpdateModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			EndStriderEntity.init();
+			EndMageEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(END_STRIDER.get(), EndStriderEntity.createAttributes().build());
+		event.put(ENDMAGE.get(), EndMageEntity.createAttributes().build());
 	}
 }

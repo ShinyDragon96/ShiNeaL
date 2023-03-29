@@ -1,14 +1,17 @@
 modLoader="javafml"
 loaderVersion="[43,)"
-license="Creative Commons Attribution-NonCommercial 3.0"
+license="All Rights Reserved"
 
 [[mods]]
 modId="shineals_end_update"
 version="1.0.0"
 displayName="ShiNeaL's End Update"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="ShinyDragon96, TgwCreeper, GlitchedMastery, MCreator"
+credits="ShinyDragon96, TgwCreeper, GlitchedMastery"
+displayURL="https://www.shineal.org/"
+authors="ShineaL"
+description='''
+An end MOD, which adds mysterious creatures, blocks and items to the game
+'''
 
 [[dependencies.shineals_end_update]]
     modId="minecraft"

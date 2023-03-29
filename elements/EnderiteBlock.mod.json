@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Blcok of Enderium",
+    "name": "Block of Enderium",
     "specialInfo": [],
     "hardness": 50.0,
     "resistance": 10.0,
@@ -119,11 +119,7 @@
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
+    "blocksToReplace": [],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,

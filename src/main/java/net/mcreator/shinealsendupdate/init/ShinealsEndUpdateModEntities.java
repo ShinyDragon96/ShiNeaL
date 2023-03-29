@@ -21,10 +21,9 @@ import net.mcreator.shinealsendupdate.ShinealsEndUpdateMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ShinealsEndUpdateModEntities {
-	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, ShinealsEndUpdateMod.MODID);
+	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ShinealsEndUpdateMod.MODID);
 	public static final RegistryObject<EntityType<EndStriderEntity>> END_STRIDER = register("end_strider",
-			EntityType.Builder.<EndStriderEntity>of(EndStriderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EndStriderEntity::new)
+			EntityType.Builder.<EndStriderEntity>of(EndStriderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EndStriderEntity::new)
 
 					.sized(0.6f, 1.8f));
 

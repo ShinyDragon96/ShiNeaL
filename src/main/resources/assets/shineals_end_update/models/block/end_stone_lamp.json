@@ -3,5 +3,6 @@
   "textures": {
     "all": "shineals_end_update:blocks/end_stone_lamp",
     "particle": "shineals_end_update:blocks/end_stone_lamp"
-  }
+  },
+  "render_type": "solid"
 }

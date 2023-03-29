@@ -3,5 +3,6 @@
   "textures": {
     "all": "shineals_end_update:blocks/chiseled_end_stone",
     "particle": "shineals_end_update:blocks/chiseled_end_stone"
-  }
+  },
+  "render_type": "solid"
 }

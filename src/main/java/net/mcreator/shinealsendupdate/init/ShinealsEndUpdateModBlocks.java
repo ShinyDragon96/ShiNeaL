@@ -7,10 +7,6 @@ package net.mcreator.shinealsendupdate.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -48,24 +44,10 @@ public class ShinealsEndUpdateModBlocks {
 	public static final RegistryObject<Block> PORTAL_TABLE_EMPTY = REGISTRY.register("portal_table_empty", () -> new PortalTableEmptyBlock());
 	public static final RegistryObject<Block> CHORUS_LOG = REGISTRY.register("chorus_log", () -> new ChorusLogBlock());
 	public static final RegistryObject<Block> CHORUS_PLANKS = REGISTRY.register("chorus_planks", () -> new ChorusPlanksBlock());
-	public static final RegistryObject<Block> PURPUR_BORDERED_PILLAR = REGISTRY.register("purpur_bordered_pillar",
-			() -> new PurpurBorderedPillarBlock());
+	public static final RegistryObject<Block> PURPUR_BORDERED_PILLAR = REGISTRY.register("purpur_bordered_pillar", () -> new PurpurBorderedPillarBlock());
 	public static final RegistryObject<Block> VOIDIAL_WATER = REGISTRY.register("voidial_water", () -> new VoidialWaterBlock());
 	public static final RegistryObject<Block> CHORUS_WOOD = REGISTRY.register("chorus_wood", () -> new ChorusWoodBlock());
 	public static final RegistryObject<Block> PURPUR_LEAVES_DEAD = REGISTRY.register("purpur_leaves_dead", () -> new PurpurLeavesDeadBlock());
 	public static final RegistryObject<Block> PURPUR_LEAVES = REGISTRY.register("purpur_leaves", () -> new PurpurLeavesBlock());
-	public static final RegistryObject<Block> FLOWERING_PURPUR_LEAVES = REGISTRY.register("flowering_purpur_leaves",
-			() -> new FloweringPurpurLeavesBlock());
-
-	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-	public static class ClientSideHandler {
-		@SubscribeEvent
-		public static void clientSetup(FMLClientSetupEvent event) {
-			PortalTableBlock.registerRenderLayer();
-			PortalTableEmptyBlock.registerRenderLayer();
-			PurpurLeavesDeadBlock.registerRenderLayer();
-			PurpurLeavesBlock.registerRenderLayer();
-			FloweringPurpurLeavesBlock.registerRenderLayer();
-		}
-	}
+	public static final RegistryObject<Block> FLOWERING_PURPUR_LEAVES = REGISTRY.register("flowering_purpur_leaves", () -> new FloweringPurpurLeavesBlock());
 }

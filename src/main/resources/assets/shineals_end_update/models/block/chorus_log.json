@@ -8,5 +8,6 @@
     "south": "shineals_end_update:blocks/purpur_log",
     "west": "shineals_end_update:blocks/purpur_log",
     "particle": "shineals_end_update:blocks/purpur_log_top"
-  }
+  },
+  "render_type": "solid"
 }

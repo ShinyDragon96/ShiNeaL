@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Chorus Forest",
@@ -8,6 +8,9 @@
     },
     "undergroundBlock": {
       "value": "Blocks.END_STONE"
+    },
+    "underwaterBlock": {
+      "value": ""
     },
     "grassColor": {
       "value": -5999965,
@@ -38,22 +41,36 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "PORTAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "FOREST",
     "rainingPossibility": 0.0,
     "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.2,
-    "biomeType": "WARM",
-    "spawnBiome": true,
-    "biomeWeight": 10,
-    "biomeDictionaryTypes": [
-      "FOREST"
-    ],
+    "spawnBiome": false,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.2,
+      "max": 0.2
+    },
+    "genHumidity": {
+      "min": -1.2,
+      "max": -0.8
+    },
+    "genContinentalness": {
+      "min": 0.31,
+      "max": 0.71
+    },
+    "genErosion": {
+      "min": 0.6000000000000001,
+      "max": 1.0
+    },
+    "genWeirdness": {
+      "min": 0.6218146215964009,
+      "max": 1.0218146215964008
+    },
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
@@ -97,7 +114,7 @@
     "spawnNetherBridge": false,
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
-    "spawnEndCity": false,
+    "spawnEndCity": true,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [],
     "spawnEntries": []

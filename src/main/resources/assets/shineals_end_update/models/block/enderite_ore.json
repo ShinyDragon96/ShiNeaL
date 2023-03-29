@@ -3,5 +3,6 @@
   "textures": {
     "all": "shineals_end_update:blocks/enderite_ore1",
     "particle": "shineals_end_update:blocks/enderite_ore1"
-  }
+  },
+  "render_type": "solid"
 }

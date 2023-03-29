@@ -3,5 +3,6 @@
   "textures": {
     "all": "shineals_end_update:blocks/purpur_planks",
     "particle": "shineals_end_update:blocks/purpur_planks"
-  }
+  },
+  "render_type": "solid"
 }

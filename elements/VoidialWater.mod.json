@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 39,
   "_type": "fluid",
   "definition": {
     "name": "Voidial Water",
@@ -19,7 +19,6 @@
     "luminosity": 0,
     "density": 1000,
     "viscosity": 1000,
-    "isGas": false,
     "temperature": 300,
     "type": "WATER",
     "generateBucket": true,
@@ -40,9 +39,6 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "colorOnMap": "PURPLE",
-    "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
     "onEntityCollides": {
       "name": "VoidialWaterMobplayerCollidesBlock"
     }

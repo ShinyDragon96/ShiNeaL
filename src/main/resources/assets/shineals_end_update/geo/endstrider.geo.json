@@ -1,0 +1,101 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 23, 0],
+					"cubes": [
+						{"origin": [-8, 15, -8], "size": [16, 14, 16], "uv": [0, 0]},
+						{"origin": [-5, 16, -14], "size": [10, 8, 6], "uv": [0, 114]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "body",
+					"pivot": [-38, 21, 0],
+					"rotation": [0, 0, 90],
+					"cubes": [
+						{"origin": [-58, 53, -8], "size": [12, 0, 16], "uv": [4, 33], "mirror": true},
+						{"origin": [-58, 65, -8], "size": [12, 0, 16], "uv": [4, 33], "mirror": true}
+					]
+				},
+				{
+					"name": "left_leg",
+					"pivot": [4, 17, 0],
+					"cubes": [
+						{"origin": [-6, 0, -2], "size": [4, 17, 4], "uv": [0, 55]}
+					]
+				},
+				{
+					"name": "right_leg",
+					"pivot": [-4, 17, 0],
+					"cubes": [
+						{"origin": [2, 0, -2], "size": [4, 17, 4], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "hair_left_middle",
+					"pivot": [-8, 25, -8]
+				},
+				{
+					"name": "hair_left_middle_rotation",
+					"parent": "hair_left_middle",
+					"pivot": [8, 22, 0],
+					"rotation": [0, 0, -60],
+					"cubes": [
+						{"origin": [8, 22, -8], "size": [12, 0, 16], "uv": [4, 49]}
+					]
+				},
+				{
+					"name": "hair_left_bottom",
+					"pivot": [-8, 20, -8]
+				},
+				{
+					"name": "hair_left_bottom_rotation",
+					"parent": "hair_left_bottom",
+					"pivot": [8, 20, 0],
+					"rotation": [0, 0, 60],
+					"cubes": [
+						{"origin": [8, 20, -8], "size": [12, 0, 16], "uv": [4, 65]}
+					]
+				},
+				{
+					"name": "hair_right_middle",
+					"pivot": [8, 24, -8]
+				},
+				{
+					"name": "hair_right_middle_rotation",
+					"parent": "hair_right_middle",
+					"pivot": [-8, 21, 0],
+					"rotation": [0, 0, 60],
+					"cubes": [
+						{"origin": [-20, 21, -8], "size": [12, 0, 16], "uv": [4, 49], "mirror": true}
+					]
+				},
+				{
+					"name": "hair_right_bottom",
+					"pivot": [8, 19, -8]
+				},
+				{
+					"name": "hair_right_bottom_rotation",
+					"parent": "hair_right_bottom",
+					"pivot": [-8, 19, 0],
+					"rotation": [0, 0, -60],
+					"cubes": [
+						{"origin": [-20, 19, -8], "size": [12, 0, 16], "uv": [4, 65], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

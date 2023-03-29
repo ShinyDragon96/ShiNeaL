@@ -6,7 +6,16 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "end_stone_pillar"
+      "registry_name": "end_stone_pillar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/block/EndStonePillarBlock.java",
+          "src/main/resources/assets/shineals_end_update/blockstates/end_stone_pillar.json",
+          "src/main/resources/assets/shineals_end_update/models/item/end_stone_pillar.json",
+          "src/main/resources/assets/shineals_end_update/models/block/end_stone_pillar.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "CobbledEndStone",
@@ -14,7 +23,18 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cobbled_end_stone"
+      "registry_name": "cobbled_end_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/forge/biome_modifier/cobbled_end_stone_biome_modifier.json",
+          "src/main/resources/assets/shineals_end_update/blockstates/cobbled_end_stone.json",
+          "src/main/resources/assets/shineals_end_update/models/block/cobbled_end_stone.json",
+          "src/main/java/net/mcreator/shinealsendupdate/world/features/ores/CobbledEndStoneFeature.java",
+          "src/main/java/net/mcreator/shinealsendupdate/block/CobbledEndStoneBlock.java",
+          "src/main/resources/assets/shineals_end_update/models/item/cobbled_end_stone.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "SmoothEndStone",
@@ -22,7 +42,16 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "smooth_end_stone"
+      "registry_name": "smooth_end_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/blockstates/smooth_end_stone.json",
+          "src/main/resources/assets/shineals_end_update/models/item/smooth_end_stone.json",
+          "src/main/resources/assets/shineals_end_update/models/block/smooth_end_stone.json",
+          "src/main/java/net/mcreator/shinealsendupdate/block/SmoothEndStoneBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "EnderiteOre",
@@ -30,7 +59,18 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_ore"
+      "registry_name": "enderite_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/forge/biome_modifier/enderite_ore_biome_modifier.json",
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_ore.json",
+          "src/main/java/net/mcreator/shinealsendupdate/block/EnderiteOreBlock.java",
+          "src/main/java/net/mcreator/shinealsendupdate/world/features/ores/EnderiteOreFeature.java",
+          "src/main/resources/assets/shineals_end_update/models/block/enderite_ore.json",
+          "src/main/resources/assets/shineals_end_update/blockstates/enderite_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "RawEnderite",
@@ -38,7 +78,13 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "raw_enderite"
+      "registry_name": "raw_enderite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/item/raw_enderite.json",
+          "src/main/java/net/mcreator/shinealsendupdate/item/RawEnderiteItem.java"
+        ]
+      }
     },
     {
       "name": "EnderiteIngot",
@@ -46,7 +92,13 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_ingot"
+      "registry_name": "enderite_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_ingot.json",
+          "src/main/java/net/mcreator/shinealsendupdate/item/EnderiteIngotItem.java"
+        ]
+      }
     },
     {
       "name": "EnderiteIngotRecipe",
@@ -54,7 +106,12 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_ingot_recipe"
+      "registry_name": "enderite_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/enderite_ingot_recipe.json"
+        ]
+      }
     },
     {
       "name": "ShinyCreepersEndUpdate",
@@ -62,7 +119,10 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "shiny_creepers_end_update"
+      "registry_name": "shiny_creepers_end_update",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "RawEnderiterecipe",
@@ -70,7 +130,13 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "raw_enderiterecipe"
+      "registry_name": "raw_enderiterecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/raw_enderiterecipe.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "RawEnderiteRecipeBlast",
@@ -78,7 +144,12 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "raw_enderite_recipe_blast"
+      "registry_name": "raw_enderite_recipe_blast",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/raw_enderite_recipe_blast.json"
+        ]
+      }
     },
     {
       "name": "EndStoneLamp",
@@ -86,7 +157,16 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "end_stone_lamp"
+      "registry_name": "end_stone_lamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/block/EndStoneLampBlock.java",
+          "src/main/resources/assets/shineals_end_update/models/item/end_stone_lamp.json",
+          "src/main/resources/assets/shineals_end_update/blockstates/end_stone_lamp.json",
+          "src/main/resources/assets/shineals_end_update/models/block/end_stone_lamp.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "RawEnderiteBlock",
@@ -94,7 +174,16 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_crystal_block"
+      "registry_name": "enderite_crystal_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/block/RawEnderiteBlockBlock.java",
+          "src/main/resources/assets/shineals_end_update/models/block/enderite_crystal_block.json",
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_crystal_block.json",
+          "src/main/resources/assets/shineals_end_update/blockstates/enderite_crystal_block.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "RawEnderiteBlockRecipe",
@@ -102,7 +191,12 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "raw_enderite_block_recipe"
+      "registry_name": "raw_enderite_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/raw_enderite_block_recipe.json"
+        ]
+      }
     },
     {
       "name": "RawEnderiteRecipeFromBlock",
@@ -110,7 +204,12 @@
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "raw_enderite_recipe_from_block"
+      "registry_name": "raw_enderite_recipe_from_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/raw_enderite_recipe_from_block.json"
+        ]
+      }
     },
     {
       "name": "ChiseledEndStone",
@@ -118,7 +217,16 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chiseled_end_stone"
+      "registry_name": "chiseled_end_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/block/ChiseledEndStoneBlock.java",
+          "src/main/resources/assets/shineals_end_update/models/block/chiseled_end_stone.json",
+          "src/main/resources/assets/shineals_end_update/models/item/chiseled_end_stone.json",
+          "src/main/resources/assets/shineals_end_update/blockstates/chiseled_end_stone.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "EnderiteBlock",
@@ -126,7 +234,16 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_block"
+      "registry_name": "enderite_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_block.json",
+          "src/main/resources/assets/shineals_end_update/models/block/enderite_block.json",
+          "src/main/java/net/mcreator/shinealsendupdate/block/EnderiteBlockBlock.java",
+          "src/main/resources/assets/shineals_end_update/blockstates/enderite_block.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "EnderiteBlockRecipe",
@@ -134,7 +251,12 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_block_recipe"
+      "registry_name": "enderite_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/enderite_block_recipe.json"
+        ]
+      }
     },
     {
       "name": "EnderiteIngotRecipeFromBlock",
@@ -142,7 +264,12 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_ingot_recipe_from_block"
+      "registry_name": "enderite_ingot_recipe_from_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/enderite_ingot_recipe_from_block.json"
+        ]
+      }
     },
     {
       "name": "PortalTable",
@@ -150,7 +277,17 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "portal_table"
+      "registry_name": "portal_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/block/portal_table.json",
+          "src/main/java/net/mcreator/shinealsendupdate/block/entity/PortalTableBlockEntity.java",
+          "src/main/resources/assets/shineals_end_update/blockstates/portal_table.json",
+          "src/main/java/net/mcreator/shinealsendupdate/block/PortalTableBlock.java",
+          "src/main/resources/assets/shineals_end_update/models/item/portal_table.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "PortalTableEmpty",
@@ -158,7 +295,16 @@
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "portal_table_empty"
+      "registry_name": "portal_table_empty",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/item/portal_table_empty.json",
+          "src/main/java/net/mcreator/shinealsendupdate/block/PortalTableEmptyBlock.java",
+          "src/main/resources/assets/shineals_end_update/blockstates/portal_table_empty.json",
+          "src/main/resources/assets/shineals_end_update/models/block/portal_table_empty.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "PortalTableEmptyOnBlockRightClicked",
@@ -168,6 +314,9 @@
       "locked_code": false,
       "registry_name": "portal_table_empty_on_block_right_clicked",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/procedures/PortalTableEmptyOnBlockRightClickedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -203,7 +352,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_armor_chestplate.json",
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_armor_helmet.json",
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_armor_leggings.json",
+          "src/main/java/net/mcreator/shinealsendupdate/item/EnderiteArmorItem.java",
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_armor_boots.json"
+        ]
       }
     },
     {
@@ -212,7 +368,16 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_log"
+      "registry_name": "chorus_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/block/chorus_log.json",
+          "src/main/java/net/mcreator/shinealsendupdate/block/ChorusLogBlock.java",
+          "src/main/resources/assets/shineals_end_update/blockstates/chorus_log.json",
+          "src/main/resources/assets/shineals_end_update/models/item/chorus_log.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "ChorusPlanks",
@@ -220,7 +385,16 @@
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_planks"
+      "registry_name": "chorus_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/blockstates/chorus_planks.json",
+          "src/main/resources/assets/shineals_end_update/models/block/chorus_planks.json",
+          "src/main/java/net/mcreator/shinealsendupdate/block/ChorusPlanksBlock.java",
+          "src/main/resources/assets/shineals_end_update/models/item/chorus_planks.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "ChorusPlanksRecipe",
@@ -228,7 +402,12 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_planks_recipe"
+      "registry_name": "chorus_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/chorus_planks_recipe.json"
+        ]
+      }
     },
     {
       "name": "ChorusForest",
@@ -236,7 +415,12 @@
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_forest"
+      "registry_name": "chorus_forest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/world/biome/ChorusForestBiome.java"
+        ]
+      }
     },
     {
       "name": "HiddenInTheSkies",
@@ -244,7 +428,12 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hidden_in_the_skies"
+      "registry_name": "hidden_in_the_skies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/advancements/hidden_in_the_skies.json"
+        ]
+      }
     },
     {
       "name": "CoverMeInShards",
@@ -252,7 +441,12 @@
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cover_me_in_shards"
+      "registry_name": "cover_me_in_shards",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/advancements/cover_me_in_shards.json"
+        ]
+      }
     },
     {
       "name": "UltimateDedication",
@@ -260,7 +454,12 @@
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ultimate_dedication"
+      "registry_name": "ultimate_dedication",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/advancements/ultimate_dedication.json"
+        ]
+      }
     },
     {
       "name": "CoverMeInShardsProcedure",
@@ -270,6 +469,9 @@
       "locked_code": false,
       "registry_name": "cover_me_in_shards_procedure",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/procedures/CoverMeInShardsProcedureProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -284,7 +486,13 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_sword"
+      "registry_name": "enderite_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/item/EnderiteSwordItem.java",
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_sword.json"
+        ]
+      }
     },
     {
       "name": "EnderitePickaxe",
@@ -292,7 +500,13 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_pickaxe"
+      "registry_name": "enderite_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_pickaxe.json",
+          "src/main/java/net/mcreator/shinealsendupdate/item/EnderitePickaxeItem.java"
+        ]
+      }
     },
     {
       "name": "EnderiteAxe",
@@ -300,7 +514,13 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_axe"
+      "registry_name": "enderite_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_axe.json",
+          "src/main/java/net/mcreator/shinealsendupdate/item/EnderiteAxeItem.java"
+        ]
+      }
     },
     {
       "name": "EnderiteShovel",
@@ -308,7 +528,13 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_shovel"
+      "registry_name": "enderite_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_shovel.json",
+          "src/main/java/net/mcreator/shinealsendupdate/item/EnderiteShovelItem.java"
+        ]
+      }
     },
     {
       "name": "EnderiteHoe",
@@ -316,7 +542,13 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_hoe"
+      "registry_name": "enderite_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/item/enderite_hoe.json",
+          "src/main/java/net/mcreator/shinealsendupdate/item/EnderiteHoeItem.java"
+        ]
+      }
     },
     {
       "name": "EnderiteSwordRecipe",
@@ -324,7 +556,12 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_sword_recipe"
+      "registry_name": "enderite_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/enderite_sword_recipe.json"
+        ]
+      }
     },
     {
       "name": "EnderitePickaxeRecipe",
@@ -332,7 +569,12 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_pickaxe_recipe"
+      "registry_name": "enderite_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/enderite_pickaxe_recipe.json"
+        ]
+      }
     },
     {
       "name": "EnderiteAxeRecipe",
@@ -340,7 +582,12 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_axe_recipe"
+      "registry_name": "enderite_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/enderite_axe_recipe.json"
+        ]
+      }
     },
     {
       "name": "EnderiteShovelRecipe",
@@ -348,7 +595,12 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_shovel_recipe"
+      "registry_name": "enderite_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/enderite_shovel_recipe.json"
+        ]
+      }
     },
     {
       "name": "EnderiteHoeRecipe",
@@ -356,7 +608,12 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_hoe_recipe"
+      "registry_name": "enderite_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/enderite_hoe_recipe.json"
+        ]
+      }
     },
     {
       "name": "EnderiteHelmetRecipe",
@@ -364,7 +621,12 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_helmet_recipe"
+      "registry_name": "enderite_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/enderite_helmet_recipe.json"
+        ]
+      }
     },
     {
       "name": "EnderiteChestplateRecipe",
@@ -372,7 +634,12 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_chestplate_recipe"
+      "registry_name": "enderite_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/enderite_chestplate_recipe.json"
+        ]
+      }
     },
     {
       "name": "EnderiteLeggingsRecipe",
@@ -380,7 +647,12 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_leggings_recipe"
+      "registry_name": "enderite_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/enderite_leggings_recipe.json"
+        ]
+      }
     },
     {
       "name": "EnderiteBootsRecipe",
@@ -388,7 +660,12 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enderite_boots_recipe"
+      "registry_name": "enderite_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/enderite_boots_recipe.json"
+        ]
+      }
     },
     {
       "name": "PortalTableGUI",
@@ -396,7 +673,13 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "portal_table_gui"
+      "registry_name": "portal_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/world/inventory/PortalTableGUIMenu.java",
+          "src/main/java/net/mcreator/shinealsendupdate/client/gui/PortalTableGUIScreen.java"
+        ]
+      }
     },
     {
       "name": "PurpurBorderedPillar",
@@ -404,7 +687,15 @@
       "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "purpur_bordered_pillar"
+      "registry_name": "purpur_bordered_pillar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/block/PurpurBorderedPillarBlock.java",
+          "src/main/resources/assets/shineals_end_update/models/block/purpur_bordered_pillar.json",
+          "src/main/resources/assets/shineals_end_update/blockstates/purpur_bordered_pillar.json",
+          "src/main/resources/assets/shineals_end_update/models/item/purpur_bordered_pillar.json"
+        ]
+      }
     },
     {
       "name": "PurpurBorderedPillarRecipe",
@@ -412,7 +703,12 @@
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "purpur_bordered_pillar_recipe"
+      "registry_name": "purpur_bordered_pillar_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/purpur_bordered_pillar_recipe.json"
+        ]
+      }
     },
     {
       "name": "SmoothEndStoneRecipe",
@@ -420,7 +716,12 @@
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "smooth_end_stone_recipe"
+      "registry_name": "smooth_end_stone_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/smooth_end_stone_recipe.json"
+        ]
+      }
     },
     {
       "name": "ChiseledEndStoneRecipe",
@@ -428,7 +729,12 @@
       "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chiseled_end_stone_recipe"
+      "registry_name": "chiseled_end_stone_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/chiseled_end_stone_recipe.json"
+        ]
+      }
     },
     {
       "name": "VoidialWaterMobplayerCollidesBlock",
@@ -438,6 +744,9 @@
       "locked_code": false,
       "registry_name": "voidial_water_mobplayer_collides_block",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/procedures/VoidialWaterMobplayerCollidesBlockProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -466,7 +775,16 @@
       "locked_code": false,
       "registry_name": "voidial_water",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/fluid/types/VoidialWaterFluidType.java",
+          "src/main/resources/assets/shineals_end_update/blockstates/voidial_water.json",
+          "src/main/resources/assets/shineals_end_update/models/block/voidial_water.json",
+          "src/main/java/net/mcreator/shinealsendupdate/fluid/VoidialWaterFluid.java",
+          "src/main/resources/assets/shineals_end_update/models/item/voidial_water_bucket.json",
+          "src/main/java/net/mcreator/shinealsendupdate/block/VoidialWaterBlock.java",
+          "src/main/java/net/mcreator/shinealsendupdate/item/VoidialWaterItem.java"
+        ]
       }
     },
     {
@@ -475,7 +793,12 @@
       "sortid": 51,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stone_tool_materials"
+      "registry_name": "stone_tool_materials",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/stone_tool_materials.json"
+        ]
+      }
     },
     {
       "name": "Planks",
@@ -483,7 +806,12 @@
       "sortid": 52,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "planks"
+      "registry_name": "planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/planks.json"
+        ]
+      }
     },
     {
       "name": "ChorusWood",
@@ -491,7 +819,16 @@
       "sortid": 53,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_wood"
+      "registry_name": "chorus_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/item/chorus_wood.json",
+          "src/main/resources/assets/shineals_end_update/models/block/chorus_wood.json",
+          "src/main/resources/assets/shineals_end_update/blockstates/chorus_wood.json",
+          "src/main/java/net/mcreator/shinealsendupdate/block/ChorusWoodBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "ChorusWoodRecipe",
@@ -499,7 +836,12 @@
       "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_wood_recipe"
+      "registry_name": "chorus_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/chorus_wood_recipe.json"
+        ]
+      }
     },
     {
       "name": "ChiseledEndStoneRecipeStonecutter",
@@ -507,7 +849,12 @@
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chiseled_end_stone_recipe_stonecutter"
+      "registry_name": "chiseled_end_stone_recipe_stonecutter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/recipes/chiseled_end_stone_recipe_stonecutter.json"
+        ]
+      }
     },
     {
       "name": "StoneCraftingMaterials",
@@ -515,7 +862,12 @@
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stone_crafting_materials"
+      "registry_name": "stone_crafting_materials",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/stone_crafting_materials.json"
+        ]
+      }
     },
     {
       "name": "PurpurLeavesDead",
@@ -523,7 +875,16 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "purpur_leaves_dead"
+      "registry_name": "purpur_leaves_dead",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/block/purpur_leaves_dead.json",
+          "src/main/java/net/mcreator/shinealsendupdate/block/PurpurLeavesDeadBlock.java",
+          "src/main/resources/assets/shineals_end_update/models/item/purpur_leaves_dead.json",
+          "src/main/resources/assets/shineals_end_update/blockstates/purpur_leaves_dead.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "PurpurLeaves",
@@ -531,7 +892,16 @@
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "purpur_leaves"
+      "registry_name": "purpur_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/block/PurpurLeavesBlock.java",
+          "src/main/resources/assets/shineals_end_update/models/block/purpur_leaves.json",
+          "src/main/resources/assets/shineals_end_update/blockstates/purpur_leaves.json",
+          "src/main/resources/assets/shineals_end_update/models/item/purpur_leaves.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "FloweringPurpurLeaves",
@@ -539,7 +909,16 @@
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "flowering_purpur_leaves"
+      "registry_name": "flowering_purpur_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/item/flowering_purpur_leaves.json",
+          "src/main/java/net/mcreator/shinealsendupdate/block/FloweringPurpurLeavesBlock.java",
+          "src/main/resources/assets/shineals_end_update/models/block/flowering_purpur_leaves.json",
+          "src/main/resources/assets/shineals_end_update/blockstates/flowering_purpur_leaves.json"
+        ]
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "ChorusTree",
@@ -547,7 +926,13 @@
       "sortid": 60,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_tree"
+      "registry_name": "chorus_tree",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/world/features/ChorusTreeFeature.java",
+          "src/main/resources/data/shineals_end_update/forge/biome_modifier/chorus_tree_biome_modifier.json"
+        ]
+      }
     },
     {
       "name": "EnderiteSwordVoid",
@@ -557,6 +942,9 @@
       "locked_code": false,
       "registry_name": "enderite_sword_void",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendupdate/procedures/EnderiteSwordVoidProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -583,11 +971,20 @@
     },
     {
       "name": "EndStrider",
-      "type": "livingentity",
+      "type": "animatedentity",
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "end_strider"
+      "registry_name": "end_strider",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_end_update/models/item/end_strider_spawn_egg.json",
+          "src/main/java/net/mcreator/shinealsendupdate/entity/EndStriderEntity.java",
+          "src/main/java/net/mcreator/shinealsendupdate/entity/model/EndStriderModel.java",
+          "src/main/java/net/mcreator/shinealsendupdate/client/renderer/EndStriderRenderer.java",
+          "src/main/resources/data/shineals_end_update/forge/biome_modifier/end_strider_biome_modifier.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -602,8 +999,8 @@
       "item.shinycreepers_end_update.enderite_armor_helmet": "Enderite Helmet",
       "block.shinycreepers_end_update.end_stone_lamp": "End Stone Lamp",
       "block.shineals_end_update.chorus_planks": "Chorus Planks",
-      "item.shineals_end_update.voidial_water_bucket": "Voidial Water Bucket",
       "biome.shinycreepers_end_update.chorus_forest": "Chorus Forest",
+      "item.shineals_end_update.voidial_water_bucket": "Voidial Water Bucket",
       "block.shineals_end_update.flowering_purpur_leaves": "Purpur Leaves Dead",
       "block.shinycreepers_end_update.portal_table_empty": "Portal Table Empty",
       "item.shinycreepers_end_update.enderite_axe": "Enderite Axe",
@@ -671,7 +1068,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Blocks",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "shineals_end_update",
@@ -685,11 +1087,13 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.18.2",
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.19.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.shinealsendupdate",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200112711
+  "mcreatorVersion": 202300110610
 }

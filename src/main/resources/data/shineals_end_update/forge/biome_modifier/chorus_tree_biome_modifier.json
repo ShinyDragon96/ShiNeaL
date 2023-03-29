@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "shineals_end_update:chorus_forest",
+  "features": "shineals_end_update:chorus_tree",
+  "step": "surface_structures"
+}

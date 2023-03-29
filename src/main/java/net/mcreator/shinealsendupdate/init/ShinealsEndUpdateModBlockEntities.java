@@ -15,13 +15,10 @@ import net.mcreator.shinealsendupdate.block.entity.PortalTableBlockEntity;
 import net.mcreator.shinealsendupdate.ShinealsEndUpdateMod;
 
 public class ShinealsEndUpdateModBlockEntities {
-	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES,
-			ShinealsEndUpdateMod.MODID);
-	public static final RegistryObject<BlockEntityType<?>> PORTAL_TABLE = register("portal_table", ShinealsEndUpdateModBlocks.PORTAL_TABLE,
-			PortalTableBlockEntity::new);
+	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, ShinealsEndUpdateMod.MODID);
+	public static final RegistryObject<BlockEntityType<?>> PORTAL_TABLE = register("portal_table", ShinealsEndUpdateModBlocks.PORTAL_TABLE, PortalTableBlockEntity::new);
 
-	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
-			BlockEntityType.BlockEntitySupplier<?> supplier) {
+	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
 	}
 }

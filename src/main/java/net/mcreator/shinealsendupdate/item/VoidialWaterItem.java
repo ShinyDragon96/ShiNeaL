@@ -11,7 +11,6 @@ import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModFluids;
 
 public class VoidialWaterItem extends BucketItem {
 	public VoidialWaterItem() {
-		super(ShinealsEndUpdateModFluids.VOIDIAL_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON)
-				.tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+		super(ShinealsEndUpdateModFluids.VOIDIAL_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
 	}
 }

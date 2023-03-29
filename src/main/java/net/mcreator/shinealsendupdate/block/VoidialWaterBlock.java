@@ -3,7 +3,6 @@ package net.mcreator.shinealsendupdate.block;
 
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.LiquidBlock;
@@ -17,10 +16,7 @@ import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModFluids;
 
 public class VoidialWaterBlock extends LiquidBlock {
 	public VoidialWaterBlock() {
-		super(() -> (FlowingFluid) ShinealsEndUpdateModFluids.VOIDIAL_WATER.get(),
-				BlockBehaviour.Properties.of(Material.WATER, MaterialColor.COLOR_PURPLE).strength(100f)
-
-		);
+		super(() -> ShinealsEndUpdateModFluids.VOIDIAL_WATER.get(), BlockBehaviour.Properties.of(Material.WATER, MaterialColor.COLOR_PURPLE).strength(100f).noCollission().noLootTable());
 	}
 
 	@Override

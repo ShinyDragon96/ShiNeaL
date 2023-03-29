@@ -8,5 +8,6 @@
     "south": "shineals_end_update:blocks/purpur_bordered_pillar",
     "west": "shineals_end_update:blocks/purpur_bordered_pillar",
     "particle": "shineals_end_update:blocks/purpur_bordered_pillar_top"
-  }
+  },
+  "render_type": "solid"
 }

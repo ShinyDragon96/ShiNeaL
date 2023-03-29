@@ -1,6 +1,6 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package net.mcreator.shinealsendupdate.init;
 
@@ -18,7 +18,7 @@ public class ShinealsEndUpdateModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(ShinealsEndUpdateModMenus.PORTAL_TABLE_GUI, PortalTableGUIScreen::new);
+			MenuScreens.register(ShinealsEndUpdateModMenus.PORTAL_TABLE_GUI.get(), PortalTableGUIScreen::new);
 		});
 	}
 }

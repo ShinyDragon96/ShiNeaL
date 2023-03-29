@@ -1,4 +1,3 @@
-
 package net.mcreator.shinealsendupdate.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -11,10 +10,13 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.shinealsendupdate.world.inventory.PortalTableGUIMenu;
 
+import java.util.HashMap;
+
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class PortalTableGUIScreen extends AbstractContainerScreen<PortalTableGUIMenu> {
+	private final static HashMap<String, Object> guistate = PortalTableGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
@@ -30,7 +32,7 @@ public class PortalTableGUIScreen extends AbstractContainerScreen<PortalTableGUI
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("shineals_end_update:textures/portal_table_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("shineals_end_update:textures/screens/portal_table_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -47,7 +49,7 @@ public class PortalTableGUIScreen extends AbstractContainerScreen<PortalTableGUI
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("shineals_end_update:textures/portal_table_gui.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("shineals_end_update:textures/screens/portal_table_gui.png"));
 		this.blit(ms, this.leftPos + -5, this.topPos + 0, 0, 0, 166, 166, 166, 166);
 
 		RenderSystem.disableBlend();

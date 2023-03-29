@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "shineals_end_update:cobbled_end_stone",
+  "step": "underground_ores"
+}

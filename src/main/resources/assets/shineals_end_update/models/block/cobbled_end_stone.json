@@ -3,5 +3,6 @@
   "textures": {
     "all": "shineals_end_update:blocks/cobbled_end_stone1",
     "particle": "shineals_end_update:blocks/cobbled_end_stone1"
-  }
+  },
+  "render_type": "solid"
 }

@@ -4,5 +4,6 @@
     "all": "shineals_end_update:blocks/portal_table_empty",
     "particle": "shineals_end_update:blocks/portal_table_empty",
     "missing": "shineals_end_update:blocks/portal_table_empty"
-  }
+  },
+  "render_type": "solid"
 }

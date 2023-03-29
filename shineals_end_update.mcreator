@@ -111,7 +111,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/enderite_ingot_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "ShinyCreepersEndUpdate",
@@ -149,7 +150,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/raw_enderite_recipe_blast.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "EndStoneLamp",
@@ -196,7 +198,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/raw_enderite_block_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "RawEnderiteRecipeFromBlock",
@@ -209,7 +212,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/raw_enderite_recipe_from_block.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "ChiseledEndStone",
@@ -256,7 +260,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/enderite_block_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "EnderiteIngotRecipeFromBlock",
@@ -269,7 +274,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/enderite_ingot_recipe_from_block.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "PortalTable",
@@ -407,7 +413,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/chorus_planks_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "ChorusForest",
@@ -561,7 +568,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/enderite_sword_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "EnderitePickaxeRecipe",
@@ -574,7 +582,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/enderite_pickaxe_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "EnderiteAxeRecipe",
@@ -587,7 +596,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/enderite_axe_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "EnderiteShovelRecipe",
@@ -600,7 +610,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/enderite_shovel_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "EnderiteHoeRecipe",
@@ -613,7 +624,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/enderite_hoe_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "EnderiteHelmetRecipe",
@@ -626,7 +638,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/enderite_helmet_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "EnderiteChestplateRecipe",
@@ -639,7 +652,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/enderite_chestplate_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "EnderiteLeggingsRecipe",
@@ -652,7 +666,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/enderite_leggings_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "EnderiteBootsRecipe",
@@ -665,7 +680,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/enderite_boots_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "PortalTableGUI",
@@ -695,7 +711,8 @@
           "src/main/resources/assets/shineals_end_update/blockstates/purpur_bordered_pillar.json",
           "src/main/resources/assets/shineals_end_update/models/item/purpur_bordered_pillar.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "PurpurBorderedPillarRecipe",
@@ -708,7 +725,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/purpur_bordered_pillar_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "SmoothEndStoneRecipe",
@@ -721,7 +739,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/smooth_end_stone_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "ChiseledEndStoneRecipe",
@@ -734,7 +753,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/chiseled_end_stone_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "VoidialWaterMobplayerCollidesBlock",
@@ -841,7 +861,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/chorus_wood_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "ChiseledEndStoneRecipeStonecutter",
@@ -854,7 +875,8 @@
         "files": [
           "src/main/resources/data/shineals_end_update/recipes/chiseled_end_stone_recipe_stonecutter.json"
         ]
-      }
+      },
+      "path": "~/Recipies"
     },
     {
       "name": "StoneCraftingMaterials",
@@ -999,8 +1021,8 @@
       "item.shinycreepers_end_update.enderite_armor_helmet": "Enderite Helmet",
       "block.shinycreepers_end_update.end_stone_lamp": "End Stone Lamp",
       "block.shineals_end_update.chorus_planks": "Chorus Planks",
-      "biome.shinycreepers_end_update.chorus_forest": "Chorus Forest",
       "item.shineals_end_update.voidial_water_bucket": "Voidial Water Bucket",
+      "biome.shinycreepers_end_update.chorus_forest": "Chorus Forest",
       "block.shineals_end_update.flowering_purpur_leaves": "Purpur Leaves Dead",
       "block.shinycreepers_end_update.portal_table_empty": "Portal Table Empty",
       "item.shinycreepers_end_update.enderite_axe": "Enderite Axe",
@@ -1071,6 +1093,10 @@
     "children": [
       {
         "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Recipies",
         "children": []
       }
     ]

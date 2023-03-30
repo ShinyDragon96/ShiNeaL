@@ -22,7 +22,7 @@ public class EnderiteShovelItem extends ShovelItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 5.5f;
 			}
 
 			public int getLevel() {
@@ -30,7 +30,7 @@ public class EnderiteShovelItem extends ShovelItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 18;
+				return 20;
 			}
 
 			public Ingredient getRepairIngredient() {

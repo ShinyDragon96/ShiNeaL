@@ -57,9 +57,9 @@
     "damageValueBoots": 4,
     "enchantability": 18,
     "toughness": 4.0,
-    "knockbackResistance": 0.0,
+    "knockbackResistance": 0.2,
     "equipSound": {
-      "value": ""
+      "value": "item.armor.equip_netherite"
     },
     "repairItems": [
       {

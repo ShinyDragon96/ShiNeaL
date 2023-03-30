@@ -22,7 +22,7 @@ public class EnderiteAxeItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 9f;
 			}
 
 			public int getLevel() {

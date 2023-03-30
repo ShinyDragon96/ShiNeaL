@@ -1,0 +1,16 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "small_end_islands",
+    "end_midlands",
+    "shineals_end_update:chorus_forest",
+    "end_highlands",
+    "end_barrens"
+  ],
+  "spawners": {
+    "type": "shineals_end_update:chorussnail",
+    "weight": 3,
+    "minCount": 2,
+    "maxCount": 6
+  }
+}

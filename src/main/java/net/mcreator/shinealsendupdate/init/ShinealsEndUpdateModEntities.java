@@ -19,6 +19,7 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.shinealsendupdate.entity.EndStriderEntity;
 import net.mcreator.shinealsendupdate.entity.EndMageEntityProjectile;
 import net.mcreator.shinealsendupdate.entity.EndMageEntity;
+import net.mcreator.shinealsendupdate.entity.ChorusSnailEntity;
 import net.mcreator.shinealsendupdate.ShinealsEndUpdateMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -34,6 +35,10 @@ public class ShinealsEndUpdateModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<EndMageEntityProjectile>> ENDMAGE_PROJECTILE = register("projectile_endmage", EntityType.Builder.<EndMageEntityProjectile>of(EndMageEntityProjectile::new, MobCategory.MISC)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(EndMageEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ChorusSnailEntity>> CHORUSSNAIL = register("chorussnail",
+			EntityType.Builder.<ChorusSnailEntity>of(ChorusSnailEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChorusSnailEntity::new)
+
+					.sized(1.25f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -44,6 +49,7 @@ public class ShinealsEndUpdateModEntities {
 		event.enqueueWork(() -> {
 			EndStriderEntity.init();
 			EndMageEntity.init();
+			ChorusSnailEntity.init();
 		});
 	}
 
@@ -51,5 +57,6 @@ public class ShinealsEndUpdateModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(END_STRIDER.get(), EndStriderEntity.createAttributes().build());
 		event.put(ENDMAGE.get(), EndMageEntity.createAttributes().build());
+		event.put(CHORUSSNAIL.get(), ChorusSnailEntity.createAttributes().build());
 	}
 }

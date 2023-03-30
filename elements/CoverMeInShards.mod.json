@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Cover Me In Shards",
-    "achievementDescription": "Get a full suit of Enderite armor",
+    "achievementDescription": "Get a full suit of Enderite Armor",
     "achievementIcon": {
       "value": "CUSTOM:EnderiteArmor.body"
     },

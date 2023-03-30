@@ -74,7 +74,7 @@ public class EndStriderEntity extends Monster implements IAnimatable {
 
 	public EndStriderEntity(EntityType<EndStriderEntity> type, Level world) {
 		super(type, world);
-		xpReward = 2;
+		xpReward = 1;
 		setNoAi(false);
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
@@ -281,14 +281,14 @@ public class EndStriderEntity extends Monster implements IAnimatable {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 15);
-		builder = builder.add(Attributes.ARMOR, 0.30000000000000004);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 4);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.25);
+		builder = builder.add(Attributes.MAX_HEALTH, 30);
+		builder = builder.add(Attributes.ARMOR, 0);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.2);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 0.1);
-		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
+		builder = builder.add(Attributes.FLYING_SPEED, 0.25);
 		return builder;
 	}
 

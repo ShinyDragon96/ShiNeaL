@@ -45,8 +45,6 @@ public class ShinealsEndUpdateModItems {
 	public static final RegistryObject<Item> ENDERITE_ARMOR_BOOTS = REGISTRY.register("enderite_armor_boots", () -> new EnderiteArmorItem.Boots());
 	public static final RegistryObject<Item> CHORUS_LOG = block(ShinealsEndUpdateModBlocks.CHORUS_LOG, ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE);
 	public static final RegistryObject<Item> CHORUS_PLANKS = block(ShinealsEndUpdateModBlocks.CHORUS_PLANKS, ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE);
-	public static final RegistryObject<Item> END_STRIDER_SPAWN_EGG = REGISTRY.register("end_strider_spawn_egg",
-			() -> new ForgeSpawnEggItem(ShinealsEndUpdateModEntities.END_STRIDER, -10092442, -13395712, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE)));
 	public static final RegistryObject<Item> ENDERITE_SWORD = REGISTRY.register("enderite_sword", () -> new EnderiteSwordItem());
 	public static final RegistryObject<Item> ENDERITE_PICKAXE = REGISTRY.register("enderite_pickaxe", () -> new EnderitePickaxeItem());
 	public static final RegistryObject<Item> ENDERITE_AXE = REGISTRY.register("enderite_axe", () -> new EnderiteAxeItem());
@@ -58,10 +56,16 @@ public class ShinealsEndUpdateModItems {
 	public static final RegistryObject<Item> PURPUR_LEAVES_DEAD = block(ShinealsEndUpdateModBlocks.PURPUR_LEAVES_DEAD, ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE);
 	public static final RegistryObject<Item> PURPUR_LEAVES = block(ShinealsEndUpdateModBlocks.PURPUR_LEAVES, ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE);
 	public static final RegistryObject<Item> FLOWERING_PURPUR_LEAVES = block(ShinealsEndUpdateModBlocks.FLOWERING_PURPUR_LEAVES, ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE);
+	public static final RegistryObject<Item> END_STRIDER_SPAWN_EGG = REGISTRY.register("end_strider_spawn_egg",
+			() -> new ForgeSpawnEggItem(ShinealsEndUpdateModEntities.END_STRIDER, -10092442, -13395712, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE)));
 	public static final RegistryObject<Item> ENDMAGE_SPAWN_EGG = REGISTRY.register("endmage_spawn_egg",
 			() -> new ForgeSpawnEggItem(ShinealsEndUpdateModEntities.ENDMAGE, -10066432, -6750055, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE)));
 	public static final RegistryObject<Item> CHORUSSNAIL_SPAWN_EGG = REGISTRY.register("chorussnail_spawn_egg",
 			() -> new ForgeSpawnEggItem(ShinealsEndUpdateModEntities.CHORUSSNAIL, -3407668, -6749953, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE)));
+	public static final RegistryObject<Item> CHORUSBEE_SPAWN_EGG = REGISTRY.register("chorusbee_spawn_egg",
+			() -> new ForgeSpawnEggItem(ShinealsEndUpdateModEntities.CHORUSBEE, -6750055, -3407617, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE)));
+	public static final RegistryObject<Item> ENDERPHANTOM_SPAWN_EGG = REGISTRY.register("enderphantom_spawn_egg",
+			() -> new ForgeSpawnEggItem(ShinealsEndUpdateModEntities.ENDERPHANTOM, -6750055, -6736897, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

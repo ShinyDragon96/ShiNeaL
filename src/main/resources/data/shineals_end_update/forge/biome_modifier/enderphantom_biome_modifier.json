@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "the_end",
+  "spawners": {
+    "type": "shineals_end_update:enderphantom",
+    "weight": 8,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

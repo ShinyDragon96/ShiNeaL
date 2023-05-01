@@ -16,10 +16,12 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.shinealsendupdate.entity.EnderPhantomEntity;
 import net.mcreator.shinealsendupdate.entity.EndStriderEntity;
 import net.mcreator.shinealsendupdate.entity.EndMageEntityProjectile;
 import net.mcreator.shinealsendupdate.entity.EndMageEntity;
 import net.mcreator.shinealsendupdate.entity.ChorusSnailEntity;
+import net.mcreator.shinealsendupdate.entity.ChorusBeeEntity;
 import net.mcreator.shinealsendupdate.ShinealsEndUpdateMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -39,6 +41,14 @@ public class ShinealsEndUpdateModEntities {
 			EntityType.Builder.<ChorusSnailEntity>of(ChorusSnailEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChorusSnailEntity::new)
 
 					.sized(1.25f, 1f));
+	public static final RegistryObject<EntityType<ChorusBeeEntity>> CHORUSBEE = register("chorusbee",
+			EntityType.Builder.<ChorusBeeEntity>of(ChorusBeeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChorusBeeEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<EnderPhantomEntity>> ENDERPHANTOM = register("enderphantom",
+			EntityType.Builder.<EnderPhantomEntity>of(EnderPhantomEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EnderPhantomEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -50,6 +60,8 @@ public class ShinealsEndUpdateModEntities {
 			EndStriderEntity.init();
 			EndMageEntity.init();
 			ChorusSnailEntity.init();
+			ChorusBeeEntity.init();
+			EnderPhantomEntity.init();
 		});
 	}
 
@@ -58,5 +70,7 @@ public class ShinealsEndUpdateModEntities {
 		event.put(END_STRIDER.get(), EndStriderEntity.createAttributes().build());
 		event.put(ENDMAGE.get(), EndMageEntity.createAttributes().build());
 		event.put(CHORUSSNAIL.get(), ChorusSnailEntity.createAttributes().build());
+		event.put(CHORUSBEE.get(), ChorusBeeEntity.createAttributes().build());
+		event.put(ENDERPHANTOM.get(), EnderPhantomEntity.createAttributes().build());
 	}
 }

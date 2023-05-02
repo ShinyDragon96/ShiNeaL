@@ -22,7 +22,7 @@ public class EnderiteAxeItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 9f;
+				return 8f;
 			}
 
 			public int getLevel() {
@@ -36,6 +36,6 @@ public class EnderiteAxeItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT.get()));
 			}
-		}, 1, -3f, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+		}, 1, -2f, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
 	}
 }

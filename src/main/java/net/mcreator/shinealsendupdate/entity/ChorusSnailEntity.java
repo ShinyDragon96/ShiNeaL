@@ -121,7 +121,7 @@ public class ChorusSnailEntity extends PathfinderMob implements IAnimatable {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		ChorusSnailEntityIsHurtProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		ChorusSnailEntityIsHurtProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 		return super.hurt(source, amount);
 	}
 

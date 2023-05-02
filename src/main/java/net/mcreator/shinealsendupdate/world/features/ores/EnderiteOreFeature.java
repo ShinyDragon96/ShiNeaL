@@ -35,7 +35,7 @@ public class EnderiteOreFeature extends OreFeature {
 		FEATURE = new EnderiteOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("shineals_end_update:enderite_ore", FEATURE,
 				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.END_STONE.defaultBlockState()), ShinealsEndUpdateModBlocks.ENDERITE_ORE.get().defaultBlockState()),
-						OreConfiguration.target(new BlockStateMatchTest(ShinealsEndUpdateModBlocks.COBBLED_END_STONE.get().defaultBlockState()), ShinealsEndUpdateModBlocks.ENDERITE_ORE.get().defaultBlockState())), 2));
+						OreConfiguration.target(new BlockStateMatchTest(ShinealsEndUpdateModBlocks.COBBLED_END_STONE.get().defaultBlockState()), ShinealsEndUpdateModBlocks.ENDERITE_ORE.get().defaultBlockState())), 3));
 		PLACED_FEATURE = PlacementUtils.register("shineals_end_update:enderite_ore", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(1), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(70)), BiomeFilter.biome()));
 		return FEATURE;

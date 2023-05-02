@@ -18,11 +18,11 @@ public class EnderitePickaxeItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 10f;
+				return 20f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 5f;
+				return 2f;
 			}
 
 			public int getLevel() {

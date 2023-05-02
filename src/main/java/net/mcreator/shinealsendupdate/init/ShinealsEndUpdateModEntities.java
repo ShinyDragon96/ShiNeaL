@@ -34,7 +34,7 @@ public class ShinealsEndUpdateModEntities {
 	public static final RegistryObject<EntityType<EndMageEntity>> ENDMAGE = register("endmage",
 			EntityType.Builder.<EndMageEntity>of(EndMageEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EndMageEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 2.9f));
 	public static final RegistryObject<EntityType<EndMageEntityProjectile>> ENDMAGE_PROJECTILE = register("projectile_endmage", EntityType.Builder.<EndMageEntityProjectile>of(EndMageEntityProjectile::new, MobCategory.MISC)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(EndMageEntityProjectile::new).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<ChorusSnailEntity>> CHORUSSNAIL = register("chorussnail",

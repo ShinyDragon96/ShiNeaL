@@ -7,7 +7,6 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModTabs;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
 
 public class EnderitePickaxeItem extends PickaxeItem {
@@ -36,6 +35,6 @@ public class EnderitePickaxeItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT.get()));
 			}
-		}, 1, -2.8f, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+		}, 1, -2.8f, new Item.Properties());
 	}
 }

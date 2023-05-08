@@ -20,7 +20,7 @@ public class EnderiteSwordVoidProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.level.dimension()) == (Level.END)) {
+		if ((entity.level.dimension()) == Level.END) {
 			if (world instanceof ServerLevel _origLevel) {
 				LevelAccessor _worldorig = world;
 				world = _origLevel.getServer().getLevel(Level.END);

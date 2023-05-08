@@ -20,8 +20,8 @@ import net.mcreator.shinealsendupdate.ShinealsEndUpdateMod;
 @Mod.EventBusSubscriber
 public class ShinealsEndUpdateModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, ShinealsEndUpdateMod.MODID);
-	public static final RegistryObject<Feature<?>> COBBLED_END_STONE = REGISTRY.register("cobbled_end_stone", CobbledEndStoneFeature::feature);
-	public static final RegistryObject<Feature<?>> ENDERITE_ORE = REGISTRY.register("enderite_ore", EnderiteOreFeature::feature);
-	public static final RegistryObject<Feature<?>> CHORUS_TREE = REGISTRY.register("chorus_tree", ChorusTreeFeature::feature);
-	public static final RegistryObject<Feature<?>> ENDER_HUT = REGISTRY.register("ender_hut", EnderHutFeature::feature);
+	public static final RegistryObject<Feature<?>> COBBLED_END_STONE = REGISTRY.register("cobbled_end_stone", CobbledEndStoneFeature::new);
+	public static final RegistryObject<Feature<?>> ENDERITE_ORE = REGISTRY.register("enderite_ore", EnderiteOreFeature::new);
+	public static final RegistryObject<Feature<?>> CHORUS_TREE = REGISTRY.register("chorus_tree", ChorusTreeFeature::new);
+	public static final RegistryObject<Feature<?>> ENDER_HUT = REGISTRY.register("ender_hut", EnderHutFeature::new);
 }

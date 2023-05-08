@@ -7,7 +7,6 @@ import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModTabs;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
 
 public class EnderiteShovelItem extends ShovelItem {
@@ -36,6 +35,6 @@ public class EnderiteShovelItem extends ShovelItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT.get()));
 			}
-		}, 1, -3f, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+		}, 1, -3f, new Item.Properties());
 	}
 }

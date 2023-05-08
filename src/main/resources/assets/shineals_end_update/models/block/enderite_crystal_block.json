@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "shineals_end_update:blocks/raw_enderite_block",
-    "particle": "shineals_end_update:blocks/raw_enderite_block"
+    "all": "shineals_end_update:block/raw_enderite_block",
+    "particle": "shineals_end_update:block/raw_enderite_block"
   },
   "render_type": "solid"
 }

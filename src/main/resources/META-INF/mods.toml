@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[43,)"
+loaderVersion="[45,)"
 license="All Rights Reserved"
 
 [[mods]]
@@ -16,7 +16,7 @@ An end MOD, which adds mysterious creatures, blocks and items to the game
 [[dependencies.shineals_end_update]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2]"
+    versionRange="[1.19.4]"
     ordering="NONE"
     side="BOTH"
 

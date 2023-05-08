@@ -1,12 +1,14 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
-    "xpReward": 1.0,
-    "cookingTime": 100,
     "recipeRetstackSize": 1,
     "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "blastingInputStack": {
       "value": "CUSTOM:EnderiteOre"

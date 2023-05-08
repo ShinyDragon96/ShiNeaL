@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "shineals_end_update:blocks/purpur_leaves",
-    "up": "shineals_end_update:blocks/purpur_leaves",
-    "north": "shineals_end_update:blocks/purpur_leaves",
-    "east": "shineals_end_update:blocks/purpur_leaves",
-    "south": "shineals_end_update:blocks/purpur_leaves",
-    "west": "shineals_end_update:blocks/purpur_leaves",
-    "particle": "shineals_end_update:blocks/purpur_leaves"
+    "down": "shineals_end_update:block/purpur_leaves",
+    "up": "shineals_end_update:block/purpur_leaves",
+    "north": "shineals_end_update:block/purpur_leaves",
+    "east": "shineals_end_update:block/purpur_leaves",
+    "south": "shineals_end_update:block/purpur_leaves",
+    "west": "shineals_end_update:block/purpur_leaves",
+    "particle": "shineals_end_update:block/purpur_leaves"
   },
   "render_type": "cutout"
 }

@@ -19,7 +19,7 @@ public class VoidialWaterFluidType extends FluidType {
 	@Override
 	public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
 		consumer.accept(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("shineals_end_update:blocks/voidial_water_still"), FLOWING_TEXTURE = new ResourceLocation("shineals_end_update:blocks/voidial_water_flow");
+			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("shineals_end_update:block/voidial_water_still"), FLOWING_TEXTURE = new ResourceLocation("shineals_end_update:block/voidial_water_flow");
 
 			@Override
 			public ResourceLocation getStillTexture() {

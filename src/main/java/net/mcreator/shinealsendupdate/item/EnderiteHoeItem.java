@@ -7,7 +7,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HoeItem;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModTabs;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
 
 public class EnderiteHoeItem extends HoeItem {
@@ -36,6 +35,6 @@ public class EnderiteHoeItem extends HoeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT.get()));
 			}
-		}, 0, 0f, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+		}, 0, 0f, new Item.Properties());
 	}
 }

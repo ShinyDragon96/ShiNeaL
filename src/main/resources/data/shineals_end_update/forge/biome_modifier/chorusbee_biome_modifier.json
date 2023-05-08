@@ -1,9 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": [
-    "shineals_end_update:chorus_forest",
-    "end_highlands"
-  ],
+  "biomes": "end_highlands",
   "spawners": {
     "type": "shineals_end_update:chorusbee",
     "weight": 14,

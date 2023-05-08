@@ -27,8 +27,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/shineals_end_update/forge/biome_modifier/cobbled_end_stone_biome_modifier.json",
+          "src/main/resources/data/shineals_end_update/worldgen/placed_feature/cobbled_end_stone.json",
           "src/main/resources/assets/shineals_end_update/blockstates/cobbled_end_stone.json",
           "src/main/resources/assets/shineals_end_update/models/block/cobbled_end_stone.json",
+          "src/main/resources/data/shineals_end_update/worldgen/configured_feature/cobbled_end_stone.json",
           "src/main/java/net/mcreator/shinealsendupdate/world/features/ores/CobbledEndStoneFeature.java",
           "src/main/java/net/mcreator/shinealsendupdate/block/CobbledEndStoneBlock.java",
           "src/main/resources/assets/shineals_end_update/models/item/cobbled_end_stone.json"
@@ -67,6 +69,8 @@
           "src/main/java/net/mcreator/shinealsendupdate/block/EnderiteOreBlock.java",
           "src/main/java/net/mcreator/shinealsendupdate/world/features/ores/EnderiteOreFeature.java",
           "src/main/resources/assets/shineals_end_update/models/block/enderite_ore.json",
+          "src/main/resources/data/shineals_end_update/worldgen/configured_feature/enderite_ore.json",
+          "src/main/resources/data/shineals_end_update/worldgen/placed_feature/enderite_ore.json",
           "src/main/resources/assets/shineals_end_update/blockstates/enderite_ore.json"
         ]
       },
@@ -415,19 +419,6 @@
         ]
       },
       "path": "~/Recipies"
-    },
-    {
-      "name": "ChorusForest",
-      "type": "biome",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chorus_forest",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/shinealsendupdate/world/biome/ChorusForestBiome.java"
-        ]
-      }
     },
     {
       "name": "HiddenInTheSkies",
@@ -951,6 +942,8 @@
       "registry_name": "chorus_tree",
       "metadata": {
         "files": [
+          "src/main/resources/data/shineals_end_update/worldgen/placed_feature/chorus_tree.json",
+          "src/main/resources/data/shineals_end_update/worldgen/configured_feature/chorus_tree.json",
           "src/main/java/net/mcreator/shinealsendupdate/world/features/ChorusTreeFeature.java",
           "src/main/resources/data/shineals_end_update/forge/biome_modifier/chorus_tree_biome_modifier.json"
         ]
@@ -1088,6 +1081,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/shinealsendupdate/world/features/EnderHutFeature.java",
+          "src/main/resources/data/shineals_end_update/worldgen/configured_feature/ender_hut.json",
+          "src/main/resources/data/shineals_end_update/worldgen/placed_feature/ender_hut.json",
           "src/main/resources/data/shineals_end_update/forge/biome_modifier/ender_hut_biome_modifier.json"
         ]
       }
@@ -1163,6 +1158,7 @@
       "fluid.shinycreepers_end_update.voidial_water": "Voidial Water",
       "item.shineals_end_update.enderite_armor_helmet": "Enderium Helmet",
       "item.shineals_end_update.chorusbee_spawn_egg": "Chorus Bee Spawn Egg",
+      "item_group.shineals_end_update.shiny_creepers_end_update": "ShiNeaL\u0027s Endgrowth",
       "entity.shineals_end_update.enderphantom": "Ender Phantom",
       "block.shineals_end_update.enderite_crystal_block": "Enderium Crystal",
       "item.shinycreepers_end_update.voidial_water_bucket": "Voidial Water Bucket",
@@ -1181,7 +1177,6 @@
       "advancements.hidden_in_the_skies.title": "Hidden In The Skies",
       "block.shineals_end_update.cobbled_end_stone": "Cobbled End Stone",
       "advancements.ultimate_dedication.title": "Ultimate Dedication",
-      "biome.shineals_end_update.chorus_forest": "Chorus Forest",
       "item.shinycreepers_end_update.enderite_ingot": "Enderite Ingot",
       "block.shinycreepers_end_update.end_stone_pillar": "End Stone Pillar",
       "item.shineals_end_update.enderite_sword": "Enderium Sword",
@@ -1246,6 +1241,7 @@
       "fluid.shinycreepers_end_update.voidial_water": "Voidial Water",
       "item.shineals_end_update.enderite_armor_helmet": "Enderium Helmet",
       "item.shineals_end_update.chorusbee_spawn_egg": "Chorus Bee Spawn Egg",
+      "item_group.shineals_end_update.shiny_creepers_end_update": "ShiNeaL\u0027s Endgrowth",
       "entity.shineals_end_update.enderphantom": "Ender Phantom",
       "block.shineals_end_update.enderite_crystal_block": "Enderium Crystal",
       "item.shinycreepers_end_update.voidial_water_bucket": "Voidial Water Bucket",
@@ -1264,7 +1260,6 @@
       "advancements.hidden_in_the_skies.title": "Hidden In The Skies",
       "block.shineals_end_update.cobbled_end_stone": "Cobbled End Stone",
       "advancements.ultimate_dedication.title": "Ultimate Dedication",
-      "biome.shineals_end_update.chorus_forest": "Chorus Forest",
       "item.shinycreepers_end_update.enderite_ingot": "Enderite Ingot",
       "block.shinycreepers_end_update.end_stone_pillar": "End Stone Pillar",
       "item.shineals_end_update.enderite_sword": "Enderium Sword",
@@ -1339,10 +1334,10 @@
     "mcreatorDependencies": [
       "geckolib"
     ],
-    "currentGenerator": "forge-1.19.2",
+    "currentGenerator": "forge-1.19.4",
     "credits": "ShinyDragon96, TgwCreeper, GlitchedMastery",
     "modElementsPackage": "net.mcreator.shinealsendupdate",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300110610
+  "mcreatorVersion": 202300217118
 }

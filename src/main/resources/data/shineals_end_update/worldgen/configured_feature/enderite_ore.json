@@ -1,0 +1,31 @@
+{
+  "type": "shineals_end_update:enderite_ore",
+  "config": {
+    "size": 3,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:end_stone"
+          }
+        },
+        "state": {
+          "Name": "shineals_end_update:enderite_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "shineals_end_update:cobbled_end_stone"
+          }
+        },
+        "state": {
+          "Name": "shineals_end_update:enderite_ore"
+        }
+      }
+    ]
+  }
+}

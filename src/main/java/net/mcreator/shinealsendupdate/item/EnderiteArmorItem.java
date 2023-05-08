@@ -13,20 +13,19 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModTabs;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
 
 public abstract class EnderiteArmorItem extends ArmorItem {
-	public EnderiteArmorItem(EquipmentSlot slot, Item.Properties properties) {
+	public EnderiteArmorItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
-			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 40;
+			public int getDurabilityForType(ArmorItem.Type type) {
+				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 40;
 			}
 
 			@Override
-			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{4, 7, 9, 4}[slot.getIndex()];
+			public int getDefenseForType(ArmorItem.Type type) {
+				return new int[]{4, 7, 9, 4}[type.getSlot().getIndex()];
 			}
 
 			@Override
@@ -58,12 +57,12 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 			public float getKnockbackResistance() {
 				return 0.2f;
 			}
-		}, slot, properties);
+		}, type, properties);
 	}
 
 	public static class Helmet extends EnderiteArmorItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+			super(ArmorItem.Type.HELMET, new Item.Properties());
 		}
 
 		@Override
@@ -74,7 +73,7 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 
 	public static class Chestplate extends EnderiteArmorItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
 		}
 
 		@Override
@@ -85,7 +84,7 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 
 	public static class Leggings extends EnderiteArmorItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+			super(ArmorItem.Type.LEGGINGS, new Item.Properties());
 		}
 
 		@Override
@@ -96,7 +95,7 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 
 	public static class Boots extends EnderiteArmorItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(ShinealsEndUpdateModTabs.TAB_SHINY_CREEPERS_END_UPDATE));
+			super(ArmorItem.Type.BOOTS, new Item.Properties());
 		}
 
 		@Override

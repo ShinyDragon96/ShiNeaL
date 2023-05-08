@@ -17,8 +17,6 @@ import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
 
 import javax.annotation.Nullable;
 
-import java.util.Iterator;
-
 @Mod.EventBusSubscriber
 public class CoverMeInShardsProcedureProcedure {
 	@SubscribeEvent
@@ -43,9 +41,8 @@ public class CoverMeInShardsProcedureProcedure {
 							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("shineals_end_update:cover_me_in_shards"));
 							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 							if (!_ap.isDone()) {
-								Iterator _iterator = _ap.getRemainingCriteria().iterator();
-								while (_iterator.hasNext())
-									_player.getAdvancements().award(_adv, (String) _iterator.next());
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
 							}
 						}
 					}

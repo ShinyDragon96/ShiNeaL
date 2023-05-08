@@ -13,7 +13,7 @@
  */
 package net.mcreator.shinealsendupdate;
 
-import software.bernie.geckolib3.GeckoLib;
+import software.bernie.geckolib.GeckoLib;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -31,7 +31,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModTabs;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModMenus;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModFluids;
@@ -40,7 +39,6 @@ import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModFeatures;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModEntities;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModBlocks;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModBlockEntities;
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModBiomes;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -58,7 +56,6 @@ public class ShinealsEndUpdateMod {
 
 	public ShinealsEndUpdateMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-		ShinealsEndUpdateModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		ShinealsEndUpdateModBlocks.REGISTRY.register(bus);
@@ -70,7 +67,7 @@ public class ShinealsEndUpdateMod {
 		ShinealsEndUpdateModFluidTypes.REGISTRY.register(bus);
 
 		ShinealsEndUpdateModMenus.REGISTRY.register(bus);
-		ShinealsEndUpdateModBiomes.REGISTRY.register(bus);
+
 		GeckoLib.initialize();
 	}
 

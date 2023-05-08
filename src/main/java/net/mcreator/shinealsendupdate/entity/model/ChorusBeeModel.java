@@ -1,12 +1,12 @@
 package net.mcreator.shinealsendupdate.entity.model;
 
-import software.bernie.geckolib3.model.AnimatedGeoModel;
+import software.bernie.geckolib.model.GeoModel;
 
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.shinealsendupdate.entity.ChorusBeeEntity;
 
-public class ChorusBeeModel extends AnimatedGeoModel<ChorusBeeEntity> {
+public class ChorusBeeModel extends GeoModel<ChorusBeeEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(ChorusBeeEntity entity) {
 		return new ResourceLocation("shineals_end_update", "animations/chorusbee.animation.json");

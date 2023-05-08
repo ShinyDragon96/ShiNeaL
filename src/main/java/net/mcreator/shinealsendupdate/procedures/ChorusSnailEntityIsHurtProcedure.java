@@ -38,7 +38,7 @@ public class ChorusSnailEntityIsHurtProcedure {
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"summon area_effect_cloud ~ ~ ~ {Radius:3f,Effects:[{Duration:5000,Id:25b}]}");
-		if (entity instanceof LivingEntity _entity)
+		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 60, 1));
 	}
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "shineals_end_update:items/enderite_sword"
+    "layer0": "shineals_end_update:item/enderite_sword"
   }
 }

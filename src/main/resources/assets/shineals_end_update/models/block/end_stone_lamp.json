@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "shineals_end_update:blocks/end_stone_lamp",
-    "particle": "shineals_end_update:blocks/end_stone_lamp"
+    "all": "shineals_end_update:block/end_stone_lamp",
+    "particle": "shineals_end_update:block/end_stone_lamp"
   },
   "render_type": "solid"
 }

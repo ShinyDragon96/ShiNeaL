@@ -16,7 +16,7 @@ public class VoidialWaterMobplayerCollidesBlockProcedure {
 			if (_ent instanceof ServerPlayer _serverPlayer)
 				_serverPlayer.connection.teleport(x, (y + 0.2), z, _ent.getYRot(), _ent.getXRot());
 		}
-		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 200, 1, (true), (true)));
+		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 200, 1, true, true));
 	}
 }

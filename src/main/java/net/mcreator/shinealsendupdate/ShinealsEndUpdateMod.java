@@ -67,7 +67,6 @@ public class ShinealsEndUpdateMod {
 		ShinealsEndUpdateModFluidTypes.REGISTRY.register(bus);
 
 		ShinealsEndUpdateModMenus.REGISTRY.register(bus);
-
 		GeckoLib.initialize();
 	}
 

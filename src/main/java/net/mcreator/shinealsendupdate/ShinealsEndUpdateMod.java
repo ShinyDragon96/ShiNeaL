@@ -13,8 +13,6 @@
  */
 package net.mcreator.shinealsendupdate;
 
-import software.bernie.geckolib.GeckoLib;
-
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -31,11 +29,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.shinealsendupdate.world.features.StructureFeature;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModMenus;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModFluids;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModFluidTypes;
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModFeatures;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModEntities;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModBlocks;
 import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModBlockEntities;
@@ -62,12 +60,13 @@ public class ShinealsEndUpdateMod {
 		ShinealsEndUpdateModItems.REGISTRY.register(bus);
 		ShinealsEndUpdateModEntities.REGISTRY.register(bus);
 		ShinealsEndUpdateModBlockEntities.REGISTRY.register(bus);
-		ShinealsEndUpdateModFeatures.REGISTRY.register(bus);
-		ShinealsEndUpdateModFluids.REGISTRY.register(bus);
-		ShinealsEndUpdateModFluidTypes.REGISTRY.register(bus);
 
 		ShinealsEndUpdateModMenus.REGISTRY.register(bus);
-		GeckoLib.initialize();
+
+		StructureFeature.REGISTRY.register(bus);
+
+		ShinealsEndUpdateModFluids.REGISTRY.register(bus);
+		ShinealsEndUpdateModFluidTypes.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

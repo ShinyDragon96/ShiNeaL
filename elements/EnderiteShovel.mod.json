@@ -1,16 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
+    "toolType": "Spade",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "enderite_shovel",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Enderium Shovel",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:ShinyCreepersEndUpdate"
     },
-    "toolType": "Spade",
     "harvestLevel": 5,
     "efficiency": 10.0,
     "attackSpeed": 1.0,
@@ -18,7 +22,6 @@
     "damageVsEntity": 7.5,
     "usageCount": 2501,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:EnderiteIngot"

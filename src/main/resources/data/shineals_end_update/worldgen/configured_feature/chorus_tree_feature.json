@@ -1,0 +1,9 @@
+{
+  "type": "shineals_end_update:structure_feature",
+  "config": {
+    "structure": "shineals_end_update:chorus_tree",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

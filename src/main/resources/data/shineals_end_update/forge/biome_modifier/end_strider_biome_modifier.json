@@ -1,8 +1,8 @@
 {
   "type": "forge:add_spawns",
   "biomes": [
-    "small_end_islands",
-    "the_void"
+    "the_void",
+    "small_end_islands"
   ],
   "spawners": {
     "type": "shineals_end_update:end_strider",

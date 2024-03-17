@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0"
+    "a"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "shineals_end_update:enderite_block"
     }
   },

@@ -1,8 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": {
-    "type": "forge:any"
-  },
-  "features": "shineals_end_update:ender_hut",
-  "step": "surface_structures"
-}

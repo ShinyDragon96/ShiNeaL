@@ -1,5 +1,5 @@
 {
-  "type": "shineals_end_update:enderite_ore",
+  "type": "minecraft:ore",
   "config": {
     "size": 3,
     "discard_chance_on_air_exposure": 0,

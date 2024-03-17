@@ -1,5 +1,5 @@
 {
-  "type": "shineals_end_update:cobbled_end_stone",
+  "type": "minecraft:ore",
   "config": {
     "size": 32,
     "discard_chance_on_air_exposure": 0,

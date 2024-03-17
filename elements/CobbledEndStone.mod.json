@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "cobbled_end_stone1",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Cobbled End Stone",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 3.5,
     "resistance": 10.0,
     "hasGravity": false,
@@ -117,10 +119,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "End"
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "#is_end"
+      }
     ],
-    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.END_STONE"

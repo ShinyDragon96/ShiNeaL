@@ -1,16 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
+    "toolType": "Axe",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "enderite_axe",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Enderium Axe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:ShinyCreepersEndUpdate"
     },
-    "toolType": "Axe",
     "harvestLevel": 5,
     "efficiency": 10.0,
     "attackSpeed": 2.0,
@@ -18,7 +22,6 @@
     "damageVsEntity": 10.0,
     "usageCount": 2501,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:EnderiteIngot"

@@ -31,7 +31,6 @@
           "src/main/resources/assets/shineals_end_update/blockstates/cobbled_end_stone.json",
           "src/main/resources/assets/shineals_end_update/models/block/cobbled_end_stone.json",
           "src/main/resources/data/shineals_end_update/worldgen/configured_feature/cobbled_end_stone.json",
-          "src/main/java/net/mcreator/shinealsendupdate/world/features/ores/CobbledEndStoneFeature.java",
           "src/main/java/net/mcreator/shinealsendupdate/block/CobbledEndStoneBlock.java",
           "src/main/resources/assets/shineals_end_update/models/item/cobbled_end_stone.json"
         ]
@@ -67,7 +66,6 @@
           "src/main/resources/data/shineals_end_update/forge/biome_modifier/enderite_ore_biome_modifier.json",
           "src/main/resources/assets/shineals_end_update/models/item/enderite_ore.json",
           "src/main/java/net/mcreator/shinealsendupdate/block/EnderiteOreBlock.java",
-          "src/main/java/net/mcreator/shinealsendupdate/world/features/ores/EnderiteOreFeature.java",
           "src/main/resources/assets/shineals_end_update/models/block/enderite_ore.json",
           "src/main/resources/data/shineals_end_update/worldgen/configured_feature/enderite_ore.json",
           "src/main/resources/data/shineals_end_update/worldgen/placed_feature/enderite_ore.json",
@@ -934,22 +932,6 @@
       "path": "~/Blocks"
     },
     {
-      "name": "ChorusTree",
-      "type": "structure",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chorus_tree",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/shineals_end_update/worldgen/placed_feature/chorus_tree.json",
-          "src/main/resources/data/shineals_end_update/worldgen/configured_feature/chorus_tree.json",
-          "src/main/java/net/mcreator/shinealsendupdate/world/features/ChorusTreeFeature.java",
-          "src/main/resources/data/shineals_end_update/forge/biome_modifier/chorus_tree_biome_modifier.json"
-        ]
-      }
-    },
-    {
       "name": "EnderiteSwordVoid",
       "type": "procedure",
       "sortid": 66,
@@ -1072,22 +1054,6 @@
       }
     },
     {
-      "name": "EnderHut",
-      "type": "structure",
-      "sortid": 68,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ender_hut",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/shinealsendupdate/world/features/EnderHutFeature.java",
-          "src/main/resources/data/shineals_end_update/worldgen/configured_feature/ender_hut.json",
-          "src/main/resources/data/shineals_end_update/worldgen/placed_feature/ender_hut.json",
-          "src/main/resources/data/shineals_end_update/forge/biome_modifier/ender_hut_biome_modifier.json"
-        ]
-      }
-    },
-    {
       "name": "EnderHutTreasure",
       "type": "loottable",
       "sortid": 69,
@@ -1133,6 +1099,38 @@
           "src/main/resources/data/shineals_end_update/forge/biome_modifier/enderphantom_biome_modifier.json"
         ]
       }
+    },
+    {
+      "name": "ChorusTreeFeature",
+      "type": "feature",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_tree_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/worldgen/placed_feature/chorus_tree_feature.json",
+          "src/main/resources/data/shineals_end_update/forge/biome_modifier/chorus_tree_feature_biome_modifier.json",
+          "src/main/resources/data/shineals_end_update/worldgen/configured_feature/chorus_tree_feature.json"
+        ],
+        "has_nbt_structure": true
+      }
+    },
+    {
+      "name": "EnderHutFeature",
+      "type": "feature",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_hut_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_end_update/forge/biome_modifier/ender_hut_feature_biome_modifier.json",
+          "src/main/resources/data/shineals_end_update/worldgen/configured_feature/ender_hut_feature.json",
+          "src/main/resources/data/shineals_end_update/worldgen/placed_feature/ender_hut_feature.json"
+        ],
+        "has_nbt_structure": true
+      }
     }
   ],
   "variable_elements": [],
@@ -1142,8 +1140,8 @@
       "block.shineals_end_update.chiseled_end_stone": "Chiselled End Stone",
       "advancements.hidden_in_the_skies.descr": "Obtain Enderite Ore",
       "item.shinycreepers_end_update.enderite_armor_leggings": "Enderite Leggings",
-      "item.shineals_end_update.enderite_axe": "Enderium Axe",
       "item.shineals_end_update.enderite_armor_leggings": "Enderium Leggings",
+      "item.shineals_end_update.enderite_axe": "Enderium Axe",
       "item.shineals_end_update.endmage_spawn_egg": "End Mage Spawn Egg",
       "item.shinycreepers_end_update.enderite_armor_helmet": "Enderite Helmet",
       "block.shinycreepers_end_update.end_stone_lamp": "End Stone Lamp",
@@ -1225,8 +1223,8 @@
       "block.shineals_end_update.chiseled_end_stone": "Chiseled End Stone",
       "advancements.hidden_in_the_skies.descr": "Obtain Enderite Ore",
       "item.shinycreepers_end_update.enderite_armor_leggings": "Enderite Leggings",
-      "item.shineals_end_update.enderite_axe": "Enderium Axe",
       "item.shineals_end_update.enderite_armor_leggings": "Enderium Leggings",
+      "item.shineals_end_update.enderite_axe": "Enderium Axe",
       "item.shinycreepers_end_update.enderite_armor_helmet": "Enderite Helmet",
       "item.shineals_end_update.endmage_spawn_egg": "End Mage Spawn Egg",
       "block.shinycreepers_end_update.end_stone_lamp": "End Stone Lamp",
@@ -1339,5 +1337,5 @@
     "modElementsPackage": "net.mcreator.shinealsendupdate",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300223515
+  "mcreatorVersion": 202300452316
 }

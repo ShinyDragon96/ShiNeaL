@@ -1,10 +1,10 @@
 {
   "type": "forge:add_spawns",
   "biomes": [
-    "small_end_islands",
+    "end_barrens",
     "end_midlands",
     "end_highlands",
-    "end_barrens"
+    "small_end_islands"
   ],
   "spawners": {
     "type": "shineals_end_update:chorussnail",

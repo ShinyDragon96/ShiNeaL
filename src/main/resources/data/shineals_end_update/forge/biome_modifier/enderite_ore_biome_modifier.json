@@ -1,11 +1,11 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "small_end_islands",
+    "end_barrens",
+    "end_highlands",
     "end_midlands",
     "the_end",
-    "end_highlands",
-    "end_barrens"
+    "small_end_islands"
   ],
   "features": "shineals_end_update:enderite_ore",
   "step": "underground_ores"

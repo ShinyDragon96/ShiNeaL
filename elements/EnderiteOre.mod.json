@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "enderite_ore1",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Enderium Ore",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 30.0,
     "resistance": 1200.0,
     "hasGravity": false,
@@ -117,9 +119,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "End"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [
       {
         "value": "end_barrens"

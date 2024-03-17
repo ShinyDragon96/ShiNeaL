@@ -1,16 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
+    "toolType": "Hoe",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "enderite_hoe",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Enderium Hoe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:ShinyCreepersEndUpdate"
     },
-    "toolType": "Hoe",
     "harvestLevel": 5,
     "efficiency": 10.0,
     "attackSpeed": 4.0,
@@ -18,7 +22,6 @@
     "damageVsEntity": 2.0,
     "usageCount": 2501,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:EnderiteIngot"

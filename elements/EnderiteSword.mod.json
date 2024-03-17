@@ -1,16 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
+    "toolType": "Sword",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "enderite_sword",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Enderium Sword",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:ShinyCreepersEndUpdate"
     },
-    "toolType": "Sword",
     "harvestLevel": 5,
     "efficiency": 4.0,
     "attackSpeed": 1.6,
@@ -18,7 +22,6 @@
     "damageVsEntity": 5.0,
     "usageCount": 2501,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:EnderiteIngot"

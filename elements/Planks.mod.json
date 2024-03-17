@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 57,
   "_type": "tag",
   "definition": {
     "type": "Items",
@@ -11,6 +11,8 @@
     "blocks": [],
     "functions": [],
     "entities": [],
+    "biomes": [],
+    "damageTypes": [],
     "name": "planks",
     "namespace": "minecraft"
   }

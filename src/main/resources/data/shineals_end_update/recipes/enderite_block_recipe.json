@@ -2,36 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "aaa",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "shineals_end_update:enderite_ingot"
-    },
-    "1": {
-      "item": "shineals_end_update:enderite_ingot"
-    },
-    "2": {
-      "item": "shineals_end_update:enderite_ingot"
-    },
-    "3": {
-      "item": "shineals_end_update:enderite_ingot"
-    },
-    "4": {
-      "item": "shineals_end_update:enderite_ingot"
-    },
-    "5": {
-      "item": "shineals_end_update:enderite_ingot"
-    },
-    "6": {
-      "item": "shineals_end_update:enderite_ingot"
-    },
-    "7": {
-      "item": "shineals_end_update:enderite_ingot"
-    },
-    "8": {
+    "a": {
       "item": "shineals_end_update:enderite_ingot"
     }
   },

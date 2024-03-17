@@ -5,7 +5,7 @@
     "toolType": "Hoe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "enderite_hoe",
+    "texture": "cyberhoe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Enderium Hoe",

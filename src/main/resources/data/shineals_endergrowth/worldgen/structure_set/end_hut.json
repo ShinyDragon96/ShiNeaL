@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "shineals_endergrowth:end_hut",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 30,
+    "separation": 15,
+    "salt": 1262198145
+  }
+}

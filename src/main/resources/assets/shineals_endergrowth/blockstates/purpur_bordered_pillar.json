@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "shineals_endergrowth:block/purpur_bordered_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "shineals_endergrowth:block/purpur_bordered_pillar"
+    },
+    "axis=z": {
+      "model": "shineals_endergrowth:block/purpur_bordered_pillar",
+      "x": 90
+    }
+  }
+}

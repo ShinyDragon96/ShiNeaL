@@ -3,17 +3,17 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "enderite_helmet",
+    "textureHelmet": "cyberhelmet",
     "enableBody": true,
-    "textureBody": "enderite_chestplate",
+    "textureBody": "cyberchestplate",
     "enableLeggings": true,
-    "textureLeggings": "enderite_leggings",
+    "textureLeggings": "cyberleggings",
     "enableBoots": true,
-    "textureBoots": "enderite_boots",
+    "textureBoots": "cyberboots",
     "creativeTab": {
       "value": "CUSTOM:ShinyCreepersEndUpdate"
     },
-    "armorTextureFile": "enderite_armor_",
+    "armorTextureFile": "cyberarmor_layer_1",
     "helmetName": "Enderium Helmet",
     "bodyName": "Enderium Chestplate",
     "leggingsName": "Enderium Leggings",

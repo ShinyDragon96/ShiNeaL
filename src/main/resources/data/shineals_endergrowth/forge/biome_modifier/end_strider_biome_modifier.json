@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "the_void",
+    "small_end_islands"
+  ],
+  "spawners": {
+    "type": "shineals_endergrowth:end_strider",
+    "weight": 8,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

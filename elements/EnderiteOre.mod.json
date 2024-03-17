@@ -122,19 +122,7 @@
     "generateFeature": true,
     "restrictionBiomes": [
       {
-        "value": "end_barrens"
-      },
-      {
-        "value": "end_highlands"
-      },
-      {
-        "value": "end_midlands"
-      },
-      {
-        "value": "the_end"
-      },
-      {
-        "value": "small_end_islands"
+        "value": "#is_end"
       }
     ],
     "blocksToReplace": [
@@ -148,7 +136,7 @@
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 1,
     "frequencyOnChunk": 3,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 70
+    "minGenerateHeight": -20,
+    "maxGenerateHeight": 100
   }
 }

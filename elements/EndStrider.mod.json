@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "End Strider",
     "mobLabel": "",
-    "mobModelTexture": "unknown.png",
+    "mobModelTexture": "end_strider.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -19,11 +19,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -10092442,
+      "value": -6749953,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -13395712,
+      "value": -3355648,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -50,17 +50,17 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
-    "mobCreatureType": "ARTHROPOD",
-    "attackStrength": 3,
-    "attackKnockback": 0.1,
-    "knockbackResistance": 0.2,
-    "movementSpeed": 0.25,
+    "mobBehaviourType": "Creature",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 0,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.3,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 30,
-    "xpAmount": 1,
+    "health": 16,
+    "xpAmount": 0,
     "waterMob": false,
     "flyingMob": true,
     "guiBoundTo": "<NONE>",
@@ -74,7 +74,7 @@
     "canControlStrafe": true,
     "immuneToFire": false,
     "immuneToArrows": false,
-    "immuneToFallDamage": true,
+    "immuneToFallDamage": false,
     "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
@@ -84,9 +84,9 @@
     "immuneToTrident": false,
     "immuneToAnvil": false,
     "immuneToWither": false,
-    "immuneToDragonBreath": true,
+    "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.CHORUS_FRUIT_POPPED"
+      "value": ""
     },
     "livingSound": {
       "value": "entity.strider.ambient"
@@ -102,8 +102,8 @@
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"fly\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_fly\"><field name=\"radius\">16</field><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "model": "endstrider.geo.json",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"avoid_entity\"><field name=\"entity\">CUSTOM:EnderPhantom</field><field name=\"radius\">6</field><field name=\"farspeed\">1</field><field name=\"nearspeed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "model": "end_strider.geo.json",
     "groupName": "",
     "animation1": "idle",
     "animation2": "walk",
@@ -112,7 +112,7 @@
     "animation5": "",
     "animation6": "",
     "animation7": "",
-    "animation8": "",
+    "animation8": "walk",
     "animation9": "",
     "animation10": "",
     "enable2": true,
@@ -121,12 +121,12 @@
     "enable5": false,
     "enable6": false,
     "enable7": false,
-    "enable8": false,
+    "enable8": true,
     "enable9": false,
     "enable10": false,
     "breedable": false,
     "tameable": false,
-    "disableDeathRotation": true,
+    "disableDeathRotation": false,
     "headMovement": false,
     "eyeHeight": false,
     "breedTriggerItems": [],
@@ -140,10 +140,10 @@
     "height": 1.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 12,
-    "mobSpawningType": "monster",
+    "spawningProbability": 8,
+    "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 2,
+    "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [
       {
         "value": "void"

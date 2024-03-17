@@ -5,7 +5,7 @@
     "toolType": "Spade",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "enderite_shovel",
+    "texture": "cybershovel",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Enderium Shovel",

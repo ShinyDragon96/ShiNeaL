@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Chorus Snail",
     "mobLabel": "",
-    "mobModelTexture": "endersnail.png",
+    "mobModelTexture": "chorussnailtexture_1.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -13,13 +13,13 @@
       "fixedValue": 1.0
     },
     "entityDataEntries": [],
-    "modelWidth": 1.25,
-    "modelHeight": 1.0,
-    "modelShadowSize": 1.25,
+    "modelWidth": 1.0,
+    "modelHeight": 1.25,
+    "modelShadowSize": 1.0,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -3407668,
+      "value": -6750055,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
@@ -54,13 +54,13 @@
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 0,
     "attackKnockback": 0.0,
-    "knockbackResistance": 0.3,
+    "knockbackResistance": 0.0,
     "movementSpeed": 0.1,
-    "armorBaseValue": 4.5,
+    "armorBaseValue": 0.5,
     "trackingRange": 64,
     "followRange": 16,
     "health": 25,
-    "xpAmount": 1,
+    "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -86,26 +86,26 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.CHORUS_FRUIT_POPPED"
+      "value": "CUSTOM:SnailSludge"
     },
     "livingSound": {
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.slime.hurt"
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "entity.small_slime.death"
+      "value": "entity.generic.death"
     },
     "stepSound": {
-      "value": "block.slime.step"
+      "value": ""
     },
     "whenMobIsHurt": {
       "name": "ChorusSnailEntityIsHurt"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></xml>",
     "model": "chorussnail.geo.json",
     "groupName": "",
     "animation1": "idle",
@@ -143,22 +143,13 @@
     "height": 1.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 3,
-    "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 2,
-    "maxNumberOfMobsPerGroup": 6,
+    "spawningProbability": 8,
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 2,
     "restrictionBiomes": [
       {
-        "value": "end_barrens"
-      },
-      {
-        "value": "end_midlands"
-      },
-      {
-        "value": "end_highlands"
-      },
-      {
-        "value": "small_end_islands"
+        "value": "CUSTOM:ChorusForest"
       }
     ],
     "spawnInDungeons": false

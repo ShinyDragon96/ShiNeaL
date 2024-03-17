@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.NETHERITE_HOE"
+      "value": "Items.DIAMOND_HOE"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:EnderiteIngot"

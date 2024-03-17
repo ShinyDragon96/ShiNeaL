@@ -5,7 +5,7 @@
     "toolType": "Pickaxe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "enderite_pickaxe",
+    "texture": "cyberpick",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Enderium Pickaxe",
@@ -16,10 +16,10 @@
       "value": "CUSTOM:ShinyCreepersEndUpdate"
     },
     "harvestLevel": 5,
-    "efficiency": 20.0,
-    "attackSpeed": 1.2,
+    "efficiency": 10.0,
+    "attackSpeed": 1.2000000000000002,
     "enchantability": 2,
-    "damageVsEntity": 4.0,
+    "damageVsEntity": 7.0,
     "usageCount": 2501,
     "blocksAffected": [],
     "repairItems": [

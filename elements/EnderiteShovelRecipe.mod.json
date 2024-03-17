@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.NETHERITE_SHOVEL"
+      "value": "Items.DIAMOND_SHOVEL"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:EnderiteIngot"

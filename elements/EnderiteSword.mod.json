@@ -5,7 +5,7 @@
     "toolType": "Sword",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "enderite_sword",
+    "texture": "cybersword",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Enderium Sword",
@@ -19,7 +19,7 @@
     "efficiency": 4.0,
     "attackSpeed": 1.6,
     "enchantability": 2,
-    "damageVsEntity": 5.0,
+    "damageVsEntity": 7.0,
     "usageCount": 2501,
     "blocksAffected": [],
     "repairItems": [
@@ -29,9 +29,6 @@
     ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onItemInUseTick": {
-      "name": "EnderiteSwordVoid"
-    }
+    "damageOnCrafting": false
   }
 }

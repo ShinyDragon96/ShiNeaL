@@ -2,8 +2,8 @@
   "_fv": 57,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Hidden In The Skies",
-    "achievementDescription": "Obtain Enderite Ore",
+    "achievementName": "Hidden In The Heights",
+    "achievementDescription": "Obtain Enderium Ore",
     "achievementIcon": {
       "value": "CUSTOM:EnderiteOre"
     },
@@ -17,7 +17,8 @@
       "RawEnderiterecipe",
       "RawEnderiteRecipeBlast",
       "RawEnderiteRecipeFromBlock",
-      "RawEnderiteBlockRecipe"
+      "RawEnderiteBlockRecipe",
+      "EnderiteIngotRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 1,

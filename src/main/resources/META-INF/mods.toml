@@ -1,26 +1,26 @@
 modLoader="javafml"
-loaderVersion="[45,)"
+loaderVersion="[47,)"
 license="All Rights Reserved"
 
 [[mods]]
-modId="shineals_end_update"
+modId="shineals_endergrowth"
 version="1.0"
-displayName="ShiNeaL's Endgrowth"
-displayURL="https://www.shineal.org/"
-credits="ShinyDragon96, TgwCreeper, GlitchedMastery"
-authors="ShineaL"
-description="An end MOD, which adds mysterious creatures, blocks and items to the game"
+displayName="ShiNeaL's Endergrowth"
+displayURL="https://shineal.org"
+credits="Created by ShinyDragon96, TgwCreeper, & GlitchedMastert"
+authors="ShineaL Studios"
+description="An End Overhaul MOD By ShineaL Studios"
 
-[[dependencies.shineals_end_update]]
+[[dependencies.shineals_endergrowth]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.4]"
+    versionRange="[1.20.1]"
     ordering="NONE"
     side="BOTH"
 
 
 
-[[dependencies.shineals_end_update]]
+[[dependencies.shineals_endergrowth]]
     modId="geckolib"
     mandatory=false
     versionRange="[0,)"

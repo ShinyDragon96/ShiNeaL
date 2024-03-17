@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "shineals_endergrowth:end_stone_pillar"
+    },
+    {
+      "item": "minecraft:purpur_pillar"
+    },
+    {
+      "item": "minecraft:purpur_pillar"
+    },
+    {
+      "item": "shineals_endergrowth:end_stone_pillar"
+    }
+  ],
+  "result": {
+    "item": "shineals_endergrowth:purpur_bordered_pillar",
+    "count": 4
+  }
+}

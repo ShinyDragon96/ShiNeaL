@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.NETHERITE_PICKAXE"
+      "value": "Items.DIAMOND_PICKAXE"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:EnderiteIngot"

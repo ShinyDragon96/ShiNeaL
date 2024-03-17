@@ -16,7 +16,7 @@
             "item": {
               "value": "Items.ENDER_PEARL"
             },
-            "weight": 20,
+            "weight": 3,
             "minCount": 2,
             "maxCount": 10,
             "minEnchantmentLevel": 0,
@@ -30,7 +30,7 @@
             "item": {
               "value": "Items.FIREWORKS"
             },
-            "weight": 20,
+            "weight": 2,
             "minCount": 8,
             "maxCount": 48,
             "minEnchantmentLevel": 0,
@@ -44,7 +44,7 @@
             "item": {
               "value": "Items.WATER_BUCKET"
             },
-            "weight": 30,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -70,7 +70,7 @@
         ]
       }
     ],
-    "name": "chests/ender_hut",
-    "namespace": "mod"
+    "name": "chests/ender_hut_treasure",
+    "namespace": "minecraft"
   }
 }

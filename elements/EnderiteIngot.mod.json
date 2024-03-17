@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "enderite_ingot",
+    "texture": "cyberingot",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

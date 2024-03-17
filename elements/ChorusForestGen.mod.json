@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "endbiome",
+  "definition": {
+    "biome": "ChorusForest",
+    "generationType": "Highlands",
+    "weight": 1.0,
+    "midlands": "Vanilla",
+    "barrens": "Vanilla",
+    "mixins": [
+      "BiomeSourceMixin",
+      "TheEndBiomeSourceMixin",
+      "ClimateSamplerMixin",
+      "NoiseConfigMixin",
+      "ChunkNoiseSamplerMixin",
+      "NoiseGeneratorSettingsAccess"
+    ]
+  }
+}

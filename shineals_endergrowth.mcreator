@@ -1,0 +1,1431 @@
+{
+  "mod_elements": [
+    {
+      "name": "EndStonePillar",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_stone_pillar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/item/end_stone_pillar.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/end_stone_pillar.json",
+          "src/main/resources/assets/shineals_endergrowth/models/block/end_stone_pillar.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/EndStonePillarBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "CobbledEndStone",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobbled_end_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/CobbledEndStoneBlock.java",
+          "src/main/resources/data/shineals_endergrowth/worldgen/configured_feature/cobbled_end_stone.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/cobbled_end_stone.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/cobbled_end_stone.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/cobbled_end_stone.json",
+          "src/main/resources/assets/shineals_endergrowth/models/block/cobbled_end_stone.json",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/cobbled_end_stone_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "SmoothEndStone",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_end_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/SmoothEndStoneBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/smooth_end_stone.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/smooth_end_stone.json",
+          "src/main/resources/assets/shineals_endergrowth/models/block/smooth_end_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteOre",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/worldgen/configured_feature/enderium_ore.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/enderium_ore.json",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/enderium_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/EnderiteOreBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/models/block/enderium_ore.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/enderium_ore.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "RawEnderite",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_enderium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/item/raw_enderium.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/RawEnderiteItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteIngot",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_ingot.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/EnderiteIngotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteIngotRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/enderite_ingot_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ShinyCreepersEndUpdate",
+      "type": "tab",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shineals_endergrowth",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "RawEnderiterecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_enderiterecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/raw_enderiterecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RawEnderiteRecipeBlast",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_enderite_recipe_blast",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/raw_enderite_recipe_blast.json"
+        ]
+      }
+    },
+    {
+      "name": "EndStoneLamp",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_stone_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/block/end_stone_lamp.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/end_stone_lamp.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/EndStoneLampBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/end_stone_lamp.json"
+        ]
+      }
+    },
+    {
+      "name": "RawEnderiteBlock",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderium_crystal_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/block/enderium_crystal_block.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/RawEnderiteBlockBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/enderium_crystal_block.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_crystal_block.json"
+        ]
+      }
+    },
+    {
+      "name": "RawEnderiteBlockRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_enderite_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/raw_enderite_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RawEnderiteRecipeFromBlock",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_enderite_recipe_from_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/raw_enderite_recipe_from_block.json"
+        ]
+      }
+    },
+    {
+      "name": "ChiseledEndStone",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_end_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/blockstates/chiseled_end_stone.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/chiseled_end_stone.json",
+          "src/main/resources/assets/shineals_endergrowth/models/block/chiseled_end_stone.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/ChiseledEndStoneBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteBlock",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/blockstates/enderite_block.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderite_block.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/EnderiteBlockBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/models/block/enderite_block.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteBlockRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/enderite_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteIngotRecipeFromBlock",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_ingot_recipe_from_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/enderite_ingot_recipe_from_block.json"
+        ]
+      }
+    },
+    {
+      "name": "PortalTable",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/item/portal_table.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/PortalTableBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/models/block/portal_table.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/entity/PortalTableBlockEntity.java",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/portal_table.json"
+        ]
+      }
+    },
+    {
+      "name": "PortalTableEmpty",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_table_empty",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/block/portal_table_empty.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/portal_table_empty.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/portal_table_empty.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/PortalTableEmptyBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "PortalTableEmptyOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_table_empty_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/procedures/PortalTableEmptyOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnderiteArmor",
+      "type": "armor",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderium_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true,
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/EnderiteArmorItem.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_armor_leggings.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_armor_chestplate.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_armor_helmet.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_armor_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorusLog",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/block/chorus_log.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/ChorusLogBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/chorus_log.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/chorus_log.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorusPlanks",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_planks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/ChorusPlanksBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/chorus_planks.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/chorus_planks.json",
+          "src/main/resources/assets/shineals_endergrowth/models/block/chorus_planks.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorusPlanksRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/chorus_planks_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "HiddenInTheSkies",
+      "type": "achievement",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hidden_in_the_skies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/advancements/hidden_in_the_skies.json"
+        ]
+      }
+    },
+    {
+      "name": "CoverMeInShards",
+      "type": "achievement",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cover_me_in_shards",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/advancements/cover_me_in_shards.json"
+        ]
+      }
+    },
+    {
+      "name": "UltimateDedication",
+      "type": "achievement",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimate_dedication",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/advancements/ultimate_dedication.json"
+        ]
+      }
+    },
+    {
+      "name": "CoverMeInShardsProcedure",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cover_me_in_shards_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/procedures/CoverMeInShardsProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnderiteSword",
+      "type": "tool",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderium_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/EnderiteSwordItem.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderitePickaxe",
+      "type": "tool",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderium_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_pickaxe.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/EnderitePickaxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteAxe",
+      "type": "tool",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderium_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/EnderiteAxeItem.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_axe.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteShovel",
+      "type": "tool",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderium_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/EnderiteShovelItem.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_shovel.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteHoe",
+      "type": "tool",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderium_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/EnderiteHoeItem.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteSwordRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/enderite_sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderitePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/enderite_pickaxe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteAxeRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/enderite_axe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteShovelRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/enderite_shovel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteHoeRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/enderite_hoe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteHelmetRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/enderite_helmet_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteChestplateRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/enderite_chestplate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/enderite_leggings_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteBootsRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/enderite_boots_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PortalTableGUI",
+      "type": "gui",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/client/gui/PortalTableGUIScreen.java",
+          "src/main/java/net/mcreator/shinealsendndergrowth/world/inventory/PortalTableGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "PurpurBorderedPillar",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpur_bordered_pillar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/PurpurBorderedPillarBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/purpur_bordered_pillar.json",
+          "src/main/resources/assets/shineals_endergrowth/models/block/purpur_bordered_pillar.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/purpur_bordered_pillar.json"
+        ]
+      }
+    },
+    {
+      "name": "PurpurBorderedPillarRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpur_bordered_pillar_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/purpur_bordered_pillar_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SmoothEndStoneRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_end_stone_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/smooth_end_stone_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChiseledEndStoneRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_end_stone_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/chiseled_end_stone_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidialWaterMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidial_water_mobplayer_collides_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/procedures/VoidialWaterMobplayerCollidesBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidialWater",
+      "type": "fluid",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidial_water",
+      "metadata": {
+        "gb": true,
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/VoidialWaterBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/voidial_water_bucket.json",
+          "src/main/resources/assets/shineals_endergrowth/models/block/voidial_water.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/VoidialWaterItem.java",
+          "src/main/java/net/mcreator/shinealsendndergrowth/fluid/types/VoidialWaterFluidType.java",
+          "src/main/java/net/mcreator/shinealsendndergrowth/fluid/VoidialWaterFluid.java",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/voidial_water.json"
+        ]
+      }
+    },
+    {
+      "name": "StoneToolMaterials",
+      "type": "tag",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_tool_materials",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/stone_tool_materials.json"
+        ]
+      }
+    },
+    {
+      "name": "Planks",
+      "type": "tag",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/planks.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorusWood",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/block/chorus_wood.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/chorus_wood.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/chorus_wood.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/ChorusWoodBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "ChorusWoodRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/chorus_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChiseledEndStoneRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_end_stone_recipe_stonecutter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/recipes/chiseled_end_stone_recipe_stonecutter.json"
+        ]
+      }
+    },
+    {
+      "name": "StoneCraftingMaterials",
+      "type": "tag",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_crafting_materials",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/stone_crafting_materials.json"
+        ]
+      }
+    },
+    {
+      "name": "PurpurLeavesDead",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpur_leaves_dead",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/PurpurLeavesDeadBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/purpur_leaves_dead.json",
+          "src/main/resources/assets/shineals_endergrowth/models/block/purpur_leaves_dead.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/purpur_leaves_dead.json"
+        ]
+      }
+    },
+    {
+      "name": "PurpurLeaves",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpur_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/PurpurLeavesBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/purpur_leaves.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/purpur_leaves.json",
+          "src/main/resources/assets/shineals_endergrowth/models/block/purpur_leaves.json"
+        ]
+      }
+    },
+    {
+      "name": "FloweringPurpurLeaves",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flowering_purpur_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/block/flowering_purpur_leaves.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/flowering_purpur_leaves.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/flowering_purpur_leaves.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/FloweringPurpurLeavesBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "EnderiteSwordVoid",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_sword_void",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/procedures/EnderiteSwordVoidProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CobbledEndStoneDrop",
+      "type": "loottable",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobbled_end_stone_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/loot_tables/blocks/cobbled_end_stone_drop.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderHutTreasure",
+      "type": "loottable",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_hut_treasure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_tables/chests/ender_hut_treasure.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorusSnailEntityIsHurt",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_snail_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/procedures/ChorusSnailEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SnailSludge",
+      "type": "item",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snail_sludge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/SnailSludgeItem.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/snail_sludge.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorusTreeFeature",
+      "type": "feature",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_tree_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/worldgen/configured_feature/chorus_tree_feature.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/chorus_tree_feature.json",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/chorus_tree_feature_biome_modifier.json"
+        ],
+        "has_nbt_structure": true
+      }
+    },
+    {
+      "name": "EnderHutFeature",
+      "type": "feature",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_hut_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/ender_hut_feature.json",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/ender_hut_feature_biome_modifier.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/configured_feature/ender_hut_feature.json"
+        ],
+        "has_nbt_structure": true
+      }
+    },
+    {
+      "name": "ChorusForest",
+      "type": "biome",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/worldgen/configured_feature/chorus_forest_tree.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/biome/chorus_forest.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/chorus_forest_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorusForestGen",
+      "type": "endbiome",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_forest_gen",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "EnderMage",
+      "type": "animatedentity",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_mage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/EnderMageEntity.java",
+          "src/main/java/net/mcreator/shinealsendndergrowth/client/renderer/EnderMageRenderer.java",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/ender_mage_biome_modifier.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/model/EnderMageModel.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/ender_mage_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderPhantom",
+      "type": "animatedentity",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_phantom",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/ender_phantom_biome_modifier.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/client/renderer/EnderPhantomRenderer.java",
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/EnderPhantomEntity.java",
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/model/EnderPhantomModel.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/ender_phantom_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "EndStrider",
+      "type": "animatedentity",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_strider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/model/EndStriderModel.java",
+          "src/main/java/net/mcreator/shinealsendndergrowth/client/renderer/EndStriderRenderer.java",
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/EndStriderEntity.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/end_strider_spawn_egg.json",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/end_strider_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorusBee",
+      "type": "animatedentity",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_bee",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/item/chorus_bee_spawn_egg.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/client/renderer/ChorusBeeRenderer.java",
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/ChorusBeeEntity.java",
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/model/ChorusBeeModel.java",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/chorus_bee_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorusSnail",
+      "type": "animatedentity",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_snail",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/ChorusSnailEntity.java",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/chorus_snail_biome_modifier.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/client/renderer/ChorusSnailRenderer.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/chorus_snail_spawn_egg.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/model/ChorusSnailModel.java"
+        ]
+      }
+    },
+    {
+      "name": "ChorusTree",
+      "type": "structure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_tree",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/worldgen/structure_set/chorus_tree.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/template_pool/chorus_tree.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/structure/chorus_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "EndHut",
+      "type": "structure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_hut",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shineals_endergrowth/worldgen/structure/end_hut.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/template_pool/end_hut.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/structure_set/end_hut.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_gb": {
+      "block.shineals_endergrowth.end_stone_lamp": "End Stone Lamp",
+      "item.shineals_endergrowth.ender_phantom_spawn_egg": "Ender Phantom Spawn Egg",
+      "fluid.shineals_endergrowth.voidial_water": "Voidial Water",
+      "advancements.hidden_in_the_skies.descr": "Obtain Enderium Ore",
+      "block.shineals_endergrowth.voidial_water": "Voidial Water",
+      "block.shineals_endergrowth.portal_table": "Portal Table",
+      "item.shineals_end_update.voidial_water_bucket": "Voidial Water Bucket",
+      "biome.shinycreepers_end_update.chorus_forest": "Chorus Forest",
+      "block.shineals_end_update.flowering_purpur_leaves": "Purpur Leaves Dead",
+      "block.shinycreepers_end_update.portal_table_empty": "Portal Table Empty",
+      "block.shineals_endergrowth.purpur_leaves_dead": "Dead Purpur Leaves ",
+      "item.shineals_endergrowth.enderium_armor_boots": "Enderium Boots",
+      "item.shinycreepers_end_update.enderite_axe": "Enderite Axe",
+      "block.shineals_endergrowth.cobbled_end_stone": "Cobbled End Stone",
+      "item.shineals_end_update.enderite_armor_helmet": "Enderium Helmet",
+      "block.shineals_endergrowth.chorus_log": "Chorus Log",
+      "block.shineals_end_update.enderite_crystal_block": "Enderium Crystal",
+      "item.shinycreepers_end_update.voidial_water_bucket": "Voidial Water Bucket",
+      "fluid.shineals_end_update.voidial_water": "Voidial Water",
+      "block.shinycreepers_end_update.portal_table": "Portal Table",
+      "item.shineals_endergrowth.chorus_bee_spawn_egg": "Chorus Bee Spawn Egg",
+      "item.shineals_endergrowth.raw_enderium": "Enderium Shard",
+      "block.shineals_endergrowth.end_stone_pillar": "End Stone Pillar",
+      "entity.shineals_endergrowth.end_strider": "End Strider",
+      "biome.shineals_end_update.chorus_forest": "Chorus Forest",
+      "block.shinycreepers_end_update.end_stone_pillar": "End Stone Pillar",
+      "item.shineals_end_update.enderite_sword": "Enderium Sword",
+      "block.shineals_endergrowth.chorus_wood": "Chorus Wood",
+      "block.shineals_endergrowth.purpur_leaves": "Purpur Leaves ",
+      "block.shinycreepers_end_update.cobbled_end_stone": "Cobbled End Stone",
+      "item.shineals_end_update.end_strider_spawn_egg": "End Strider Spawn Egg",
+      "block.shineals_endergrowth.portal_table_empty": "Portal Table Empty",
+      "block.shineals_end_update.purpur_bordered_pillar": "Purpur Bordered Pillar",
+      "item.shineals_endergrowth.voidial_water_bucket": "Voidial Water Bucket",
+      "block.shinycreepers_end_update.purpur_leaves_dead": "Dead Purpur Leaves ",
+      "item.shineals_endergrowth.ender_mage_spawn_egg": "Ender Mage Spawn Egg",
+      "block.shineals_endergrowth.smooth_end_stone": "Smooth End Stone",
+      "item.shineals_end_update.enderite_hoe": "Enderium Hoe",
+      "block.shineals_endergrowth.enderite_block": "Blcok of Enderium",
+      "item.shinycreepers_end_update.enderite_pickaxe": "Enderite Pickaxe",
+      "block.shinycreepers_end_update.chorus_wood": "Chorus Wood",
+      "block.shinycreepers_end_update.enderite_block": "Block of Enderite",
+      "item.shineals_endergrowth.enderium_armor_helmet": "Enderium Helmet",
+      "item.shinycreepers_end_update.raw_enderite": "Enderite Shard",
+      "item.shinycreepers_end_update.enderite_hoe": "Enderite Hoe",
+      "item.shineals_end_update.enderite_pickaxe": "Enderium Pickaxe",
+      "block.shineals_end_update.purpur_leaves_dead": "Dead Purpur Leaves ",
+      "advancements.cover_me_in_shards.title": "Cover Me In Shards",
+      "block.shinycreepers_end_update.smooth_end_stone": "Smooth End Stone",
+      "item.shinycreepers_end_update.enderite_sword": "Enderite Sword",
+      "itemGroup.tabshineals_endergrowth": "ShiNeaL\u0027s Endergrowth",
+      "item.shineals_endergrowth.enderium_armor_leggings": "Enderium Leggings",
+      "block.shinycreepers_end_update.chiseled_end_stone": "Chiselled End Stone",
+      "block.shinycreepers_end_update.voidial_water": "Voidial Water",
+      "item.shineals_end_update.enderite_armor_boots": "Enderium Boots",
+      "block.shinycreepers_end_update.purpur_bordered_pillar": "Purpur Bordered Pillar",
+      "advancements.ultimate_dedication.descr": "Use a Enderium ingot to upgrade a hoe, and then re-evaluate your life choices",
+      "item.shineals_endergrowth.end_strider_spawn_egg": "End Strider Spawn Egg",
+      "item.shineals_endergrowth.enderium_shovel": "Enderium Shovel",
+      "item.shineals_endergrowth.enderium_ingot": "Enderium Ingot",
+      "block.shineals_end_update.chiseled_end_stone": "Chiselled End Stone",
+      "item.shinycreepers_end_update.enderite_armor_leggings": "Enderite Leggings",
+      "item.shineals_end_update.enderite_armor_leggings": "Enderium Leggings",
+      "item.shineals_end_update.enderite_axe": "Enderium Axe",
+      "block.shineals_endergrowth.enderium_ore": "Enderium Ore",
+      "item.shinycreepers_end_update.enderite_armor_helmet": "Enderite Helmet",
+      "item.shineals_endergrowth.chorus_snail_spawn_egg": "Chorus Snail Spawn Egg",
+      "block.shinycreepers_end_update.end_stone_lamp": "End Stone Lamp",
+      "block.shineals_end_update.chorus_planks": "Chorus Planks",
+      "item.shinycreepers_end_update.enderite_shovel": "Enderite Shovel",
+      "fluid.shinycreepers_end_update.voidial_water": "Voidial Water",
+      "block.shineals_end_update.end_stone_lamp": "End Stone Lamp",
+      "block.shineals_end_update.portal_table_empty": "Portal Table Empty",
+      "advancements.cover_me_in_shards.descr": "Get a full suit of Enderium armor",
+      "block.shineals_end_update.end_stone_pillar": "End Stone Pillar",
+      "item.shineals_end_update.raw_enderite": "Enderium Shard",
+      "block.shinycreepers_end_update.chorus_planks": "Chorus Planks",
+      "item_group.shineals_endergrowth.shineals_endergrowth": "ShiNeaL\u0027s Endergrowth",
+      "block.shineals_end_update.voidial_water": "Voidial Water",
+      "block.shineals_end_update.enderite_block": "Block of Enderium",
+      "block.shineals_end_update.portal_table": "Portal Table",
+      "advancements.hidden_in_the_skies.title": "Hidden In The Heights",
+      "block.shineals_end_update.cobbled_end_stone": "Cobbled End Stone",
+      "item.shineals_endergrowth.enderium_sword": "Enderium Sword",
+      "advancements.ultimate_dedication.title": "Ultimate Dedication",
+      "item.shinycreepers_end_update.enderite_ingot": "Enderite Ingot",
+      "block.shineals_endergrowth.chiseled_end_stone": "Chiselled End Stone",
+      "block.shineals_end_update.enderite_ore": "Enderium Ore",
+      "item.shinycreepers_end_update.enderite_armor_chestplate": "Enderite Chestplate",
+      "item.shineals_endergrowth.enderium_hoe": "Enderium Hoe",
+      "entity.shineals_endergrowth.chorus_bee": "Chorus Bee",
+      "block.shinycreepers_end_update.chorus_log": "Chorus Log",
+      "entity.shineals_endergrowth.ender_mage": "Ender Mage",
+      "block.shineals_end_update.chorus_log": "Chorus Log",
+      "block.shinycreepers_end_update.purpur_leaves": "Purpur Leaves ",
+      "block.shineals_end_update.chorus_wood": "Chorus Wood",
+      "item.shineals_endergrowth.enderium_armor_chestplate": "Enderium Chestplate",
+      "item.shineals_end_update.enderite_armor_chestplate": "Enderium Chestplate",
+      "entity.shineals_end_update.end_strider": "End Strider",
+      "block.shineals_endergrowth.chorus_planks": "Chorus Planks",
+      "block.shineals_endergrowth.purpur_bordered_pillar": "Purpur Bordered Pillar",
+      "block.shinycreepers_end_update.enderite_ore": "Enderite Ore",
+      "item.shinycreepers_end_update.enderite_armor_boots": "Enderite Boots",
+      "block.shineals_end_update.smooth_end_stone": "Smooth End Stone",
+      "block.shineals_end_update.purpur_leaves": "Purpur Leaves ",
+      "block.shinycreepers_end_update.flowering_purpur_leaves": "Flowering Purpur Leaves ",
+      "block.shineals_endergrowth.flowering_purpur_leaves": "Flowering Purpur Leaves",
+      "block.shinycreepers_end_update.enderite_crystal_block": "Enderite Crystal",
+      "item.shineals_end_update.enderite_ingot": "Enderium Ingot",
+      "item.shineals_end_update.enderite_shovel": "Enderium Shovel",
+      "item.shineals_endergrowth.snail_sludge": "Snail Sludge",
+      "item.shineals_endergrowth.enderium_axe": "Enderium Axe",
+      "block.shineals_endergrowth.enderium_crystal_block": "Enderium Crystal",
+      "biome.shineals_endergrowth.chorus_forest": "Chorus Forest",
+      "item.shineals_endergrowth.enderium_pickaxe": "Enderium Pickaxe",
+      "entity.shineals_endergrowth.chorus_snail": "Chorus Snail",
+      "entity.shineals_endergrowth.ender_phantom": "Ender Phantom"
+    },
+    "en_us": {
+      "block.shineals_endergrowth.end_stone_lamp": "End Stone Lamp",
+      "item.shineals_endergrowth.ender_phantom_spawn_egg": "Ender Phantom Spawn Egg",
+      "fluid.shineals_endergrowth.voidial_water": "Voidial Water",
+      "advancements.hidden_in_the_skies.descr": "Obtain Enderium Ore",
+      "block.shineals_endergrowth.voidial_water": "Voidial Water",
+      "block.shineals_endergrowth.portal_table": "Portal Table",
+      "item.shineals_end_update.voidial_water_bucket": "Voidial Water Bucket",
+      "biome.shinycreepers_end_update.chorus_forest": "Chorus Forest",
+      "block.shineals_end_update.flowering_purpur_leaves": "Purpur Leaves Dead",
+      "block.shinycreepers_end_update.portal_table_empty": "Portal Table Empty",
+      "block.shineals_endergrowth.purpur_leaves_dead": "Dead Purpur Leaves ",
+      "item.shineals_endergrowth.enderium_armor_boots": "Enderium Boots",
+      "item.shinycreepers_end_update.enderite_axe": "Enderite Axe",
+      "block.shineals_endergrowth.cobbled_end_stone": "Cobbled End Stone",
+      "item.shineals_end_update.enderite_armor_helmet": "Enderium Helmet",
+      "block.shineals_endergrowth.chorus_log": "Chorus Log",
+      "block.shineals_end_update.enderite_crystal_block": "Enderium Crystal",
+      "item.shinycreepers_end_update.voidial_water_bucket": "Voidial Water Bucket",
+      "fluid.shineals_end_update.voidial_water": "Voidial Water",
+      "block.shinycreepers_end_update.portal_table": "Portal Table",
+      "item.shineals_endergrowth.chorus_bee_spawn_egg": "Chorus Bee Spawn Egg",
+      "item.shineals_endergrowth.raw_enderium": "Enderium Shard",
+      "block.shineals_endergrowth.end_stone_pillar": "End Stone Pillar",
+      "entity.shineals_endergrowth.end_strider": "End Strider",
+      "biome.shineals_end_update.chorus_forest": "Chorus Forest",
+      "block.shinycreepers_end_update.end_stone_pillar": "End Stone Pillar",
+      "item.shineals_end_update.enderite_sword": "Enderium Sword",
+      "block.shineals_endergrowth.chorus_wood": "Chorus Wood",
+      "block.shineals_endergrowth.purpur_leaves": "Purpur Leaves ",
+      "block.shinycreepers_end_update.cobbled_end_stone": "Cobbled End Stone",
+      "item.shineals_end_update.end_strider_spawn_egg": "End Strider Spawn Egg",
+      "block.shineals_endergrowth.portal_table_empty": "Portal Table Empty",
+      "block.shineals_end_update.purpur_bordered_pillar": "Purpur Bordered Pillar",
+      "item.shineals_endergrowth.voidial_water_bucket": "Voidial Water Bucket",
+      "block.shinycreepers_end_update.purpur_leaves_dead": "Purpur Leaves Dead",
+      "item.shineals_endergrowth.ender_mage_spawn_egg": "Ender Mage Spawn Egg",
+      "block.shineals_endergrowth.smooth_end_stone": "Smooth End Stone",
+      "item.shineals_end_update.enderite_hoe": "Enderium Hoe",
+      "block.shineals_endergrowth.enderite_block": "Block of Enderium",
+      "item.shinycreepers_end_update.enderite_pickaxe": "Enderite Pickaxe",
+      "block.shinycreepers_end_update.chorus_wood": "Chorus Wood",
+      "block.shinycreepers_end_update.enderite_block": "Blcok of Enderite",
+      "item.shineals_endergrowth.enderium_armor_helmet": "Enderium Helmet",
+      "item.shinycreepers_end_update.raw_enderite": "Enderite Shard",
+      "item.shinycreepers_end_update.enderite_hoe": "Enderite Hoe",
+      "item.shineals_end_update.enderite_pickaxe": "Enderium Pickaxe",
+      "block.shineals_end_update.purpur_leaves_dead": "Purpur Leaves Dead",
+      "advancements.cover_me_in_shards.title": "Cover Me In Shards",
+      "block.shinycreepers_end_update.smooth_end_stone": "Smooth End Stone",
+      "item.shinycreepers_end_update.enderite_sword": "Enderite Sword",
+      "itemGroup.tabshineals_endergrowth": "ShiNeaL\u0027s Endergrowth",
+      "item.shineals_endergrowth.enderium_armor_leggings": "Enderium Leggings",
+      "block.shinycreepers_end_update.chiseled_end_stone": "Chiseled End Stone",
+      "block.shinycreepers_end_update.voidial_water": "Voidial Water",
+      "item.shineals_end_update.enderite_armor_boots": "Enderium Boots",
+      "block.shinycreepers_end_update.purpur_bordered_pillar": "Purpur Bordered Pillar",
+      "advancements.ultimate_dedication.descr": "Use a Enderium ingot to upgrade a hoe, and then reevaluate your life choices",
+      "item.shineals_endergrowth.end_strider_spawn_egg": "End Strider Spawn Egg",
+      "item.shineals_endergrowth.enderium_shovel": "Enderium Shovel",
+      "item.shineals_endergrowth.enderium_ingot": "Enderium Ingot",
+      "block.shineals_end_update.chiseled_end_stone": "Chiseled End Stone",
+      "item.shinycreepers_end_update.enderite_armor_leggings": "Enderite Leggings",
+      "item.shineals_end_update.enderite_armor_leggings": "Enderium Leggings",
+      "item.shineals_end_update.enderite_axe": "Enderium Axe",
+      "block.shineals_endergrowth.enderium_ore": "Enderium Ore",
+      "item.shinycreepers_end_update.enderite_armor_helmet": "Enderite Helmet",
+      "item.shineals_endergrowth.chorus_snail_spawn_egg": "Chorus Snail Spawn Egg",
+      "block.shinycreepers_end_update.end_stone_lamp": "End Stone Lamp",
+      "block.shineals_end_update.chorus_planks": "Chorus Planks",
+      "item.shinycreepers_end_update.enderite_shovel": "Enderite Shovel",
+      "fluid.shinycreepers_end_update.voidial_water": "Voidial Water",
+      "block.shineals_end_update.end_stone_lamp": "End Stone Lamp",
+      "block.shineals_end_update.portal_table_empty": "Portal Table Empty",
+      "advancements.cover_me_in_shards.descr": "Get a full suit of Enderium armor",
+      "block.shineals_end_update.end_stone_pillar": "End Stone Pillar",
+      "item.shineals_end_update.raw_enderite": "Enderium Shard",
+      "block.shinycreepers_end_update.chorus_planks": "Chorus Planks",
+      "item_group.shineals_endergrowth.shineals_endergrowth": "ShiNeaL\u0027s Endergrowth",
+      "block.shineals_end_update.voidial_water": "Voidial Water",
+      "block.shineals_end_update.enderite_block": "Blcok of Enderium",
+      "block.shineals_end_update.portal_table": "Portal Table",
+      "advancements.hidden_in_the_skies.title": "Hidden In The Heights",
+      "block.shineals_end_update.cobbled_end_stone": "Cobbled End Stone",
+      "item.shineals_endergrowth.enderium_sword": "Enderium Sword",
+      "advancements.ultimate_dedication.title": "Ultimate Dedication",
+      "item.shinycreepers_end_update.enderite_ingot": "Enderite Ingot",
+      "block.shineals_endergrowth.chiseled_end_stone": "Chiseled End Stone",
+      "block.shineals_end_update.enderite_ore": "Enderium Ore",
+      "item.shinycreepers_end_update.enderite_armor_chestplate": "Enderite Chestplate",
+      "item.shineals_endergrowth.enderium_hoe": "Enderium Hoe",
+      "entity.shineals_endergrowth.chorus_bee": "Chorus Bee",
+      "block.shinycreepers_end_update.chorus_log": "Chorus Log",
+      "entity.shineals_endergrowth.ender_mage": "Ender Mage",
+      "block.shineals_end_update.chorus_log": "Chorus Log",
+      "block.shinycreepers_end_update.purpur_leaves": "Purpur Leaves Dead",
+      "block.shineals_end_update.chorus_wood": "Chorus Wood",
+      "item.shineals_endergrowth.enderium_armor_chestplate": "Enderium Chestplate",
+      "item.shineals_end_update.enderite_armor_chestplate": "Enderium Chestplate",
+      "entity.shineals_end_update.end_strider": "End Strider",
+      "block.shineals_endergrowth.chorus_planks": "Chorus Planks",
+      "block.shineals_endergrowth.purpur_bordered_pillar": "Purpur Bordered Pillar",
+      "block.shinycreepers_end_update.enderite_ore": "Enderite Ore",
+      "item.shinycreepers_end_update.enderite_armor_boots": "Enderite Boots",
+      "block.shineals_end_update.smooth_end_stone": "Smooth End Stone",
+      "block.shineals_end_update.purpur_leaves": "Purpur Leaves Dead",
+      "block.shinycreepers_end_update.flowering_purpur_leaves": "Purpur Leaves Dead",
+      "block.shineals_endergrowth.flowering_purpur_leaves": "Flowering Purpur Leaves ",
+      "block.shinycreepers_end_update.enderite_crystal_block": "Enderite Crystal",
+      "item.shineals_end_update.enderite_ingot": "Enderium Ingot",
+      "item.shineals_end_update.enderite_shovel": "Enderium Shovel",
+      "item.shineals_endergrowth.snail_sludge": "Snail Sludge",
+      "item.shineals_endergrowth.enderium_axe": "Enderium Axe",
+      "block.shineals_endergrowth.enderium_crystal_block": "Enderium Crystal",
+      "biome.shineals_endergrowth.chorus_forest": "Chorus Forest",
+      "item.shineals_endergrowth.enderium_pickaxe": "Enderium Pickaxe",
+      "entity.shineals_endergrowth.chorus_snail": "Chorus Snail",
+      "entity.shineals_endergrowth.ender_phantom": "Ender Phantom"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "shineals_endergrowth",
+    "modName": "ShiNeaL\u0027s Endergrowth",
+    "version": "1.0",
+    "description": "An End Overhaul MOD By ShineaL Studios",
+    "author": "ShineaL Studios",
+    "websiteURL": "https://shineal.org",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created by ShinyDragon96, TgwCreeper, \u0026 GlitchedMastert",
+    "modElementsPackage": "net.mcreator.shinealsendndergrowth",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

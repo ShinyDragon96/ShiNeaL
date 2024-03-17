@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "shineals_endergrowth:block/purpur_leaves1",
+    "up": "shineals_endergrowth:block/purpur_leaves1",
+    "north": "shineals_endergrowth:block/purpur_leaves1",
+    "east": "shineals_endergrowth:block/purpur_leaves1",
+    "south": "shineals_endergrowth:block/purpur_leaves1",
+    "west": "shineals_endergrowth:block/purpur_leaves1",
+    "particle": "shineals_endergrowth:block/purpur_leaves1"
+  },
+  "render_type": "cutout"
+}

@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "shineals_end_update:cobbled_end_stone",
-    "shineals_end_update:smooth_end_stone",
-    "shineals_end_update:enderite_ore",
-    "shineals_end_update:end_stone_lamp",
-    "shineals_end_update:enderite_crystal_block",
-    "shineals_end_update:chiseled_end_stone",
-    "shineals_end_update:enderite_block"
+    "shineals_endergrowth:cobbled_end_stone",
+    "shineals_endergrowth:smooth_end_stone",
+    "shineals_endergrowth:enderium_ore",
+    "shineals_endergrowth:end_stone_lamp",
+    "shineals_endergrowth:enderium_crystal_block",
+    "shineals_endergrowth:chiseled_end_stone",
+    "shineals_endergrowth:enderite_block"
   ]
 }

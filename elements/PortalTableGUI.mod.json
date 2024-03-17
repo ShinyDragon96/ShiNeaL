@@ -9,17 +9,7 @@
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
-    "components": [
-      {
-        "type": "image",
-        "data": {
-          "image": "portal_table_gui.png",
-          "use1Xscale": false,
-          "x": 125,
-          "y": 37
-        }
-      }
-    ],
+    "components": [],
     "gridSettings": {
       "sx": 18,
       "sy": 18,

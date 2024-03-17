@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "shineals_endergrowth:chorus_forest",
+  "spawners": {
+    "type": "shineals_endergrowth:chorus_bee",
+    "weight": 12,
+    "minCount": 1,
+    "maxCount": 5
+  }
+}

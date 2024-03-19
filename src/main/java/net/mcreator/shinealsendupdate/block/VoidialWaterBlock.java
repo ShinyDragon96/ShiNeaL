@@ -1,7 +1,5 @@
 
-package net.mcreator.shinealsendupdate.block;
-
-import org.checkerframework.checker.units.qual.s;
+package net.mcreator.shinealsendndergrowth.block;
 
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
@@ -13,12 +11,12 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.shinealsendupdate.procedures.VoidialWaterMobplayerCollidesBlockProcedure;
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModFluids;
+import net.mcreator.shinealsendndergrowth.procedures.VoidialWaterMobplayerCollidesBlockProcedure;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModFluids;
 
 public class VoidialWaterBlock extends LiquidBlock {
 	public VoidialWaterBlock() {
-		super(() -> ShinealsEndUpdateModFluids.VOIDIAL_WATER.get(), BlockBehaviour.Properties.of(Material.WATER, MaterialColor.COLOR_PURPLE).strength(100f).lightLevel(s -> 1).noCollission().noLootTable());
+		super(() -> ShinealsEndergrowthModFluids.VOIDIAL_WATER.get(), BlockBehaviour.Properties.of(Material.WATER, MaterialColor.COLOR_PURPLE).strength(100f).noCollission().noLootTable());
 	}
 
 	@Override
@@ -29,6 +27,6 @@ public class VoidialWaterBlock extends LiquidBlock {
 	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		VoidialWaterMobplayerCollidesBlockProcedure.execute(pos.getX(), pos.getY(), pos.getZ(), entity);
+		VoidialWaterMobplayerCollidesBlockProcedure.execute(entity);
 	}
 }

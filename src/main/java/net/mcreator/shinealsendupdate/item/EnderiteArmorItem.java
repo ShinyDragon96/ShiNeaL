@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.item;
+package net.mcreator.shinealsendndergrowth.item;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -16,7 +16,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModItems;
 
 import java.util.List;
 
@@ -45,12 +45,12 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT.get()));
+				return Ingredient.of(new ItemStack(ShinealsEndergrowthModItems.ENDERIUM_INGOT.get()));
 			}
 
 			@Override
 			public String getName() {
-				return "enderite_armor";
+				return "enderium_armor";
 			}
 
 			@Override
@@ -77,7 +77,7 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "shineals_end_update:textures/models/armor/enderite_armor__layer_1.png";
+			return "shineals_endergrowth:textures/models/armor/cyberarmor_layer_1_layer_1.png";
 		}
 	}
 
@@ -93,7 +93,7 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "shineals_end_update:textures/models/armor/enderite_armor__layer_1.png";
+			return "shineals_endergrowth:textures/models/armor/cyberarmor_layer_1_layer_1.png";
 		}
 	}
 
@@ -109,7 +109,7 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "shineals_end_update:textures/models/armor/enderite_armor__layer_2.png";
+			return "shineals_endergrowth:textures/models/armor/cyberarmor_layer_1_layer_2.png";
 		}
 	}
 
@@ -125,7 +125,7 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "shineals_end_update:textures/models/armor/enderite_armor__layer_1.png";
+			return "shineals_endergrowth:textures/models/armor/cyberarmor_layer_1_layer_1.png";
 		}
 	}
 }

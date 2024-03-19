@@ -1,5 +1,5 @@
 {
-  "parent": "shineals_end_update:block/enderite_block",
+  "parent": "shineals_endergrowth:block/enderite_block",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.block;
+package net.mcreator.shinealsendndergrowth.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -22,7 +22,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.shinealsendupdate.procedures.PortalTableEmptyOnBlockRightClickedProcedure;
+import net.mcreator.shinealsendndergrowth.procedures.PortalTableEmptyOnBlockRightClickedProcedure;
 
 import java.util.List;
 import java.util.Collections;

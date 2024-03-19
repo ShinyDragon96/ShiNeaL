@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.client.renderer;
+package net.mcreator.shinealsendndergrowth.client.renderer;
 
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
@@ -9,8 +9,8 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
-import net.mcreator.shinealsendupdate.entity.model.EndStriderModel;
-import net.mcreator.shinealsendupdate.entity.EndStriderEntity;
+import net.mcreator.shinealsendndergrowth.entity.model.EndStriderModel;
+import net.mcreator.shinealsendndergrowth.entity.EndStriderEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -33,10 +33,5 @@ public class EndStriderRenderer extends GeoEntityRenderer<EndStriderEntity> {
 		this.scaleHeight = scale;
 		this.scaleWidth = scale;
 		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);
-	}
-
-	@Override
-	protected float getDeathMaxRotation(EndStriderEntity entityLivingBaseIn) {
-		return 0.0F;
 	}
 }

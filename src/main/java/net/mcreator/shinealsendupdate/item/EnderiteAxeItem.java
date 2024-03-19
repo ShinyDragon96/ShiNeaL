@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.item;
+package net.mcreator.shinealsendndergrowth.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -10,7 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModItems;
 
 import java.util.List;
 
@@ -26,7 +26,7 @@ public class EnderiteAxeItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 8f;
+				return 9f;
 			}
 
 			public int getLevel() {
@@ -38,9 +38,9 @@ public class EnderiteAxeItem extends AxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT.get()));
+				return Ingredient.of(new ItemStack(ShinealsEndergrowthModItems.ENDERIUM_INGOT.get()));
 			}
-		}, 1, -2f, new Item.Properties());
+		}, 1, -3f, new Item.Properties());
 	}
 
 	@Override

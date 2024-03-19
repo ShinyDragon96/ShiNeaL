@@ -1,9 +1,0 @@
-{
-  "parent": "shineals_endergrowth:custom/portal_table_final",
-  "textures": {
-    "all": "shineals_endergrowth:block/portal_table_1",
-    "particle": "shineals_endergrowth:block/portal_table_1",
-    "missing": "shineals_endergrowth:block/portal_table_1"
-  },
-  "render_type": "solid"
-}

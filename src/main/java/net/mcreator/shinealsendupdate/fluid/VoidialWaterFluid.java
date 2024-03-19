@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.fluid;
+package net.mcreator.shinealsendndergrowth.fluid;
 
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 
@@ -10,14 +10,14 @@ import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.ParticleOptions;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModFluids;
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModFluidTypes;
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModBlocks;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModItems;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModFluids;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModFluidTypes;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModBlocks;
 
 public abstract class VoidialWaterFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ShinealsEndUpdateModFluidTypes.VOIDIAL_WATER_TYPE.get(), () -> ShinealsEndUpdateModFluids.VOIDIAL_WATER.get(),
-			() -> ShinealsEndUpdateModFluids.FLOWING_VOIDIAL_WATER.get()).explosionResistance(100f).bucket(() -> ShinealsEndUpdateModItems.VOIDIAL_WATER_BUCKET.get()).block(() -> (LiquidBlock) ShinealsEndUpdateModBlocks.VOIDIAL_WATER.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ShinealsEndergrowthModFluidTypes.VOIDIAL_WATER_TYPE.get(), () -> ShinealsEndergrowthModFluids.VOIDIAL_WATER.get(),
+			() -> ShinealsEndergrowthModFluids.FLOWING_VOIDIAL_WATER.get()).explosionResistance(100f).bucket(() -> ShinealsEndergrowthModItems.VOIDIAL_WATER_BUCKET.get()).block(() -> (LiquidBlock) ShinealsEndergrowthModBlocks.VOIDIAL_WATER.get());
 
 	private VoidialWaterFluid() {
 		super(PROPERTIES);

@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "shineals_end_update:block/purpur_log",
-    "particle": "shineals_end_update:block/purpur_log"
+    "all": "shineals_endergrowth:block/cyberlog",
+    "particle": "shineals_endergrowth:block/cyberlog"
   },
   "render_type": "solid"
 }

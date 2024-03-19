@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "shineals_end_update:block/chiseled_end_stone"
+      "model": "shineals_endergrowth:block/chiseled_end_stone"
     }
   }
 }

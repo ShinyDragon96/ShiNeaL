@@ -8,11 +8,11 @@
   ],
   "key": {
     "a": {
-      "item": "shineals_end_update:enderite_ingot"
+      "item": "shineals_endergrowth:enderium_ingot"
     }
   },
   "result": {
-    "item": "shineals_end_update:enderite_block",
+    "item": "shineals_endergrowth:enderite_block",
     "count": 1
   }
 }

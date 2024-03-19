@@ -1,5 +1,5 @@
 {
-  "parent": "shineals_end_update:block/smooth_end_stone",
+  "parent": "shineals_endergrowth:block/smooth_end_stone",
   "display": {
     "thirdperson": {
       "rotation": [

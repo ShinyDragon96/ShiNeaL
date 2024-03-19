@@ -1,12 +1,12 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:netherite_hoe"
+    "item": "minecraft:diamond_hoe"
   },
   "addition": {
-    "item": "shineals_end_update:enderite_ingot"
+    "item": "shineals_endergrowth:enderium_ingot"
   },
   "result": {
-    "item": "shineals_end_update:enderite_hoe"
+    "item": "shineals_endergrowth:enderium_hoe"
   }
 }

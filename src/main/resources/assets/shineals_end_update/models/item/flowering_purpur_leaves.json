@@ -1,5 +1,5 @@
 {
-  "parent": "shineals_end_update:block/flowering_purpur_leaves",
+  "parent": "shineals_endergrowth:block/flowering_purpur_leaves",
   "display": {
     "thirdperson": {
       "rotation": [

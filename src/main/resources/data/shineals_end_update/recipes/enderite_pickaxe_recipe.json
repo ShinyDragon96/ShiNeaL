@@ -1,12 +1,12 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:netherite_pickaxe"
+    "item": "minecraft:diamond_pickaxe"
   },
   "addition": {
-    "item": "shineals_end_update:enderite_ingot"
+    "item": "shineals_endergrowth:enderium_ingot"
   },
   "result": {
-    "item": "shineals_end_update:enderite_pickaxe"
+    "item": "shineals_endergrowth:enderium_pickaxe"
   }
 }

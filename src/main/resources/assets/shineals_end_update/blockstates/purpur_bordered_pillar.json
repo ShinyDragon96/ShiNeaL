@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "shineals_end_update:block/purpur_bordered_pillar",
+      "model": "shineals_endergrowth:block/purpur_bordered_pillar",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "shineals_end_update:block/purpur_bordered_pillar"
+      "model": "shineals_endergrowth:block/purpur_bordered_pillar"
     },
     "axis=z": {
-      "model": "shineals_end_update:block/purpur_bordered_pillar",
+      "model": "shineals_endergrowth:block/purpur_bordered_pillar",
       "x": 90
     }
   }

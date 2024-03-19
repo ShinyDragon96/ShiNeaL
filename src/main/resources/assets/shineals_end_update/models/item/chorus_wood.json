@@ -1,5 +1,5 @@
 {
-  "parent": "shineals_end_update:block/chorus_wood",
+  "parent": "shineals_endergrowth:block/chorus_wood",
   "display": {
     "thirdperson": {
       "rotation": [

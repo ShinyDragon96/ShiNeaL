@@ -1,4 +1,4 @@
-package net.mcreator.shinealsendupdate.world.features;
+package net.mcreator.shinealsendndergrowth.world.features;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -18,14 +18,14 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.core.Holder;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.shinealsendupdate.world.features.configurations.StructureFeatureConfiguration;
-import net.mcreator.shinealsendupdate.ShinealsEndUpdateMod;
+import net.mcreator.shinealsendndergrowth.world.features.configurations.StructureFeatureConfiguration;
+import net.mcreator.shinealsendndergrowth.ShinealsEndergrowthMod;
 
 import com.mojang.serialization.Codec;
 
 @Mod.EventBusSubscriber
 public class StructureFeature extends Feature<StructureFeatureConfiguration> {
-	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, ShinealsEndUpdateMod.MODID);
+	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, ShinealsEndergrowthMod.MODID);
 	public static final RegistryObject<Feature<?>> STRUCTURE_FEATURE = REGISTRY.register("structure_feature", () -> new StructureFeature(StructureFeatureConfiguration.CODEC));
 
 	public StructureFeature(Codec<StructureFeatureConfiguration> codec) {

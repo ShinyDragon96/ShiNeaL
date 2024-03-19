@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.item;
+package net.mcreator.shinealsendndergrowth.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;

@@ -1,4 +1,9 @@
-package net.mcreator.shinealsendupdate.procedures;
+package net.mcreator.shinealsendndergrowth.procedures;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -10,14 +15,26 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModItems;
+
+import javax.annotation.Nullable;
 
 import java.util.stream.Collectors;
 import java.util.List;
 import java.util.Comparator;
 
+@Mod.EventBusSubscriber
 public class EnderiteSwordVoidProcedure {
+	@SubscribeEvent
+	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
+		execute(event, event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+	}
+
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
+	}
+
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if ((entity.level.dimension()) == Level.END) {
@@ -31,7 +48,7 @@ public class EnderiteSwordVoidProcedure {
 								.collect(Collectors.toList());
 						for (Entity entityiterator : _entfound) {
 							if (entity.getY() < 0) {
-								if ((entity instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY).getItem() == ShinealsEndUpdateModItems.ENDERITE_SWORD.get()) {
+								if ((entity instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY).getItem() == ShinealsEndergrowthModItems.ENDERIUM_SWORD.get()) {
 									{
 										Entity _ent = entity;
 										_ent.teleportTo(x, (y + 1), z);

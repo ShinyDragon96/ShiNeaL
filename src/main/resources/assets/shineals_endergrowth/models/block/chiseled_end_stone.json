@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "shineals_endergrowth:block/chiseled_end_stone",
-    "particle": "shineals_endergrowth:block/chiseled_end_stone"
-  },
-  "render_type": "solid"
-}

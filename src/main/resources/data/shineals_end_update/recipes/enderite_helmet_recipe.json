@@ -4,9 +4,9 @@
     "item": "minecraft:netherite_helmet"
   },
   "addition": {
-    "item": "shineals_end_update:enderite_ingot"
+    "item": "shineals_endergrowth:enderium_ingot"
   },
   "result": {
-    "item": "shineals_end_update:enderite_armor_helmet"
+    "item": "shineals_endergrowth:enderium_armor_helmet"
   }
 }

@@ -3,16 +3,16 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "shineals_end_update:raw_enderite"
+      "item": "shineals_endergrowth:raw_enderium"
     },
     {
-      "item": "shineals_end_update:raw_enderite"
+      "item": "shineals_endergrowth:raw_enderium"
     },
     {
-      "item": "shineals_end_update:raw_enderite"
+      "item": "shineals_endergrowth:raw_enderium"
     },
     {
-      "item": "shineals_end_update:raw_enderite"
+      "item": "shineals_endergrowth:raw_enderium"
     },
     {
       "item": "minecraft:diamond"
@@ -28,7 +28,7 @@
     }
   ],
   "result": {
-    "item": "shineals_end_update:enderite_ingot",
+    "item": "shineals_endergrowth:enderium_ingot",
     "count": 1
   }
 }

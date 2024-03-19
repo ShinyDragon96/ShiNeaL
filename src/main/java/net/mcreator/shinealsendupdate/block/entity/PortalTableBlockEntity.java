@@ -1,4 +1,4 @@
-package net.mcreator.shinealsendupdate.block.entity;
+package net.mcreator.shinealsendndergrowth.block.entity;
 
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
@@ -21,7 +21,7 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModBlockEntities;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -32,7 +32,7 @@ public class PortalTableBlockEntity extends RandomizableContainerBlockEntity imp
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public PortalTableBlockEntity(BlockPos position, BlockState state) {
-		super(ShinealsEndUpdateModBlockEntities.PORTAL_TABLE.get(), position, state);
+		super(ShinealsEndergrowthModBlockEntities.PORTAL_TABLE.get(), position, state);
 	}
 
 	@Override

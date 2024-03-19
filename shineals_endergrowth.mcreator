@@ -4,14 +4,14 @@
       "name": "EndStonePillar",
       "type": "block",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "end_stone_pillar",
       "metadata": {
         "files": [
           "src/main/resources/assets/shineals_endergrowth/models/item/end_stone_pillar.json",
-          "src/main/resources/assets/shineals_endergrowth/blockstates/end_stone_pillar.json",
           "src/main/resources/assets/shineals_endergrowth/models/block/end_stone_pillar.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/end_stone_pillar.json",
           "src/main/java/net/mcreator/shinealsendndergrowth/block/EndStonePillarBlock.java"
         ]
       }
@@ -20,18 +20,18 @@
       "name": "CobbledEndStone",
       "type": "block",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "cobbled_end_stone",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/shinealsendndergrowth/block/CobbledEndStoneBlock.java",
           "src/main/resources/data/shineals_endergrowth/worldgen/configured_feature/cobbled_end_stone.json",
-          "src/main/resources/assets/shineals_endergrowth/models/item/cobbled_end_stone.json",
-          "src/main/resources/assets/shineals_endergrowth/blockstates/cobbled_end_stone.json",
           "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/cobbled_end_stone.json",
           "src/main/resources/assets/shineals_endergrowth/models/block/cobbled_end_stone.json",
-          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/cobbled_end_stone_biome_modifier.json"
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/cobbled_end_stone_biome_modifier.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/cobbled_end_stone.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/cobbled_end_stone.json"
         ]
       }
     },
@@ -39,15 +39,15 @@
       "name": "SmoothEndStone",
       "type": "block",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "smooth_end_stone",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/shinealsendndergrowth/block/SmoothEndStoneBlock.java",
           "src/main/resources/assets/shineals_endergrowth/models/item/smooth_end_stone.json",
-          "src/main/resources/assets/shineals_endergrowth/blockstates/smooth_end_stone.json",
-          "src/main/resources/assets/shineals_endergrowth/models/block/smooth_end_stone.json"
+          "src/main/resources/assets/shineals_endergrowth/models/block/smooth_end_stone.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/smooth_end_stone.json"
         ]
       }
     },
@@ -55,18 +55,18 @@
       "name": "EnderiteOre",
       "type": "block",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "enderium_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/shineals_endergrowth/worldgen/configured_feature/enderium_ore.json",
           "src/main/resources/assets/shineals_endergrowth/blockstates/enderium_ore.json",
-          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/enderium_ore_biome_modifier.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/enderium_ore.json",
           "src/main/java/net/mcreator/shinealsendndergrowth/block/EnderiteOreBlock.java",
           "src/main/resources/assets/shineals_endergrowth/models/block/enderium_ore.json",
-          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/enderium_ore.json",
-          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_ore.json"
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_ore.json",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/enderium_ore_biome_modifier.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/configured_feature/enderium_ore.json"
         ]
       }
     },
@@ -79,8 +79,8 @@
       "registry_name": "raw_enderium",
       "metadata": {
         "files": [
-          "src/main/resources/assets/shineals_endergrowth/models/item/raw_enderium.json",
-          "src/main/java/net/mcreator/shinealsendndergrowth/item/RawEnderiteItem.java"
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/RawEnderiteItem.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/raw_enderium.json"
         ]
       }
     },
@@ -152,15 +152,15 @@
       "name": "EndStoneLamp",
       "type": "block",
       "sortid": 11,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "end_stone_lamp",
       "metadata": {
         "files": [
           "src/main/resources/assets/shineals_endergrowth/models/block/end_stone_lamp.json",
           "src/main/resources/assets/shineals_endergrowth/models/item/end_stone_lamp.json",
-          "src/main/java/net/mcreator/shinealsendndergrowth/block/EndStoneLampBlock.java",
-          "src/main/resources/assets/shineals_endergrowth/blockstates/end_stone_lamp.json"
+          "src/main/resources/assets/shineals_endergrowth/blockstates/end_stone_lamp.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/EndStoneLampBlock.java"
         ]
       }
     },
@@ -168,15 +168,15 @@
       "name": "RawEnderiteBlock",
       "type": "block",
       "sortid": 12,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "enderium_crystal_block",
       "metadata": {
         "files": [
           "src/main/resources/assets/shineals_endergrowth/models/block/enderium_crystal_block.json",
-          "src/main/java/net/mcreator/shinealsendndergrowth/block/RawEnderiteBlockBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_crystal_block.json",
           "src/main/resources/assets/shineals_endergrowth/blockstates/enderium_crystal_block.json",
-          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_crystal_block.json"
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/RawEnderiteBlockBlock.java"
         ]
       }
     },
@@ -210,15 +210,15 @@
       "name": "ChiseledEndStone",
       "type": "block",
       "sortid": 15,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "chiseled_end_stone",
       "metadata": {
         "files": [
           "src/main/resources/assets/shineals_endergrowth/blockstates/chiseled_end_stone.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/ChiseledEndStoneBlock.java",
           "src/main/resources/assets/shineals_endergrowth/models/item/chiseled_end_stone.json",
-          "src/main/resources/assets/shineals_endergrowth/models/block/chiseled_end_stone.json",
-          "src/main/java/net/mcreator/shinealsendndergrowth/block/ChiseledEndStoneBlock.java"
+          "src/main/resources/assets/shineals_endergrowth/models/block/chiseled_end_stone.json"
         ]
       }
     },
@@ -226,15 +226,15 @@
       "name": "EnderiteBlock",
       "type": "block",
       "sortid": 16,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "enderite_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/shineals_endergrowth/blockstates/enderite_block.json",
           "src/main/resources/assets/shineals_endergrowth/models/item/enderite_block.json",
+          "src/main/resources/assets/shineals_endergrowth/models/block/enderite_block.json",
           "src/main/java/net/mcreator/shinealsendndergrowth/block/EnderiteBlockBlock.java",
-          "src/main/resources/assets/shineals_endergrowth/models/block/enderite_block.json"
+          "src/main/resources/assets/shineals_endergrowth/blockstates/enderite_block.json"
         ]
       }
     },
@@ -268,16 +268,16 @@
       "name": "PortalTable",
       "type": "block",
       "sortid": 19,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "portal_table",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/entity/PortalTableBlockEntity.java",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/portal_table.json",
           "src/main/resources/assets/shineals_endergrowth/models/item/portal_table.json",
           "src/main/java/net/mcreator/shinealsendndergrowth/block/PortalTableBlock.java",
-          "src/main/resources/assets/shineals_endergrowth/models/block/portal_table.json",
-          "src/main/java/net/mcreator/shinealsendndergrowth/block/entity/PortalTableBlockEntity.java",
-          "src/main/resources/assets/shineals_endergrowth/blockstates/portal_table.json"
+          "src/main/resources/assets/shineals_endergrowth/models/block/portal_table.json"
         ]
       }
     },
@@ -285,15 +285,15 @@
       "name": "PortalTableEmpty",
       "type": "block",
       "sortid": 20,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "portal_table_empty",
       "metadata": {
         "files": [
           "src/main/resources/assets/shineals_endergrowth/models/block/portal_table_empty.json",
-          "src/main/resources/assets/shineals_endergrowth/blockstates/portal_table_empty.json",
           "src/main/resources/assets/shineals_endergrowth/models/item/portal_table_empty.json",
-          "src/main/java/net/mcreator/shinealsendndergrowth/block/PortalTableEmptyBlock.java"
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/PortalTableEmptyBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/portal_table_empty.json"
         ]
       }
     },
@@ -345,11 +345,11 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/java/net/mcreator/shinealsendndergrowth/item/EnderiteArmorItem.java",
-          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_armor_leggings.json",
-          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_armor_chestplate.json",
           "src/main/resources/assets/shineals_endergrowth/models/item/enderium_armor_helmet.json",
-          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_armor_boots.json"
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_armor_boots.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_armor_chestplate.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/EnderiteArmorItem.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_armor_leggings.json"
         ]
       }
     },
@@ -357,13 +357,13 @@
       "name": "ChorusLog",
       "type": "block",
       "sortid": 22,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "chorus_log",
       "metadata": {
         "files": [
-          "src/main/resources/assets/shineals_endergrowth/models/block/chorus_log.json",
           "src/main/java/net/mcreator/shinealsendndergrowth/block/ChorusLogBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/models/block/chorus_log.json",
           "src/main/resources/assets/shineals_endergrowth/models/item/chorus_log.json",
           "src/main/resources/assets/shineals_endergrowth/blockstates/chorus_log.json"
         ]
@@ -373,15 +373,15 @@
       "name": "ChorusPlanks",
       "type": "block",
       "sortid": 23,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "chorus_planks",
       "metadata": {
         "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/block/chorus_planks.json",
           "src/main/java/net/mcreator/shinealsendndergrowth/block/ChorusPlanksBlock.java",
-          "src/main/resources/assets/shineals_endergrowth/blockstates/chorus_planks.json",
           "src/main/resources/assets/shineals_endergrowth/models/item/chorus_planks.json",
-          "src/main/resources/assets/shineals_endergrowth/models/block/chorus_planks.json"
+          "src/main/resources/assets/shineals_endergrowth/blockstates/chorus_planks.json"
         ]
       }
     },
@@ -465,8 +465,8 @@
       "registry_name": "enderium_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/shinealsendndergrowth/item/EnderiteSwordItem.java",
-          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_sword.json"
+          "src/main/resources/assets/shineals_endergrowth/models/item/enderium_sword.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/EnderiteSwordItem.java"
         ]
       }
     },
@@ -661,14 +661,14 @@
       "name": "PurpurBorderedPillar",
       "type": "block",
       "sortid": 45,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "purpur_bordered_pillar",
       "metadata": {
         "files": [
+          "src/main/resources/assets/shineals_endergrowth/models/block/purpur_bordered_pillar.json",
           "src/main/java/net/mcreator/shinealsendndergrowth/block/PurpurBorderedPillarBlock.java",
           "src/main/resources/assets/shineals_endergrowth/models/item/purpur_bordered_pillar.json",
-          "src/main/resources/assets/shineals_endergrowth/models/block/purpur_bordered_pillar.json",
           "src/main/resources/assets/shineals_endergrowth/blockstates/purpur_bordered_pillar.json"
         ]
       }
@@ -735,19 +735,19 @@
       "name": "VoidialWater",
       "type": "fluid",
       "sortid": 49,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "voidial_water",
       "metadata": {
         "gb": true,
         "files": [
+          "src/main/java/net/mcreator/shinealsendndergrowth/fluid/types/VoidialWaterFluidType.java",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/voidial_water.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/fluid/VoidialWaterFluid.java",
+          "src/main/resources/assets/shineals_endergrowth/models/block/voidial_water.json",
           "src/main/java/net/mcreator/shinealsendndergrowth/block/VoidialWaterBlock.java",
           "src/main/resources/assets/shineals_endergrowth/models/item/voidial_water_bucket.json",
-          "src/main/resources/assets/shineals_endergrowth/models/block/voidial_water.json",
-          "src/main/java/net/mcreator/shinealsendndergrowth/item/VoidialWaterItem.java",
-          "src/main/java/net/mcreator/shinealsendndergrowth/fluid/types/VoidialWaterFluidType.java",
-          "src/main/java/net/mcreator/shinealsendndergrowth/fluid/VoidialWaterFluid.java",
-          "src/main/resources/assets/shineals_endergrowth/blockstates/voidial_water.json"
+          "src/main/java/net/mcreator/shinealsendndergrowth/item/VoidialWaterItem.java"
         ]
       }
     },
@@ -781,15 +781,15 @@
       "name": "ChorusWood",
       "type": "block",
       "sortid": 53,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "chorus_wood",
       "metadata": {
         "files": [
-          "src/main/resources/assets/shineals_endergrowth/models/block/chorus_wood.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/ChorusWoodBlock.java",
           "src/main/resources/assets/shineals_endergrowth/models/item/chorus_wood.json",
-          "src/main/resources/assets/shineals_endergrowth/blockstates/chorus_wood.json",
-          "src/main/java/net/mcreator/shinealsendndergrowth/block/ChorusWoodBlock.java"
+          "src/main/resources/assets/shineals_endergrowth/models/block/chorus_wood.json",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/chorus_wood.json"
         ]
       }
     },
@@ -836,15 +836,15 @@
       "name": "PurpurLeavesDead",
       "type": "block",
       "sortid": 57,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "purpur_leaves_dead",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/shinealsendndergrowth/block/PurpurLeavesDeadBlock.java",
+          "src/main/resources/assets/shineals_endergrowth/blockstates/purpur_leaves_dead.json",
           "src/main/resources/assets/shineals_endergrowth/models/item/purpur_leaves_dead.json",
           "src/main/resources/assets/shineals_endergrowth/models/block/purpur_leaves_dead.json",
-          "src/main/resources/assets/shineals_endergrowth/blockstates/purpur_leaves_dead.json"
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/PurpurLeavesDeadBlock.java"
         ]
       }
     },
@@ -852,15 +852,15 @@
       "name": "PurpurLeaves",
       "type": "block",
       "sortid": 58,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "purpur_leaves",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/shinealsendndergrowth/block/PurpurLeavesBlock.java",
-          "src/main/resources/assets/shineals_endergrowth/models/item/purpur_leaves.json",
           "src/main/resources/assets/shineals_endergrowth/blockstates/purpur_leaves.json",
-          "src/main/resources/assets/shineals_endergrowth/models/block/purpur_leaves.json"
+          "src/main/resources/assets/shineals_endergrowth/models/block/purpur_leaves.json",
+          "src/main/resources/assets/shineals_endergrowth/models/item/purpur_leaves.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/block/PurpurLeavesBlock.java"
         ]
       }
     },
@@ -868,14 +868,14 @@
       "name": "FloweringPurpurLeaves",
       "type": "block",
       "sortid": 59,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "flowering_purpur_leaves",
       "metadata": {
         "files": [
+          "src/main/resources/assets/shineals_endergrowth/blockstates/flowering_purpur_leaves.json",
           "src/main/resources/assets/shineals_endergrowth/models/block/flowering_purpur_leaves.json",
           "src/main/resources/assets/shineals_endergrowth/models/item/flowering_purpur_leaves.json",
-          "src/main/resources/assets/shineals_endergrowth/blockstates/flowering_purpur_leaves.json",
           "src/main/java/net/mcreator/shinealsendndergrowth/block/FloweringPurpurLeavesBlock.java"
         ]
       }
@@ -995,9 +995,9 @@
       "registry_name": "chorus_tree_feature",
       "metadata": {
         "files": [
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/chorus_tree_feature_biome_modifier.json",
           "src/main/resources/data/shineals_endergrowth/worldgen/configured_feature/chorus_tree_feature.json",
-          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/chorus_tree_feature.json",
-          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/chorus_tree_feature_biome_modifier.json"
+          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/chorus_tree_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -1011,9 +1011,9 @@
       "registry_name": "ender_hut_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/ender_hut_feature.json",
           "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/ender_hut_feature_biome_modifier.json",
-          "src/main/resources/data/shineals_endergrowth/worldgen/configured_feature/ender_hut_feature.json"
+          "src/main/resources/data/shineals_endergrowth/worldgen/configured_feature/ender_hut_feature.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/ender_hut_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -1028,8 +1028,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/shineals_endergrowth/worldgen/configured_feature/chorus_forest_tree.json",
-          "src/main/resources/data/shineals_endergrowth/worldgen/biome/chorus_forest.json",
-          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/chorus_forest_tree.json"
+          "src/main/resources/data/shineals_endergrowth/worldgen/placed_feature/chorus_forest_tree.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/biome/chorus_forest.json"
         ]
       }
     },
@@ -1053,11 +1053,11 @@
       "registry_name": "ender_mage",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/shinealsendndergrowth/entity/EnderMageEntity.java",
           "src/main/java/net/mcreator/shinealsendndergrowth/client/renderer/EnderMageRenderer.java",
-          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/ender_mage_biome_modifier.json",
           "src/main/java/net/mcreator/shinealsendndergrowth/entity/model/EnderMageModel.java",
-          "src/main/resources/assets/shineals_endergrowth/models/item/ender_mage_spawn_egg.json"
+          "src/main/resources/assets/shineals_endergrowth/models/item/ender_mage_spawn_egg.json",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/ender_mage_biome_modifier.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/EnderMageEntity.java"
         ]
       }
     },
@@ -1070,11 +1070,11 @@
       "registry_name": "ender_phantom",
       "metadata": {
         "files": [
-          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/ender_phantom_biome_modifier.json",
-          "src/main/java/net/mcreator/shinealsendndergrowth/client/renderer/EnderPhantomRenderer.java",
+          "src/main/resources/assets/shineals_endergrowth/models/item/ender_phantom_spawn_egg.json",
           "src/main/java/net/mcreator/shinealsendndergrowth/entity/EnderPhantomEntity.java",
           "src/main/java/net/mcreator/shinealsendndergrowth/entity/model/EnderPhantomModel.java",
-          "src/main/resources/assets/shineals_endergrowth/models/item/ender_phantom_spawn_egg.json"
+          "src/main/java/net/mcreator/shinealsendndergrowth/client/renderer/EnderPhantomRenderer.java",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/ender_phantom_biome_modifier.json"
         ]
       }
     },
@@ -1082,16 +1082,16 @@
       "name": "EndStrider",
       "type": "animatedentity",
       "sortid": 75,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "end_strider",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/shinealsendndergrowth/entity/model/EndStriderModel.java",
           "src/main/java/net/mcreator/shinealsendndergrowth/client/renderer/EndStriderRenderer.java",
-          "src/main/java/net/mcreator/shinealsendndergrowth/entity/EndStriderEntity.java",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/end_strider_biome_modifier.json",
           "src/main/resources/assets/shineals_endergrowth/models/item/end_strider_spawn_egg.json",
-          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/end_strider_biome_modifier.json"
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/EndStriderEntity.java",
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/model/EndStriderModel.java"
         ]
       }
     },
@@ -1099,16 +1099,16 @@
       "name": "ChorusBee",
       "type": "animatedentity",
       "sortid": 76,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "chorus_bee",
       "metadata": {
         "files": [
-          "src/main/resources/assets/shineals_endergrowth/models/item/chorus_bee_spawn_egg.json",
-          "src/main/java/net/mcreator/shinealsendndergrowth/client/renderer/ChorusBeeRenderer.java",
           "src/main/java/net/mcreator/shinealsendndergrowth/entity/ChorusBeeEntity.java",
           "src/main/java/net/mcreator/shinealsendndergrowth/entity/model/ChorusBeeModel.java",
-          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/chorus_bee_biome_modifier.json"
+          "src/main/resources/assets/shineals_endergrowth/models/item/chorus_bee_spawn_egg.json",
+          "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/chorus_bee_biome_modifier.json",
+          "src/main/java/net/mcreator/shinealsendndergrowth/client/renderer/ChorusBeeRenderer.java"
         ]
       }
     },
@@ -1121,11 +1121,11 @@
       "registry_name": "chorus_snail",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/shinealsendndergrowth/entity/ChorusSnailEntity.java",
           "src/main/resources/data/shineals_endergrowth/forge/biome_modifier/chorus_snail_biome_modifier.json",
           "src/main/java/net/mcreator/shinealsendndergrowth/client/renderer/ChorusSnailRenderer.java",
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/model/ChorusSnailModel.java",
           "src/main/resources/assets/shineals_endergrowth/models/item/chorus_snail_spawn_egg.json",
-          "src/main/java/net/mcreator/shinealsendndergrowth/entity/model/ChorusSnailModel.java"
+          "src/main/java/net/mcreator/shinealsendndergrowth/entity/ChorusSnailEntity.java"
         ]
       }
     },
@@ -1139,8 +1139,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/shineals_endergrowth/worldgen/structure_set/chorus_tree.json",
-          "src/main/resources/data/shineals_endergrowth/worldgen/template_pool/chorus_tree.json",
-          "src/main/resources/data/shineals_endergrowth/worldgen/structure/chorus_tree.json"
+          "src/main/resources/data/shineals_endergrowth/worldgen/structure/chorus_tree.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/template_pool/chorus_tree.json"
         ]
       }
     },
@@ -1153,9 +1153,9 @@
       "registry_name": "end_hut",
       "metadata": {
         "files": [
-          "src/main/resources/data/shineals_endergrowth/worldgen/structure/end_hut.json",
+          "src/main/resources/data/shineals_endergrowth/worldgen/structure_set/end_hut.json",
           "src/main/resources/data/shineals_endergrowth/worldgen/template_pool/end_hut.json",
-          "src/main/resources/data/shineals_endergrowth/worldgen/structure_set/end_hut.json"
+          "src/main/resources/data/shineals_endergrowth/worldgen/structure/end_hut.json"
         ]
       }
     }

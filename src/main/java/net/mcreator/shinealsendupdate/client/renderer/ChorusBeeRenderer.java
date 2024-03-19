@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.client.renderer;
+package net.mcreator.shinealsendndergrowth.client.renderer;
 
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
@@ -9,8 +9,8 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
-import net.mcreator.shinealsendupdate.entity.model.ChorusBeeModel;
-import net.mcreator.shinealsendupdate.entity.ChorusBeeEntity;
+import net.mcreator.shinealsendndergrowth.entity.model.ChorusBeeModel;
+import net.mcreator.shinealsendndergrowth.entity.ChorusBeeEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;

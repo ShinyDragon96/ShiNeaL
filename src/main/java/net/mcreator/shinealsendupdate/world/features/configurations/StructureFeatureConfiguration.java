@@ -1,4 +1,4 @@
-package net.mcreator.shinealsendupdate.world.features.configurations;
+package net.mcreator.shinealsendndergrowth.world.features.configurations;
 
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.block.Block;

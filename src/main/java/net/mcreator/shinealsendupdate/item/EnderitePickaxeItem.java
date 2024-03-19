@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.item;
+package net.mcreator.shinealsendndergrowth.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -10,7 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModItems;
 
 import java.util.List;
 
@@ -22,11 +22,11 @@ public class EnderitePickaxeItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 20f;
+				return 10f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 5f;
 			}
 
 			public int getLevel() {
@@ -38,7 +38,7 @@ public class EnderitePickaxeItem extends PickaxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT.get()));
+				return Ingredient.of(new ItemStack(ShinealsEndergrowthModItems.ENDERIUM_INGOT.get()));
 			}
 		}, 1, -2.8f, new Item.Properties());
 	}

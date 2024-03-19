@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#is_end",
-  "features": "shineals_end_update:ender_hut_feature",
+  "features": "shineals_endergrowth:ender_hut_feature",
   "step": "surface_structures"
 }

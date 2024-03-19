@@ -1,9 +1,17 @@
 {
-  "type": "shineals_end_update:structure_feature",
+  "type": "shineals_endergrowth:structure_feature",
   "config": {
-    "structure": "shineals_end_update:chorus_tree",
+    "structure": "shineals_endergrowth:chorustreestructure",
     "random_rotation": true,
     "random_mirror": true,
-    "ignored_blocks": "minecraft:structure_block"
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:air"
+    ],
+    "offset": [
+      0,
+      -6,
+      0
+    ]
   }
 }

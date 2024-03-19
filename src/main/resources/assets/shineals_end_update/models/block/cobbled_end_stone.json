@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "shineals_end_update:block/cobbled_end_stone1",
-    "particle": "shineals_end_update:block/cobbled_end_stone1"
+    "all": "shineals_endergrowth:block/newce",
+    "particle": "shineals_endergrowth:block/newce"
   },
   "render_type": "solid"
 }

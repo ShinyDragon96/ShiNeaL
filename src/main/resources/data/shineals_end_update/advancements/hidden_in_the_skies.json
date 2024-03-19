@@ -2,7 +2,7 @@
   "display": {
     "background": "minecraft:textures/block/stone.png",
     "icon": {
-      "item": "shineals_end_update:enderite_ore"
+      "item": "shineals_endergrowth:enderium_ore"
     },
     "title": {
       "translate": "advancements.hidden_in_the_skies.title"
@@ -22,7 +22,7 @@
         "items": [
           {
             "items": [
-              "shineals_end_update:enderite_ore"
+              "shineals_endergrowth:enderium_ore"
             ],
             "count": {
               "min": 1,
@@ -36,10 +36,11 @@
   "rewards": {
     "experience": 1,
     "recipes": [
-      "shineals_end_update:raw_enderiterecipe",
-      "shineals_end_update:raw_enderite_recipe_blast",
-      "shineals_end_update:raw_enderite_recipe_from_block",
-      "shineals_end_update:raw_enderite_block_recipe"
+      "shineals_endergrowth:raw_enderiterecipe",
+      "shineals_endergrowth:raw_enderite_recipe_blast",
+      "shineals_endergrowth:raw_enderite_recipe_from_block",
+      "shineals_endergrowth:raw_enderite_block_recipe",
+      "shineals_endergrowth:enderite_ingot_recipe"
     ]
   }
 }

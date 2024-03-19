@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.item;
+package net.mcreator.shinealsendndergrowth.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -8,11 +8,9 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.shinealsendupdate.procedures.EnderiteSwordVoidProcedure;
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModItems;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModItems;
 
 import java.util.List;
 
@@ -28,7 +26,7 @@ public class EnderiteSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 3f;
+				return 5f;
 			}
 
 			public int getLevel() {
@@ -40,7 +38,7 @@ public class EnderiteSwordItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(ShinealsEndUpdateModItems.ENDERITE_INGOT.get()));
+				return Ingredient.of(new ItemStack(ShinealsEndergrowthModItems.ENDERIUM_INGOT.get()));
 			}
 		}, 3, -2.4f, new Item.Properties());
 	}
@@ -48,12 +46,5 @@ public class EnderiteSwordItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		if (selected)
-			EnderiteSwordVoidProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 }

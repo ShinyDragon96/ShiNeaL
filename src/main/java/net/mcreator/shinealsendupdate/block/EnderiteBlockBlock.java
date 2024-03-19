@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.block;
+package net.mcreator.shinealsendndergrowth.block;
 
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;

@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.world.inventory;
+package net.mcreator.shinealsendndergrowth.world.inventory;
 
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
@@ -16,7 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModMenus;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModMenus;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -36,7 +36,7 @@ public class PortalTableGUIMenu extends AbstractContainerMenu implements Supplie
 	private BlockEntity boundBlockEntity = null;
 
 	public PortalTableGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(ShinealsEndUpdateModMenus.PORTAL_TABLE_GUI.get(), id);
+		super(ShinealsEndergrowthModMenus.PORTAL_TABLE_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(0);

@@ -1,12 +1,12 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:netherite_shovel"
+    "item": "minecraft:diamond_shovel"
   },
   "addition": {
-    "item": "shineals_end_update:enderite_ingot"
+    "item": "shineals_endergrowth:enderium_ingot"
   },
   "result": {
-    "item": "shineals_end_update:enderite_shovel"
+    "item": "shineals_endergrowth:enderium_shovel"
   }
 }

@@ -2,7 +2,7 @@
   "display": {
     "background": "minecraft:textures/block/stone.png",
     "icon": {
-      "item": "shineals_end_update:enderite_ingot"
+      "item": "shineals_endergrowth:enderium_ingot"
     },
     "title": {
       "translate": "advancements.ultimate_dedication.title"
@@ -22,7 +22,7 @@
         "items": [
           {
             "items": [
-              "shineals_end_update:enderite_hoe"
+              "shineals_endergrowth:enderium_hoe"
             ],
             "count": {
               "min": 1,
@@ -34,6 +34,6 @@
     }
   },
   "rewards": {
-    "experience": 3
+    "experience": 1
   }
 }

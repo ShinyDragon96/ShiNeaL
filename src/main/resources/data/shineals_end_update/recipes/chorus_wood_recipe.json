@@ -7,11 +7,11 @@
   ],
   "key": {
     "a": {
-      "item": "shineals_end_update:chorus_log"
+      "item": "shineals_endergrowth:chorus_log"
     }
   },
   "result": {
-    "item": "shineals_end_update:chorus_wood",
+    "item": "shineals_endergrowth:chorus_wood",
     "count": 3
   }
 }

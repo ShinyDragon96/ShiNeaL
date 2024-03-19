@@ -1,5 +1,5 @@
 {
-  "parent": "shineals_end_update:block/end_stone_lamp",
+  "parent": "shineals_endergrowth:block/end_stone_lamp",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.entity;
+package net.mcreator.shinealsendndergrowth.entity;
 
 import software.bernie.geckolib.util.GeckoLibUtil;
 import software.bernie.geckolib.core.object.PlayState;
@@ -15,31 +15,29 @@ import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.Pose;
+import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.Difficulty;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
@@ -51,9 +49,9 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.shinealsendupdate.init.ShinealsEndUpdateModEntities;
+import net.mcreator.shinealsendndergrowth.init.ShinealsEndergrowthModEntities;
 
-public class ChorusBeeEntity extends Monster implements GeoEntity {
+public class ChorusBeeEntity extends PathfinderMob implements GeoEntity {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(ChorusBeeEntity.class, EntityDataSerializers.BOOLEAN);
 	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(ChorusBeeEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(ChorusBeeEntity.class, EntityDataSerializers.STRING);
@@ -64,12 +62,12 @@ public class ChorusBeeEntity extends Monster implements GeoEntity {
 	public String animationprocedure = "empty";
 
 	public ChorusBeeEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(ShinealsEndUpdateModEntities.CHORUSBEE.get(), world);
+		this(ShinealsEndergrowthModEntities.CHORUS_BEE.get(), world);
 	}
 
 	public ChorusBeeEntity(EntityType<ChorusBeeEntity> type, Level world) {
 		super(type, world);
-		xpReward = 2;
+		xpReward = 0;
 		setNoAi(false);
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
@@ -103,13 +101,7 @@ public class ChorusBeeEntity extends Monster implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
-			@Override
-			protected double getAttackReachSqr(LivingEntity entity) {
-				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
-			}
-		});
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.8, 20) {
+		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = ChorusBeeEntity.this.getRandom();
@@ -119,9 +111,9 @@ public class ChorusBeeEntity extends Monster implements GeoEntity {
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
-		this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(5, new FloatGoal(this));
+		this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(4, new FloatGoal(this));
 	}
 
 	@Override
@@ -131,7 +123,12 @@ public class ChorusBeeEntity extends Monster implements GeoEntity {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(Items.POPPED_CHORUS_FRUIT));
+		this.spawnAtLocation(new ItemStack(Blocks.CHORUS_FLOWER));
+	}
+
+	@Override
+	public SoundEvent getAmbientSound() {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.bee.loop"));
 	}
 
 	@Override
@@ -182,20 +179,22 @@ public class ChorusBeeEntity extends Monster implements GeoEntity {
 		super.setNoGravity(true);
 	}
 
+	@Override
 	public void aiStep() {
 		super.aiStep();
+		this.updateSwingTime();
 		this.setNoGravity(true);
 	}
 
 	public static void init() {
-		SpawnPlacements.register(ShinealsEndUpdateModEntities.CHORUSBEE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+		SpawnPlacements.register(ShinealsEndergrowthModEntities.CHORUS_BEE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).getMaterial() == Material.GRASS && world.getRawBrightness(pos, 0) > 8));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 5);
+		builder = builder.add(Attributes.MAX_HEALTH, 8);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
@@ -206,7 +205,7 @@ public class ChorusBeeEntity extends Monster implements GeoEntity {
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
 			if (!this.isOnGround()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("fly"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("idle"));
 			}
 			return event.setAndContinue(RawAnimation.begin().thenLoop("idle"));
 		}

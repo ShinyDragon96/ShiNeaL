@@ -1,4 +1,4 @@
-package net.mcreator.shinealsendupdate.client.gui;
+package net.mcreator.shinealsendndergrowth.client.gui;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -7,7 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 
-import net.mcreator.shinealsendupdate.world.inventory.PortalTableGUIMenu;
+import net.mcreator.shinealsendndergrowth.world.inventory.PortalTableGUIMenu;
 
 import java.util.HashMap;
 
@@ -31,7 +31,7 @@ public class PortalTableGUIScreen extends AbstractContainerScreen<PortalTableGUI
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("shineals_end_update:textures/screens/portal_table_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("shineals_endergrowth:textures/screens/portal_table_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -47,10 +47,6 @@ public class PortalTableGUIScreen extends AbstractContainerScreen<PortalTableGUI
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
-		RenderSystem.setShaderTexture(0, new ResourceLocation("shineals_end_update:textures/screens/portal_table_gui.png"));
-		this.blit(ms, this.leftPos + -6, this.topPos + 0, 0, 0, 166, 166, 166, 166);
-
 		RenderSystem.disableBlend();
 	}
 

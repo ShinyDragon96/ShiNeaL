@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "shineals_end_update:block/purpur_log_top",
-    "up": "shineals_end_update:block/purpur_log_top",
-    "north": "shineals_end_update:block/purpur_log",
-    "east": "shineals_end_update:block/purpur_log",
-    "south": "shineals_end_update:block/purpur_log",
-    "west": "shineals_end_update:block/purpur_log",
-    "particle": "shineals_end_update:block/purpur_log_top"
+    "down": "shineals_endergrowth:block/purpur_pillar_top",
+    "up": "shineals_endergrowth:block/purpur_pillar_top",
+    "north": "shineals_endergrowth:block/purpur_pillar",
+    "east": "shineals_endergrowth:block/purpur_pillar",
+    "south": "shineals_endergrowth:block/purpur_pillar",
+    "west": "shineals_endergrowth:block/purpur_pillar",
+    "particle": "shineals_endergrowth:block/purpur_pillar_top"
   },
   "render_type": "solid"
 }

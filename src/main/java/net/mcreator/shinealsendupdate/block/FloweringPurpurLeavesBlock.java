@@ -1,5 +1,5 @@
 
-package net.mcreator.shinealsendupdate.block;
+package net.mcreator.shinealsendndergrowth.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;

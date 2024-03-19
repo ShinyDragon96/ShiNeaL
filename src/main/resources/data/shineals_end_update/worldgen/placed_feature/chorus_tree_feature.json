@@ -1,9 +1,9 @@
 {
-  "feature": "shineals_end_update:chorus_tree_feature",
+  "feature": "shineals_endergrowth:chorus_tree_feature",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 9615
+      "chance": 5
     },
     {
       "type": "minecraft:count",
@@ -11,7 +11,7 @@
         "type": "uniform",
         "value": {
           "min_inclusive": 2,
-          "max_inclusive": 10
+          "max_inclusive": 8
         }
       }
     },
@@ -21,6 +21,21 @@
     {
       "type": "minecraft:heightmap",
       "heightmap": "OCEAN_FLOOR_WG"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "shineals_endergrowth:cobbled_end_stone",
+          "minecraft:end_stone"
+        ],
+        "offset": [
+          0,
+          -1,
+          0
+        ]
+      }
     },
     {
       "type": "minecraft:biome"

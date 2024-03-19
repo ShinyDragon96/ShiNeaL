@@ -4,7 +4,7 @@
   "experience": 1,
   "cookingtime": 100,
   "ingredient": {
-    "item": "shineals_end_update:enderite_ore"
+    "item": "shineals_endergrowth:enderium_ore"
   },
-  "result": "shineals_end_update:raw_enderite"
+  "result": "shineals_endergrowth:raw_enderium"
 }

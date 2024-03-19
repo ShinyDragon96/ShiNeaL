@@ -1,9 +1,9 @@
 {
-  "feature": "shineals_end_update:ender_hut_feature",
+  "feature": "shineals_endergrowth:ender_hut_feature",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 1538
+      "chance": 150
     },
     {
       "type": "minecraft:in_square"
@@ -18,7 +18,7 @@
         "type": "minecraft:matching_blocks",
         "blocks": [
           "minecraft:end_stone",
-          "shineals_end_update:cobbled_end_stone"
+          "shineals_endergrowth:cobbled_end_stone"
         ],
         "offset": [
           0,

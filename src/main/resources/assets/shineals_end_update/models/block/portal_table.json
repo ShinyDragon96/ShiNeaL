@@ -1,9 +1,9 @@
 {
-  "parent": "shineals_end_update:custom/portal_table_final",
+  "parent": "shineals_endergrowth:custom/portal_table_final",
   "textures": {
-    "all": "shineals_end_update:block/portal_table_1",
-    "particle": "shineals_end_update:block/portal_table_1",
-    "missing": "shineals_end_update:block/portal_table_1"
+    "all": "shineals_endergrowth:block/portal_table_1",
+    "particle": "shineals_endergrowth:block/portal_table_1",
+    "missing": "shineals_endergrowth:block/portal_table_1"
   },
   "render_type": "solid"
 }

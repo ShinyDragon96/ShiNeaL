@@ -12,18 +12,18 @@
           }
         },
         "state": {
-          "Name": "shineals_end_update:cobbled_end_stone"
+          "Name": "shineals_endergrowth:cobbled_end_stone"
         }
       },
       {
         "target": {
           "predicate_type": "blockstate_match",
           "block_state": {
-            "Name": "shineals_end_update:cobbled_end_stone"
+            "Name": "shineals_endergrowth:cobbled_end_stone"
           }
         },
         "state": {
-          "Name": "shineals_end_update:cobbled_end_stone"
+          "Name": "shineals_endergrowth:cobbled_end_stone"
         }
       }
     ]
